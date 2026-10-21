@@ -1,0 +1,5 @@
+# Address of the story server, used by the build scripts (first line that is not a comment).
+# Run run_server.bat to see the address to use. Examples:
+#   http://10.0.2.2:8080        the Android emulator, server on this PC
+#   http://192.168.1.20:8080    a phone on the same Wi-Fi
+#   https://stories.example.com a server on the internet
