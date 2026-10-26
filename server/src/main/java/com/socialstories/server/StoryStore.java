@@ -129,9 +129,9 @@ public class StoryStore {
         for (int n = 2; byId(id).isPresent(); n++) id = base + "_" + n;
         // Drop the placeholder ids so pages and questions get ids from the real story id.
         List<Story.Page> pages = proposal.pages().stream()
-                .map(p -> new Story.Page(null, p.image(), p.lead(), p.body(), p.focus())).toList();
+                .map(p -> new Story.Page(null, p.image(), p.lead(), p.body(), p.focus(), p.animation())).toList();
         List<Story.Question> questions = proposal.questionsOrEmpty().stream()
-                .map(q -> new Story.Question(null, q.question(), q.choices(), q.answer())).toList();
+                .map(q -> new Story.Question(null, q.question(), q.choices(), q.answer(), q.choiceImages())).toList();
         Story story = clean(new Story(id, proposal.title(), pages, questions), id, true);
         stories.add(story);
         save();
@@ -222,12 +222,12 @@ public class StoryStore {
                     image,
                     text(page.lead(), where + " main sentence", MAX_TEXT),
                     text(page.body(), where + " detail", MAX_TEXT),
-                    focus(page.focus(), where)));
+                    focus(page.focus(), where), animation(page.animation(), page.lead(), page.body(), where, checkImages)));
         }
-        return new Story(id, title, List.copyOf(pages), questions(input.questions(), id));
+        return new Story(id, title, List.copyOf(pages), questions(input.questions(), id, checkImages));
     }
 
-    private static List<Story.Question> questions(List<Story.Question> raw, String storyId) {
+    private List<Story.Question> questions(List<Story.Question> raw, String storyId, boolean checkImages) {
         if (raw == null || raw.isEmpty()) return List.of();
         if (raw.size() > MAX_QUESTIONS) throw ApiException.invalid("A story can have at most " + MAX_QUESTIONS + " questions.");
         List<Story.Question> out = new ArrayList<>();
@@ -253,7 +253,7 @@ public class StoryStore {
                 throw ApiException.invalid(where + " needs a correct answer.");
             }
             out.add(new Story.Question(uniqueId(q.id(), storyId + "-q" + (i + 1), ids), question,
-                    List.copyOf(cleanChoices), answer));
+                    List.copyOf(cleanChoices), answer, choiceImages(q.choiceImages(), choices.size(), where, checkImages)));
         }
         return List.copyOf(out);
     }
@@ -263,6 +263,65 @@ public class StoryStore {
         while (taken.contains(id)) id = id + "x";
         taken.add(id);
         return id;
+    }
+
+    private Story.Animation animation(Story.Animation a, String lead, String body, String where, boolean checkImages) {
+        if (a == null) return null;
+        if (a.asset() == null || a.asset().isBlank() || (checkImages && !images.exists(a.asset()))) {
+            throw ApiException.invalid(where + " needs an animation atlas that exists.");
+        }
+        int columns = integer(a.columns(), where + " animation columns", 1, 32);
+        int rows = integer(a.rows(), where + " animation rows", 1, 32);
+        int row = integer(a.row(), where + " animation row", 0, rows - 1);
+        int count = integer(a.frameCount(), where + " animation frames", 1, columns);
+        double fps = number(a.fps(), 2, where + " animation fps", 0.2, 24);
+        int poster = a.posterFrame() == null ? 0 : integer(a.posterFrame(), where + " animation poster", 0, count - 1);
+        String cue = a.cue() == null ? null : text(a.cue(), where + " animation cue", MAX_TEXT).trim();
+        String narration = (lead == null ? "" : lead) + " " + (body == null ? "" : body);
+        if (cue != null && !cue.isEmpty() && !narration.contains(cue)) {
+            throw ApiException.invalid(where + " animation cue must appear in its narration.");
+        }
+        boolean loop = a.loop() == null || a.loop();
+        List<String> frameCues = a.frameCues();
+        if (frameCues != null && !frameCues.isEmpty()) {
+            if (loop || frameCues.size() != count) {
+                throw ApiException.invalid(where + " needs one cue per frame in a non-looping sequence.");
+            }
+            int previous = -1;
+            for (String phrase : frameCues) {
+                if (phrase == null || phrase.isBlank() || phrase.length() > MAX_TEXT) {
+                    throw ApiException.invalid(where + " frame cues must be nonempty narration phrases.");
+                }
+                int offset = narration.indexOf(phrase);
+                if (offset <= previous) {
+                    throw ApiException.invalid(where + " frame cues must appear in narration order.");
+                }
+                previous = offset;
+            }
+            frameCues = List.copyOf(frameCues);
+        }
+        return new Story.Animation(a.asset(), columns, rows, row, count, fps, poster, cue,
+                text(a.description(), where + " animation description", 1000), loop, frameCues);
+    }
+
+    private List<String> choiceImages(List<String> raw, int count, String where, boolean checkImages) {
+        if (raw == null || raw.isEmpty()) return null;
+        if (raw.size() != count) throw ApiException.invalid(where + " needs one image entry per answer.");
+        List<String> out = new ArrayList<>();
+        for (String image : raw) {
+            if (image != null && (image.isBlank() || (checkImages && !images.exists(image)))) {
+                throw ApiException.invalid(where + " uses an answer picture that does not exist.");
+            }
+            out.add(image);
+        }
+        return out.stream().allMatch(java.util.Objects::isNull) ? null : java.util.Collections.unmodifiableList(out);
+    }
+
+    private static int integer(Integer value, String field, int min, int max) {
+        if (value == null || value < min || value > max) {
+            throw ApiException.invalid(field + " must be an integer from " + min + " to " + max + ".");
+        }
+        return value;
     }
 
     private static Story.Focus focus(Story.Focus focus, String where) {

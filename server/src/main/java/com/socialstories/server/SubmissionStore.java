@@ -197,7 +197,7 @@ public class SubmissionStore {
         for (int i = 0; i < a.pages().size(); i++) {
             Story.Page x = a.pages().get(i), y = b.pages().get(i);
             if (!x.image().equals(y.image()) || !x.lead().equals(y.lead()) || !x.body().equals(y.body())
-                    || !Objects.equals(x.focus(), y.focus())) {
+                    || !Objects.equals(x.focus(), y.focus()) || !Objects.equals(x.animation(), y.animation())) {
                 return false;
             }
         }
@@ -210,7 +210,8 @@ public class SubmissionStore {
         if (x.size() != y.size()) return false;
         for (int i = 0; i < x.size(); i++) {
             if (!x.get(i).question().equals(y.get(i).question()) || !x.get(i).choices().equals(y.get(i).choices())
-                    || !x.get(i).answer().equals(y.get(i).answer())) {
+                    || !x.get(i).answer().equals(y.get(i).answer())
+                    || !Objects.equals(x.get(i).choiceImages(), y.get(i).choiceImages())) {
                 return false;
             }
         }

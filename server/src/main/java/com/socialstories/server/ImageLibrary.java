@@ -27,6 +27,8 @@ public class ImageLibrary {
 
     public static final String BUNDLED_PREFIX = "assets/images/stories/";
     public static final String UPLOADS_PREFIX = "uploads/";
+    public static final String SCENES_PREFIX = "assets/images/story_scenes/";
+    public static final String SPRITES_PREFIX = "assets/animations/spritesheets/";
     public static final int MAX_UPLOAD_BYTES = 5 * 1024 * 1024;
 
     private static final Pattern FILE_NAME = Pattern.compile("^[A-Za-z0-9][A-Za-z0-9_.-]*\\.(png|jpe?g|webp)$");
@@ -34,10 +36,14 @@ public class ImageLibrary {
 
     private final Path bundledDir;
     private final Path uploadsDir;
+    private final Path scenesDir;
+    private final Path spritesDir;
 
     public ImageLibrary(StoriesProperties properties) {
         this.bundledDir = properties.bundledImagesDir();
         this.uploadsDir = properties.uploadsDir();
+        this.scenesDir = properties.sceneImagesDir();
+        this.spritesDir = properties.spriteSheetsDir();
         try {
             Files.createDirectories(uploadsDir);
         } catch (IOException e) {
@@ -53,6 +59,9 @@ public class ImageLibrary {
         return uploadsDir;
     }
 
+    public Path scenesDir() { return scenesDir; }
+    public Path spritesDir() { return spritesDir; }
+
     /** True if {@code path} points at a picture that exists. */
     public boolean exists(String path) {
         Path file = fileFor(path);
@@ -62,7 +71,8 @@ public class ImageLibrary {
     /** The file behind an image path, or null if the path is not allowed. */
     Path fileFor(String path) {
         if (path == null) return null;
-        for (var entry : List.of(Map.entry(BUNDLED_PREFIX, bundledDir), Map.entry(UPLOADS_PREFIX, uploadsDir))) {
+        for (var entry : List.of(Map.entry(BUNDLED_PREFIX, bundledDir), Map.entry(UPLOADS_PREFIX, uploadsDir),
+                Map.entry(SCENES_PREFIX, scenesDir), Map.entry(SPRITES_PREFIX, spritesDir))) {
             if (!path.startsWith(entry.getKey())) continue;
             String name = path.substring(entry.getKey().length());
             return FILE_NAME.matcher(name).matches() ? entry.getValue().resolve(name) : null;
@@ -75,6 +85,7 @@ public class ImageLibrary {
         List<Map<String, String>> all = new ArrayList<>();
         all.addAll(listDir(bundledDir, BUNDLED_PREFIX, "bundled"));
         all.addAll(listDir(uploadsDir, UPLOADS_PREFIX, "uploaded"));
+        all.addAll(listDir(scenesDir, SCENES_PREFIX, "bundled"));
         return all;
     }
 

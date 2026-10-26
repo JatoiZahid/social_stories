@@ -43,4 +43,12 @@ public record StoriesProperties(String dataDir, String appDir, String adminToken
     public Path bundledImagesDir() {
         return appPath().resolve("assets").resolve("images").resolve("stories");
     }
+
+    public Path sceneImagesDir() {
+        return appPath().resolve("assets/images/story_scenes");
+    }
+
+    public Path spriteSheetsDir() {
+        return appPath().resolve("assets/animations/spritesheets");
+    }
 }

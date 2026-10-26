@@ -35,6 +35,12 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addResourceHandler("/assets/images/stories/**")
                 .addResourceLocations(folder(images.bundledDir()))
                 .setCacheControl(CacheControl.maxAge(Duration.ofHours(1)).cachePublic());
+        registry.addResourceHandler("/assets/images/story_scenes/**")
+                .addResourceLocations(folder(images.scenesDir()))
+                .setCacheControl(CacheControl.maxAge(Duration.ofHours(1)).cachePublic());
+        registry.addResourceHandler("/assets/animations/spritesheets/**")
+                .addResourceLocations(folder(images.spritesDir()))
+                .setCacheControl(CacheControl.maxAge(Duration.ofHours(1)).cachePublic());
     }
 
     @Override
