@@ -1,0 +1,90 @@
+{
+  "review_date": "2026-10-27",
+  "host_platform": "Windows",
+  "flutter_version": "3.47.5",
+  "dart_version": "3.13.4",
+  "stories_sha256": "87ffad5a1c3024d3afade6019a7b0efd26cfed2850034ca3a68fde1eff6d2499",
+  "scene_manifest_sha256": "f2a13eca4dad45a40ba5e2d452d0692636169e0575835ccd83bb19f337338f99",
+  "flutter_analyze": {
+    "passed": true,
+    "issues": 0
+  },
+  "flutter_tests": {
+    "passed": true,
+    "count": 54
+  },
+  "admin_tests": {
+    "passed": true,
+    "count": 2
+  },
+  "server_tests": {
+    "passed": true,
+    "count": 18
+  },
+  "all_scene_rendering_passed": true,
+  "scene_rendering_count": 75,
+  "scene_rendering_checks": [
+    "asset bundle registration and decode",
+    "actual source-cell changes",
+    "one-shot final holds",
+    "pause freezes current pose"
+  ],
+  "layout_sizes": [
+    [
+      360,
+      640
+    ],
+    [
+      800,
+      360
+    ],
+    [
+      768,
+      1024
+    ],
+    [
+      1024,
+      768
+    ],
+    [
+      1024,
+      1366
+    ],
+    [
+      1366,
+      1024
+    ]
+  ],
+  "layout_representative_stories": [
+    "going_to_the_doctor",
+    "airport",
+    "staying_safe"
+  ],
+  "key_pose_count": 210,
+  "native_frame_sizes": [
+    [
+      724,
+      724
+    ],
+    [
+      1024,
+      768
+    ]
+  ],
+  "original_asset_hashes_unchanged": true,
+  "story_text_and_questions_preserved": true,
+  "asset_generation_method": "built_in_image_gen_with_original_character_references",
+  "native_4k_artwork": false,
+  "physical_device_tts_verified": false,
+  "physical_tablet_sharpness_verified": false,
+  "ios_build_verified": false,
+  "android_debug_build": {
+    "passed": true,
+    "artifact": "dist/social_stories-animated-debug-2026-10-27.apk",
+    "bytes": 376548375,
+    "sha256": "ae3ea9441d030e4539effee56f83a17b82b7346d473cb625d4b7b8da078b624c",
+    "bundled_story_json_exact_match": true,
+    "bundled_scene_assets_hash_verified": 150,
+    "bundled_original_asset_hashes_verified": 12
+  }
+}

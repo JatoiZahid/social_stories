@@ -1,0 +1,767 @@
+{
+  "originals_unchanged": true,
+  "story_text_and_questions_preserved": true,
+  "reviewed_integrated_scenes": 75,
+  "total_scenes": 75,
+  "missing_scene_ids": [],
+  "scenes": [
+    {
+      "scene_id": "going_to_school-p1",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed original face, all narrated action beats, safe framing and logically held props; no extra limbs. Three meaningful limited-animation poses.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "going_to_school-p2",
+      "frame_width": 1024,
+      "frame_height": 768,
+      "frame_count": 2,
+      "review": "reviewed_ready",
+      "qa_notes": "Visually reviewed original identity, correct scene/action, distinct articulated poses, equal grid, uncropped heads and props. Limited key-pose animation with minor drawn-frame registration differences.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "going_to_school-p3",
+      "frame_width": 1024,
+      "frame_height": 768,
+      "frame_count": 2,
+      "review": "reviewed_ready",
+      "qa_notes": "Visually reviewed original identity, correct scene/action, distinct articulated poses, equal grid, uncropped heads and props. Limited key-pose animation with minor drawn-frame registration differences.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "going_to_school-p4",
+      "frame_width": 1024,
+      "frame_height": 768,
+      "frame_count": 2,
+      "review": "reviewed_ready",
+      "qa_notes": "Visually reviewed original boy identity and distinct teacher greeting poses. Two-pose wave/settle; mother visible behind boy.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "going_to_school-p5",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Visually reviewed original identity, correct scene/action, distinct articulated poses, equal grid, uncropped heads and props. Limited key-pose animation with minor drawn-frame registration differences.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "going_to_school-p6",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed all three distinct articulated poses against original face reference, exact narration progression, correct environment, full heads/feet and props; deliberate narrative location changes.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "going_to_the_toilet-p1",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed all three distinct articulated poses against original face reference, exact narration progression, correct environment, full heads/feet and props; deliberate narrative location changes.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "going_to_the_toilet-p2",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed original face, action sequence and full opaque foreground privacy screen; body/clothing actions deliberately concealed; paper/upper-body poses provide non-explicit instruction.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "going_to_the_toilet-p3",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Targeted identity-preserving edit reviewed: first two cels reach/tear paper; final cel BOTH hands and ALL paper lowered completely behind opaque teal privacy wall, shoulders/torso lean subtly downward implying concealed wiping. No paper at chest or mouth; no private anatomy visible; full head margin preserved.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "going_to_the_toilet-p4",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed original face, all narrated action beats, safe framing and logically held props; no extra limbs. Three meaningful limited-animation poses.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "going_to_the_toilet-p5",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed original boy identity, three waistband/clothing poses, opaque privacy screen conceals lower body and no private anatomy.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "going_to_the_toilet-p6",
+      "frame_width": 1024,
+      "frame_height": 768,
+      "frame_count": 2,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed original boy identity, correct bathroom props and meaningful hand/arm/leg poses, safe uncropped head margin and native equal-cell grid. Limited key-pose animation.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "going_to_the_toilet-p7",
+      "frame_width": 1024,
+      "frame_height": 768,
+      "frame_count": 2,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed original boy identity, correct bathroom props and meaningful hand/arm/leg poses, safe uncropped head margin and native equal-cell grid. Limited key-pose animation.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "going_to_the_toilet-p8",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed original boy identity, correct bathroom props and meaningful hand/arm/leg poses, safe uncropped head margin and native equal-cell grid. Limited key-pose animation.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "going_to_the_doctor-p1",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed original boy and woman doctor faces, distinct articulated narrated action poses, relevant clinic props and direct logical hand/prop contact. Wider framing preserves complete hair/heads/feet; no anatomy distortion. Limited two/three-key-pose animation.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "going_to_the_doctor-p2",
+      "frame_width": 1024,
+      "frame_height": 768,
+      "frame_count": 2,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed original doctor and boy identities, genuine palm/wrist waving poses with correct exam room. Both complete heads visible; doctor head has narrow top margin.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "going_to_the_doctor-p3",
+      "frame_width": 1024,
+      "frame_height": 768,
+      "frame_count": 2,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed original boy and woman doctor faces, distinct articulated narrated action poses, relevant clinic props and direct logical hand/prop contact. Wider framing preserves complete hair/heads/feet; no anatomy distortion. Limited two/three-key-pose animation.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "going_to_the_doctor-p4",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Targeted regeneration verified visible outer EAR contact (not eye) in first cel, open mouth/depressor and penlight in following cels. Original doctor/boy faces and full head margins retained.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "going_to_the_doctor-p5",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed original boy and woman doctor faces, distinct articulated narrated action poses, relevant clinic props and direct logical hand/prop contact. Wider framing preserves complete hair/heads/feet; no anatomy distortion. Limited two/three-key-pose animation.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "going_to_the_doctor-p6",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed original boy and woman doctor faces, distinct articulated narrated action poses, relevant clinic props and direct logical hand/prop contact. Wider framing preserves complete hair/heads/feet; no anatomy distortion. Limited two/three-key-pose animation.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "brushing_teeth-p1",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Original boy face, large dark brown iris outlines, hair, blue collared shirt preserved. Yellow brush is held and lifted from cup, paste placed onto bristles, then bristles visibly contact teeth. Both hands/props and complete hair visible; native724squarecells retained. No unrelated blue implement.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "brushing_teeth-p2",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Regenerated wide full-body composition to remove cropped hair. Original face/iris shape/hair/blue collared shirt and yellow brush preserved. Frame2 nozzle aligned over bristles placing tiny round pea-size bead; frame3 caps tube. Poster uses middle frame showing paste quantity. Native724squarecels retained; no upscale.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "brushing_teeth-p3",
+      "frame_width": 1024,
+      "frame_height": 768,
+      "frame_count": 2,
+      "review": "reviewed_ready",
+      "qa_notes": "Regenerated wide full-body composition to remove cropped hair. Original face/hair/blue collared shirt, yellow brush and blue/yellow bathroom preserved. Brush bristles visibly contact teeth in both poses; small wrist/brush/mouth differences support gentle loop. Full hair and body visible. Native1024x768cels retained; no upscale.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "brushing_teeth-p4",
+      "frame_width": 1024,
+      "frame_height": 768,
+      "frame_count": 2,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed original brown-haired boy face, yellow toothbrush correctly held/contacting teeth or rinse stream, blue bathroom, distinct arm/wrist poses, emotion and complete head/hand framing. Limited key-pose animation; native frame resolution, no 4K claim.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "brushing_teeth-p5",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed original brown-haired boy face, yellow toothbrush correctly held/contacting teeth or rinse stream, blue bathroom, distinct arm/wrist poses, emotion and complete head/hand framing. Limited key-pose animation; native frame resolution, no 4K claim.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "brushing_teeth-p6",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed original brown-haired boy face, yellow toothbrush correctly held/contacting teeth or rinse stream, blue bathroom, distinct arm/wrist poses, emotion and complete head/hand framing. Limited key-pose animation; native frame resolution, no 4K claim.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "restaurant-p1",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed against original: matching boy/mother hair, dark eyes, peach skin, blue/yellow clothes; restaurant menu/drawing contact and action poses match narration. Native dimensions retained; no 4K claim.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "restaurant-p2",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed against original: matching boy/mother hair, dark eyes, peach skin, blue/yellow clothes; restaurant menu/drawing contact and action poses match narration. Native dimensions retained; no 4K claim.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "restaurant-p3",
+      "frame_width": 1024,
+      "frame_height": 768,
+      "frame_count": 2,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed against original: matching boy/mother hair, dark eyes, peach skin, blue/yellow clothes; restaurant menu/drawing contact and action poses match narration. Native dimensions retained; no 4K claim.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "restaurant-p4",
+      "frame_width": 1024,
+      "frame_height": 768,
+      "frame_count": 2,
+      "review": "reviewed_ready",
+      "qa_notes": "Visually reviewed against original: face, hair, clothes, contact and narrated action progression preserved. Whole heads and action props visible. Native frame geometry retained without resizing; original-like detail, not 4K.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "restaurant-p5",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed: original boy face/hair/skin/clothes and restaurant mother identity maintained. Specific food/water hand contact or airport check-in/security/waiting progression matches narration. Full heads visible. Native 724px square cells in3frame strips retained without upscaling; tablet QA remains.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "restaurant-p6",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Visually reviewed against original: face, hair, clothes, contact and narrated action progression preserved. Whole heads and action props visible. Native frame geometry retained without resizing; original-like detail, not 4K.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "airport-p1",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Visually reviewed against original: face, hair, clothes, contact and narrated action progression preserved. Whole heads and action props visible. Native frame geometry retained without resizing; original-like detail, not 4K.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "airport-p2",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed: original boy face/hair/skin/clothes and restaurant mother identity maintained. Specific food/water hand contact or airport check-in/security/waiting progression matches narration. Full heads visible. Native 724px square cells in3frame strips retained without upscaling; tablet QA remains.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "airport-p3",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Targeted edit visually verified: frame1 original lime-shirt boy wears original blue/yellow backpack and holds wallet/keys; frame2 backpack is removed from back (no straps) and physically supported INSIDE gray tray with wallet/keys while hands contact bag; frame3 boy walks through scanner with NO bag or straps and SAME blue bag remains visible in tray on conveyor behind security worker. Original child/staff faces, hair, clothing, scene geometry maintained; complete main heads/hands/feet visible. Native3x724squarecells retained without resizing.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "airport-p4",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Visually reviewed: original lime-shirt boy face/hair/skin preserved. Guardian now same green overshirt/white tee/beige trousers as arrival. Waiting/seatbelt fastening/takeoff yawn/arrival booster belt match narration. Whole heads visible; close seated shots intentional. Native cells retained, tablet review pending.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "airport-p5",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Regenerated to show missing boarding beat: original lime-shirt boy walks in cabin aisle beside row, sits and holds belt ends with backpack stowed, then clips lap belt. Existing generated green-overshirt guardian matches earlier airport scene and is buckled throughout. Original child face/hair/skin preserved; whole heads/hands/feet visible. Plane parked at gate. Three native724squarecells retained.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "airport-p6",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Visually reviewed: original lime-shirt boy face/hair/skin preserved. Guardian now same green overshirt/white tee/beige trousers as arrival. Waiting/seatbelt fastening/takeoff yawn/arrival booster belt match narration. Whole heads visible; close seated shots intentional. Native cells retained, tablet review pending.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "airport-p7",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Visually reviewed: original lime-shirt boy face/hair/skin preserved. Guardian now same green overshirt/white tee/beige trousers as arrival. Waiting/seatbelt fastening/takeoff yawn/arrival booster belt match narration. Whole heads visible; close seated shots intentional. Native cells retained, tablet review pending.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "playground-p1",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed original boy/girl faces, hair, pink headband, blue/pink hoodies and shorts. Waiting/turn exchange and feet-first slide/clear landing/invitation match narration. Chains gripped, children wait lateral to swing path. Full uncropped bodies. 3 native724squarecels, no upscaling.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "playground-p2",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed original boy/girl faces, hair, pink headband, blue/pink hoodies and shorts. Waiting/turn exchange and feet-first slide/clear landing/invitation match narration. Chains gripped, children wait lateral to swing path. Full uncropped bodies. 3 native724squarecels, no upscaling.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "playground-p3",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed original boy/girl faces, hair, pink headband, blue/pink hoodies and shorts. Waiting/turn exchange and feet-first slide/clear landing/invitation match narration. Chains gripped, children wait lateral to swing path. Full uncropped bodies. 3 native724squarecels, no upscaling.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "playground-p4",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed original boy/girl faces, hair, pink headband, blue/pink hoodies and shorts. Waiting/turn exchange and feet-first slide/clear landing/invitation match narration. Chains gripped, children wait lateral to swing path. Full uncropped bodies. 3 native724squarecels, no upscaling.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "playground-p5",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed against original boy/girl and original restaurant mother: consistent faces, hair, blue/pink hoodies and yellow adult top. Girl sad with small non-graphic sore knee, boy signals adult, adult kneels to apply bandage and girl reassured. Full bodies/heads visible. Three native724squarecels; no upscale/4Kclaim.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "playground-p6",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Regenerated wider to remove cropped mother foreground. Original playground boy/girl faces, hair and clothing preserved; existing original restaurant mother yellow top/face reused. All full bodies/heads visible with safe margins. Mother signals time to go, children exchange waves, boy leaves holding mother's hand. Three native724squarecels retained.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "sharing-p1",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed original-character faces, hair and clothes; three equal native cels. Complete heads and active hands visible. Table intentionally occludes seated lower bodies. Actual articulated ask/wait or hand-to-hand toy transfer; original playroom/toy; calm happy expressions.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "sharing-p2",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed original-character faces, hair and clothes; three equal native cels. Complete heads and active hands visible. Table intentionally occludes seated lower bodies. Actual articulated ask/wait or hand-to-hand toy transfer; original playroom/toy; calm happy expressions.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "sharing-p3",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed original-character faces, hair and clothes; three equal native cels. Complete heads and active hands visible. Table intentionally occludes seated lower bodies. Actual articulated ask/wait or hand-to-hand toy transfer; original playroom/toy; calm happy expressions.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "sharing-p4",
+      "frame_width": 1024,
+      "frame_height": 768,
+      "frame_count": 2,
+      "review": "reviewed_ready",
+      "qa_notes": "Compared to original sharing characters: same faces/hair, blue polo/purple hooded top, same warm playroom. Meaningful articulated block placement, toy-car hand movement, or proud smile/thumb gesture. All heads and active hands/props fully within uniform cells; lower bodies intentionally occluded by table. Native resolution retained.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "sharing-p5",
+      "frame_width": 1024,
+      "frame_height": 768,
+      "frame_count": 2,
+      "review": "reviewed_ready",
+      "qa_notes": "Compared to original sharing characters: same faces/hair, blue polo/purple hooded top, same warm playroom. Meaningful articulated block placement, toy-car hand movement, or proud smile/thumb gesture. All heads and active hands/props fully within uniform cells; lower bodies intentionally occluded by table. Native resolution retained.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "sharing-p6",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Compared to original sharing characters: same faces/hair, blue polo/purple hooded top, same warm playroom. Meaningful articulated block placement, toy-car hand movement, or proud smile/thumb gesture. All heads and active hands/props fully within uniform cells; lower bodies intentionally occluded by table. Native resolution retained.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "asking_for_help-p1",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed against original adult and boy faces/hair/blue and pink clothes. All complete heads/hands/feet within uniform three cells. Actual reaching/turning/raising-hand, picture-card selection and listening gestures match scene. Door and cards contacted correctly, adult calm at child level.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "asking_for_help-p2",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed against original adult and boy faces/hair/blue and pink clothes. All complete heads/hands/feet within uniform three cells. Actual reaching/turning/raising-hand, picture-card selection and listening gestures match scene. Door and cards contacted correctly, adult calm at child level.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "asking_for_help-p3",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed against original adult and boy faces/hair/blue and pink clothes. All complete heads/hands/feet within uniform three cells. Actual reaching/turning/raising-hand, picture-card selection and listening gestures match scene. Door and cards contacted correctly, adult calm at child level.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "asking_for_help-p4",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed against original adult and boy faces/hair/blue and pink clothes. All complete heads/hands/feet within uniform three cells. Actual reaching/turning/raising-hand, picture-card selection and listening gestures match scene. Door and cards contacted correctly, adult calm at child level.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "asking_for_help-p5",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed against original characters; all heads/hands/feet fully visible in each uniform cell. Actual door-handle opening or small step backward maintains meaningful scene. Hands contact door correctly; children keep safe comfortable gap.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "asking_for_help-p6",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Compared to original faces/clothing and inspected every cel: full heads/hair/hands/feet, same clear hallway gap. Articulated arm extension, consent request/wait, accepting no then waving, or encouraged doorway walk. No hug/touch before consent. Help6 and personal-space2 regenerated with wider framing after rejecting cropped initial versions.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "personal_space-p1",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed against original characters; all heads/hands/feet fully visible in each uniform cell. Actual door-handle opening or small step backward maintains meaningful scene. Hands contact door correctly; children keep safe comfortable gap.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "personal_space-p2",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Compared to original faces/clothing and inspected every cel: full heads/hair/hands/feet, same clear hallway gap. Articulated arm extension, consent request/wait, accepting no then waving, or encouraged doorway walk. No hug/touch before consent. Help6 and personal-space2 regenerated with wider framing after rejecting cropped initial versions.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "personal_space-p3",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Compared to original faces/clothing and inspected every cel: full heads/hair/hands/feet, same clear hallway gap. Articulated arm extension, consent request/wait, accepting no then waving, or encouraged doorway walk. No hug/touch before consent. Help6 and personal-space2 regenerated with wider framing after rejecting cropped initial versions.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "personal_space-p4",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Compared to original faces/clothing and inspected every cel: full heads/hair/hands/feet, same clear hallway gap. Articulated arm extension, consent request/wait, accepting no then waving, or encouraged doorway walk. No hug/touch before consent. Help6 and personal-space2 regenerated with wider framing after rejecting cropped initial versions.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "personal_space-p5",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Inspected all cels against original faces/hair/clothes. Full child heads/hands/feet; fixed clear hallway gap with deliberate small backward step, relaxed smiles/wave, or original pink-shirt girl's kind stop palm and adult withdrawing offer. Saying No adult is intentionally a partial foreground supporting figure as in original; girl's entire silhouette remains clear.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "personal_space-p6",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Inspected all cels against original faces/hair/clothes. Full child heads/hands/feet; fixed clear hallway gap with deliberate small backward step, relaxed smiles/wave, or original pink-shirt girl's kind stop palm and adult withdrawing offer. Saying No adult is intentionally a partial foreground supporting figure as in original; girl's entire silhouette remains clear.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "saying_no-p1",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Inspected all cels against original faces/hair/clothes. Full child heads/hands/feet; fixed clear hallway gap with deliberate small backward step, relaxed smiles/wave, or original pink-shirt girl's kind stop palm and adult withdrawing offer. Saying No adult is intentionally a partial foreground supporting figure as in original; girl's entire silhouette remains clear.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "saying_no-p2",
+      "frame_width": 1024,
+      "frame_height": 768,
+      "frame_count": 2,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed against original pink-shirt girl: same bangs/face/skin, blue denim shorts and pink shoes consistent with scene1. Two actual opposite head turns with kind expression and stop palm. Entire child hair silhouette, hands and shoes visible; adult deliberately partial foreground as in original.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "saying_no-p3",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Original pink-shirt girl's face/hair preserved; offers a red toy car to distinct green-shirt child friend, friend declines with open palm, girl nods and withdraws car. Logical continuous hand support, full child heads/hands/shoes in every cel.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "saying_no-p4",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Original girl raises firm stop palm toward anonymous gray-sleeved reaching hand, turns away and tells blue-clothed trusted adult. Distinct roles clear; no unwanted contact. Entire girl visible every cel. Trusted adult deliberately partial at right foreground in first two cels, then shown kneeling with full head during conversation; original reference also uses partial foreground adult.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "saying_no-p5",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Regenerated wider camera: both adult and original girl's full heads/hair and shoes visible. Girl's stop palm prevents contact, adult withdraws hands and steps back, child relaxes. Consistent pink polo/blue shorts/pink shoes, safe air gap.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "saying_no-p6",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Original girl completes kind no, blue adult withdraws offered lollipop and nods acceptance, girl relaxes smiling. Full girl head/hair/hands/shoes all cels. Supporting adult intentionally partial foreground as in original reference; no accidental child crop. Consistent clothing and correct hand-held prop.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "staying_safe-p1",
+      "frame_width": 1024,
+      "frame_height": 768,
+      "frame_count": 2,
+      "review": "reviewed_ready",
+      "qa_notes": "Reviewed both cels against original boy/mother faces and clothes. Hands held continuously; head turns left/right, both pairs of shoes fully on broad foreground sidewalk, raised curb separates them from stopped cars and crossing. Full heads/hair/shoes visible; no step into road.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "staying_safe-p2",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Three actual reach/clasp/walk poses. Boy's blue hoodie/charcoal shorts and mother's pink blazer/bag match originals. All feet remain on foreground pavement behind curb; cars confined to road beyond. Full heads/hands/shoes and actual hand contact inspected.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "staying_safe-p3",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Regenerated for unambiguous signal semantics: first cel RED STOP palm, next cels GREEN WALK person. Original boy/mother hold hands; all four shoes stay entirely on foreground sidewalk behind curb, stopped cars/stripes beyond. Full heads/hair/hands/shoes; real pointing and look-both-ways poses, one-time signal change with no flashing.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "staying_safe-p4",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Boy remains at same shop-door/shopping-cart-sign landmark, starts worried, raises hand, uniformed police helper approaches and kneels to listen. Mother absent as required for lost-child scenario. Original boy face/hair/clothes preserved; full heads, hands and feet visible. Child never walks away with helper.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "staying_safe-p5",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Regenerated with reviewed scene4 shop as supporting background reference: exact same blue-framed door, striped awning/cart sign and waiting spot. Boy points to mother's picture, explains her name, policeman notes information while child remains put. Mother only on picture card. All full heads/hair/hands/shoes present, original boy face preserved.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    },
+    {
+      "scene_id": "staying_safe-p6",
+      "frame_width": 724,
+      "frame_height": 724,
+      "frame_count": 3,
+      "review": "reviewed_ready",
+      "qa_notes": "Regenerated to same scene4 shop landmark: mother kneels/rejoins boy, they take hands and wave thanks to police helper, then step along shop pavement together. No road, zebra stripes or signals; all shoes remain on pavement. Original mother/boy faces/clothes preserved, all full heads and active hands visible; policeman legs intentionally occluded behind fixed shop sign.",
+      "device_tts_verified": false,
+      "physical_tablet_verified": false
+    }
+  ],
+  "limits": "Limited illustrated key-pose animation. Native exports are recorded per scene; no 4K, full skeletal animation or physical-device QA claim.",
+  "runtime_evidence": {
+    "file": "docs/test_verification.json",
+    "flutter_tests_passed": 54,
+    "all_75_scene_frames_advance_and_pause": true,
+    "analyzer_issues": 0,
+    "apk_scene_asset_hashes_verified": 150
+  }
+}

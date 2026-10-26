@@ -1,0 +1,817 @@
+{
+  "audit_date": "2026-10-26",
+  "stories": [
+    {
+      "id": "going_to_school",
+      "title": "Going to School",
+      "pages": [
+        {
+          "image": "assets/images/stories/going_to_school.png",
+          "lead": "First, we get dressed and put on our backpack.",
+          "body": "Then we go to school with our family."
+        },
+        {
+          "image": "assets/images/stories/going_to_school.png",
+          "lead": "We ride the bus or walk to school.",
+          "body": "We stay close to our grown-up.",
+          "focus": {
+            "x": 0,
+            "y": 0,
+            "zoom": 1.15
+          }
+        },
+        {
+          "image": "assets/images/stories/going_to_school.png",
+          "lead": "We say goodbye to our family.",
+          "body": "They will come back to pick us up.",
+          "focus": {
+            "x": 0.35,
+            "y": -0.6,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/going_to_school.png",
+          "lead": "We say hello to our teacher.",
+          "body": "Our teacher is happy to see us.",
+          "focus": {
+            "x": -0.35,
+            "y": -0.1,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/going_to_school.png",
+          "lead": "We find our seat in the classroom.",
+          "body": "We listen and learn new things.",
+          "focus": {
+            "x": -0.5,
+            "y": 0.5,
+            "zoom": 1.35
+          }
+        },
+        {
+          "image": "assets/images/stories/going_to_school.png",
+          "lead": "At the end of the day, we go home.",
+          "body": "We can tell our family about our day."
+        }
+      ]
+    },
+    {
+      "id": "going_to_the_toilet",
+      "title": "Going to the Toilet",
+      "pages": [
+        {
+          "image": "assets/images/stories/going_to_the_toilet.png",
+          "lead": "First, we know we need the toilet.",
+          "body": "We can tell a trusted adult and go to the bathroom."
+        },
+        {
+          "image": "assets/images/stories/going_to_the_toilet.png",
+          "lead": "We pull down our pants and sit on the toilet.",
+          "body": "We can take our time. That is okay.",
+          "focus": {
+            "x": -0.15,
+            "y": -0.25,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/going_to_the_toilet.png",
+          "lead": "When we are done, we use toilet paper.",
+          "body": "We wipe from front to back.",
+          "focus": {
+            "x": 0,
+            "y": 0,
+            "zoom": 1.15
+          }
+        },
+        {
+          "image": "assets/images/stories/going_to_the_toilet.png",
+          "lead": "We flush the toilet.",
+          "body": "It might be loud, and that is okay.",
+          "focus": {
+            "x": 0.6,
+            "y": 0.1,
+            "zoom": 1.4
+          }
+        },
+        {
+          "image": "assets/images/stories/going_to_the_toilet.png",
+          "lead": "We pull up our pants.",
+          "body": "We check that our clothes are on right.",
+          "focus": {
+            "x": -0.15,
+            "y": -0.25,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/going_to_the_toilet.png",
+          "lead": "We wash our hands with soap and water.",
+          "body": "We scrub while we sing a little song.",
+          "focus": {
+            "x": -0.8,
+            "y": 0.2,
+            "zoom": 1.4
+          }
+        },
+        {
+          "image": "assets/images/stories/going_to_the_toilet.png",
+          "lead": "We dry our hands with a towel.",
+          "body": "Now our hands are clean.",
+          "focus": {
+            "x": -0.8,
+            "y": 0.2,
+            "zoom": 1.4
+          }
+        },
+        {
+          "image": "assets/images/stories/going_to_the_toilet.png",
+          "lead": "We did it!",
+          "body": "Going to the toilet is part of every day."
+        }
+      ]
+    },
+    {
+      "id": "going_to_the_doctor",
+      "title": "Going to the Doctor",
+      "pages": [
+        {
+          "image": "assets/images/stories/going_to_the_doctor.png",
+          "lead": "First, we go to the doctor.",
+          "body": "The doctor will check how we are feeling and help us stay healthy."
+        },
+        {
+          "image": "assets/images/stories/going_to_the_doctor.png",
+          "lead": "The doctor says hello.",
+          "body": "We can say hello back or wave.",
+          "focus": {
+            "x": 0.5,
+            "y": -0.5,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/going_to_the_doctor.png",
+          "lead": "The doctor listens to our heart.",
+          "body": "The stethoscope may feel cold. That is okay.",
+          "focus": {
+            "x": 0.3,
+            "y": 0.5,
+            "zoom": 1.4
+          }
+        },
+        {
+          "image": "assets/images/stories/going_to_the_doctor.png",
+          "lead": "The doctor looks in our ears and mouth.",
+          "body": "We can open wide and say 'ahh'.",
+          "focus": {
+            "x": 0.5,
+            "y": -0.5,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/going_to_the_doctor.png",
+          "lead": "We can tell the doctor how we feel.",
+          "body": "It is okay to ask questions.",
+          "focus": {
+            "x": -0.35,
+            "y": -0.1,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/going_to_the_doctor.png",
+          "lead": "When we are done, we say thank you.",
+          "body": "Going to the doctor helps us stay well."
+        }
+      ]
+    },
+    {
+      "id": "brushing_teeth",
+      "title": "Brushing Teeth",
+      "pages": [
+        {
+          "image": "assets/images/stories/brushing_teeth.png",
+          "lead": "First, we get our toothbrush.",
+          "body": "Then we put toothpaste on it and brush our teeth."
+        },
+        {
+          "image": "assets/images/stories/brushing_teeth.png",
+          "lead": "We squeeze a little toothpaste.",
+          "body": "A tiny bit, like a pea, is just right.",
+          "focus": {
+            "x": 0.4,
+            "y": 0.0,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/brushing_teeth.png",
+          "lead": "We brush our front teeth and back teeth.",
+          "body": "Round and round, up and down.",
+          "focus": {
+            "x": -0.05,
+            "y": -0.45,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/brushing_teeth.png",
+          "lead": "We brush for two minutes.",
+          "body": "We can count or sing a song.",
+          "focus": {
+            "x": 0,
+            "y": 0,
+            "zoom": 1.15
+          }
+        },
+        {
+          "image": "assets/images/stories/brushing_teeth.png",
+          "lead": "We spit out the toothpaste.",
+          "body": "Then we rinse our toothbrush.",
+          "focus": {
+            "x": 0.85,
+            "y": 0.3,
+            "zoom": 1.4
+          }
+        },
+        {
+          "image": "assets/images/stories/brushing_teeth.png",
+          "lead": "Our teeth are clean and shiny!",
+          "body": "We brush in the morning and at night."
+        }
+      ]
+    },
+    {
+      "id": "restaurant",
+      "title": "Restaurant",
+      "pages": [
+        {
+          "image": "assets/images/stories/restaurant.png",
+          "lead": "First, we sit at the table.",
+          "body": "Then we choose what we want and tell the person."
+        },
+        {
+          "image": "assets/images/stories/restaurant.png",
+          "lead": "We look at the menu.",
+          "body": "We can point to pictures of food we like.",
+          "focus": {
+            "x": 0.0,
+            "y": 0.6,
+            "zoom": 1.4
+          }
+        },
+        {
+          "image": "assets/images/stories/restaurant.png",
+          "lead": "We wait for our food.",
+          "body": "Waiting can be hard. We can draw or talk quietly.",
+          "focus": {
+            "x": -0.5,
+            "y": -0.1,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/restaurant.png",
+          "lead": "We eat our food with our family.",
+          "body": "We use our inside voice.",
+          "focus": {
+            "x": 0,
+            "y": 0,
+            "zoom": 1.15
+          }
+        },
+        {
+          "image": "assets/images/stories/restaurant.png",
+          "lead": "We say please and thank you.",
+          "body": "Good manners are kind.",
+          "focus": {
+            "x": 0.6,
+            "y": -0.3,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/restaurant.png",
+          "lead": "When we are finished, we go home.",
+          "body": "Eating out can be fun."
+        }
+      ]
+    },
+    {
+      "id": "airport",
+      "title": "Airport",
+      "pages": [
+        {
+          "image": "assets/images/stories/airport.png",
+          "lead": "First, we arrive at the airport.",
+          "body": "Then we check in and go through security."
+        },
+        {
+          "image": "assets/images/stories/airport.png",
+          "lead": "We show our tickets and give our big bags.",
+          "body": "Our bags will meet us later.",
+          "focus": {
+            "x": -0.3,
+            "y": 0.3,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/airport.png",
+          "lead": "We go through security.",
+          "body": "We put our things in a tray. The staff help keep us safe.",
+          "focus": {
+            "x": 0,
+            "y": 0,
+            "zoom": 1.15
+          }
+        },
+        {
+          "image": "assets/images/stories/airport.png",
+          "lead": "We wait at the gate.",
+          "body": "We can look at the planes through the window.",
+          "focus": {
+            "x": 0.5,
+            "y": 0.1,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/airport.png",
+          "lead": "We get on the plane and find our seat.",
+          "body": "We buckle our seatbelt.",
+          "focus": {
+            "x": -0.3,
+            "y": 0.3,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/airport.png",
+          "lead": "The plane goes up into the sky.",
+          "body": "Our ears may feel funny. We can swallow or yawn.",
+          "focus": {
+            "x": 0.5,
+            "y": 0.1,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/airport.png",
+          "lead": "We land and ride to where we are going.",
+          "body": "We made it to our trip!"
+        }
+      ]
+    },
+    {
+      "id": "playground",
+      "title": "Playground",
+      "pages": [
+        {
+          "image": "assets/images/stories/playground.png",
+          "lead": "First, we wait for our turn.",
+          "body": "Then we can play together and be kind."
+        },
+        {
+          "image": "assets/images/stories/playground.png",
+          "lead": "We go down the slide one at a time.",
+          "body": "We wait until the slide is clear.",
+          "focus": {
+            "x": -0.1,
+            "y": -0.6,
+            "zoom": 1.4
+          }
+        },
+        {
+          "image": "assets/images/stories/playground.png",
+          "lead": "We can ask a friend to play.",
+          "body": "We can say, 'Do you want to play with me?'",
+          "focus": {
+            "x": -0.45,
+            "y": -0.2,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/playground.png",
+          "lead": "We take turns on the swings.",
+          "body": "Everyone gets a turn.",
+          "focus": {
+            "x": 0.45,
+            "y": 0.0,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/playground.png",
+          "lead": "If someone gets hurt, we can help.",
+          "body": "We can find a trusted adult.",
+          "focus": {
+            "x": 0,
+            "y": 0,
+            "zoom": 1.15
+          }
+        },
+        {
+          "image": "assets/images/stories/playground.png",
+          "lead": "When it is time to go, we say goodbye.",
+          "body": "We can come back another day."
+        }
+      ]
+    },
+    {
+      "id": "sharing",
+      "title": "Sharing",
+      "pages": [
+        {
+          "image": "assets/images/stories/sharing.png",
+          "lead": "Sharing is kind.",
+          "body": "We can take turns and share our toys with friends."
+        },
+        {
+          "image": "assets/images/stories/sharing.png",
+          "lead": "We can ask, 'Can I have a turn?'",
+          "body": "Then we wait for our friend to answer.",
+          "focus": {
+            "x": -0.4,
+            "y": -0.1,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/sharing.png",
+          "lead": "We can give a toy to a friend.",
+          "body": "Our friend feels happy.",
+          "focus": {
+            "x": 0.1,
+            "y": 0.4,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/sharing.png",
+          "lead": "Sharing makes playing more fun.",
+          "body": "We can play together.",
+          "focus": {
+            "x": 0.6,
+            "y": -0.1,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/sharing.png",
+          "lead": "Sometimes we have to wait.",
+          "body": "We can play with something else while we wait.",
+          "focus": {
+            "x": 0,
+            "y": 0,
+            "zoom": 1.15
+          }
+        },
+        {
+          "image": "assets/images/stories/sharing.png",
+          "lead": "We feel proud when we share.",
+          "body": "Sharing is being a good friend."
+        }
+      ]
+    },
+    {
+      "id": "asking_for_help",
+      "title": "Asking for Help",
+      "pages": [
+        {
+          "image": "assets/images/stories/asking_for_help.png",
+          "lead": "If we need help, we can ask a trusted adult.",
+          "body": "It is okay to ask for help."
+        },
+        {
+          "image": "assets/images/stories/asking_for_help.png",
+          "lead": "Trusted adults are people like our family and teachers.",
+          "body": "They want to help us.",
+          "focus": {
+            "x": 1.0,
+            "y": -0.4,
+            "zoom": 1.3
+          }
+        },
+        {
+          "image": "assets/images/stories/asking_for_help.png",
+          "lead": "We can raise our hand or say, 'Help, please.'",
+          "body": "We use a calm voice.",
+          "focus": {
+            "x": 0.85,
+            "y": -0.4,
+            "zoom": 1.4
+          }
+        },
+        {
+          "image": "assets/images/stories/asking_for_help.png",
+          "lead": "We tell them what we need.",
+          "body": "We can use words, pictures, or point.",
+          "focus": {
+            "x": -0.5,
+            "y": 0.1,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/asking_for_help.png",
+          "lead": "The adult listens and helps us.",
+          "body": "We say thank you.",
+          "focus": {
+            "x": 0.6,
+            "y": -0.6,
+            "zoom": 1.15
+          }
+        },
+        {
+          "image": "assets/images/stories/asking_for_help.png",
+          "lead": "Asking for help is brave.",
+          "body": "Everyone needs help sometimes."
+        }
+      ]
+    },
+    {
+      "id": "personal_space",
+      "title": "Personal Space",
+      "pages": [
+        {
+          "image": "assets/images/stories/personal_space.png",
+          "lead": "We give people space.",
+          "body": "We do not stand too close to others."
+        },
+        {
+          "image": "assets/images/stories/personal_space.png",
+          "lead": "An arm's length is a good space.",
+          "body": "We can stretch out our arm to check.",
+          "focus": {
+            "x": 0.0,
+            "y": 0.0,
+            "zoom": 1.35
+          }
+        },
+        {
+          "image": "assets/images/stories/personal_space.png",
+          "lead": "We ask before we hug.",
+          "body": "We can say, 'Can I have a hug?'",
+          "focus": {
+            "x": -0.6,
+            "y": -0.1,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/personal_space.png",
+          "lead": "If someone says no, that is okay.",
+          "body": "We can wave or give a high five instead.",
+          "focus": {
+            "x": 0.6,
+            "y": 0.0,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/personal_space.png",
+          "lead": "Other people give us space too.",
+          "body": "We can say, 'Please give me some space.'",
+          "focus": {
+            "x": 0,
+            "y": 0,
+            "zoom": 1.15
+          }
+        },
+        {
+          "image": "assets/images/stories/personal_space.png",
+          "lead": "Giving space helps everyone feel comfortable.",
+          "body": "Space is a way to be kind."
+        }
+      ]
+    },
+    {
+      "id": "saying_no",
+      "title": "Saying No",
+      "pages": [
+        {
+          "image": "assets/images/stories/saying_no.png",
+          "lead": "It is okay to say 'No, thank you.'",
+          "body": "We can say no if we don't want something."
+        },
+        {
+          "image": "assets/images/stories/saying_no.png",
+          "lead": "We can use a kind voice.",
+          "body": "We can shake our head or say, 'No, thank you.'",
+          "focus": {
+            "x": 0.0,
+            "y": -1.0,
+            "zoom": 1.4
+          }
+        },
+        {
+          "image": "assets/images/stories/saying_no.png",
+          "lead": "Other people can say no to us too.",
+          "body": "We listen and say okay.",
+          "focus": {
+            "x": 0.8,
+            "y": -1.0,
+            "zoom": 1.3
+          }
+        },
+        {
+          "image": "assets/images/stories/saying_no.png",
+          "lead": "If we feel unsafe, we can say 'No!' loudly.",
+          "body": "Then we tell a trusted adult.",
+          "focus": {
+            "x": -0.8,
+            "y": 0.4,
+            "zoom": 1.15
+          }
+        },
+        {
+          "image": "assets/images/stories/saying_no.png",
+          "lead": "Our body belongs to us.",
+          "body": "We can say no to touches we do not want.",
+          "focus": {
+            "x": 0,
+            "y": -1.0,
+            "zoom": 1.12
+          }
+        },
+        {
+          "image": "assets/images/stories/saying_no.png",
+          "lead": "Saying no is okay.",
+          "body": "We can be kind and still say no."
+        }
+      ]
+    },
+    {
+      "id": "staying_safe",
+      "title": "Staying Safe",
+      "pages": [
+        {
+          "image": "assets/images/stories/staying_safe.png",
+          "lead": "We stay with our trusted adults.",
+          "body": "We follow safety rules like looking both ways before we cross."
+        },
+        {
+          "image": "assets/images/stories/staying_safe.png",
+          "lead": "We hold hands near busy roads.",
+          "body": "We stay on the sidewalk.",
+          "focus": {
+            "x": 0.0,
+            "y": 0.8,
+            "zoom": 1.35
+          }
+        },
+        {
+          "image": "assets/images/stories/staying_safe.png",
+          "lead": "We wait for the green light.",
+          "body": "Green means walk. Red means stop.",
+          "focus": {
+            "x": -0.3,
+            "y": -0.7,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/staying_safe.png",
+          "lead": "If we get lost, we stay where we are.",
+          "body": "We can ask a helper, like a police officer or a shop worker.",
+          "focus": {
+            "x": -0.1,
+            "y": 0.1,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/staying_safe.png",
+          "lead": "We know our grown-up's name.",
+          "body": "This helps people find them.",
+          "focus": {
+            "x": 0.6,
+            "y": -0.4,
+            "zoom": 1.45
+          }
+        },
+        {
+          "image": "assets/images/stories/staying_safe.png",
+          "lead": "Staying safe keeps us happy and healthy.",
+          "body": "We can always ask for help."
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/images/stories/going_to_school.png",
+      "width": 760,
+      "height": 644,
+      "bytes": 521134,
+      "sha256": "9111ff3068a46d9574480d77af6ab766f0bc2d52d3074f1765a7beed9e04e278",
+      "type": "flattened_scene_illustration",
+      "separate_rig_layers": false
+    },
+    {
+      "path": "assets/images/stories/going_to_the_toilet.png",
+      "width": 760,
+      "height": 632,
+      "bytes": 350764,
+      "sha256": "d42ba04996aab84a66249d2641ff05888e372a8fc8ca27f868f7458f7cd50219",
+      "type": "flattened_scene_illustration",
+      "separate_rig_layers": false
+    },
+    {
+      "path": "assets/images/stories/going_to_the_doctor.png",
+      "width": 760,
+      "height": 620,
+      "bytes": 499578,
+      "sha256": "eb22a1454b438b475ea9df50f1630395687ee9ff55a8f57901ce3e95a6f74b32",
+      "type": "flattened_scene_illustration",
+      "separate_rig_layers": false
+    },
+    {
+      "path": "assets/images/stories/brushing_teeth.png",
+      "width": 764,
+      "height": 632,
+      "bytes": 461307,
+      "sha256": "c57435a60bf5349ea24a859ccca504031c392cd4b4bfa2198674391271a92b62",
+      "type": "flattened_scene_illustration",
+      "separate_rig_layers": false
+    },
+    {
+      "path": "assets/images/stories/restaurant.png",
+      "width": 768,
+      "height": 612,
+      "bytes": 556040,
+      "sha256": "d47b52f4934e1ef4269124e281e1de902d92d47ce3e17d6f650ec6eb256e7b78",
+      "type": "flattened_scene_illustration",
+      "separate_rig_layers": false
+    },
+    {
+      "path": "assets/images/stories/airport.png",
+      "width": 764,
+      "height": 620,
+      "bytes": 510175,
+      "sha256": "fb2ed48f70e9bacb81f5aba40f1dbd977fa5281320c0c8e958994c048c24853c",
+      "type": "flattened_scene_illustration",
+      "separate_rig_layers": false
+    },
+    {
+      "path": "assets/images/stories/playground.png",
+      "width": 764,
+      "height": 620,
+      "bytes": 621611,
+      "sha256": "91d7bfa5a4aaf3d1d6f2bcc690cb8e374016244ccb3411b6781af5ed175aa19b",
+      "type": "flattened_scene_illustration",
+      "separate_rig_layers": false
+    },
+    {
+      "path": "assets/images/stories/sharing.png",
+      "width": 768,
+      "height": 628,
+      "bytes": 513497,
+      "sha256": "e84c059dad9ee209083361b4b0cb527a751f4ad2d8ced1e7de87120a09ab241e",
+      "type": "flattened_scene_illustration",
+      "separate_rig_layers": false
+    },
+    {
+      "path": "assets/images/stories/asking_for_help.png",
+      "width": 764,
+      "height": 576,
+      "bytes": 450221,
+      "sha256": "9bda3c617d667b2f2c3f7c5d3282c5960b8962849b78a0d9e11b09e4972b652f",
+      "type": "flattened_scene_illustration",
+      "separate_rig_layers": false
+    },
+    {
+      "path": "assets/images/stories/personal_space.png",
+      "width": 768,
+      "height": 576,
+      "bytes": 364270,
+      "sha256": "70df4786a2785cd626d4ba296839e0528df9f7d677aac9e60cd70473e9c700f1",
+      "type": "flattened_scene_illustration",
+      "separate_rig_layers": false
+    },
+    {
+      "path": "assets/images/stories/saying_no.png",
+      "width": 776,
+      "height": 584,
+      "bytes": 376592,
+      "sha256": "7083412889bdc15d74d20e9c0e6ee32e8088deaa184fe60a47d846a44bd662bd",
+      "type": "flattened_scene_illustration",
+      "separate_rig_layers": false
+    },
+    {
+      "path": "assets/images/stories/staying_safe.png",
+      "width": 764,
+      "height": 580,
+      "bytes": 497619,
+      "sha256": "e3f979b4009554989d4adc01db30fcf321194f09f8f7ab2a132624b456e62f48",
+      "type": "flattened_scene_illustration",
+      "separate_rig_layers": false
+    }
+  ]
+}

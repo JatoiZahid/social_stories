@@ -1,0 +1,90 @@
+{
+  "description": "Exact narration phrases for distinct stages in multi-action scenes. Native TTS boundaries trigger these poses; the finite clock estimates progress on engines without boundaries.",
+  "scenes": {
+    "going_to_school-p1": [
+      "First, we get dressed",
+      "put on our backpack",
+      "Then we go to school"
+    ],
+    "going_to_school-p5": [
+      "We find our seat",
+      "in the classroom",
+      "We listen"
+    ],
+    "going_to_the_toilet-p1": [
+      "First",
+      "and go",
+      "the bathroom"
+    ],
+    "going_to_the_toilet-p2": [
+      "We pull down our pants",
+      "sit on the toilet",
+      "We can take our time"
+    ],
+    "going_to_the_toilet-p3": [
+      "When we are done",
+      "use toilet paper",
+      "We wipe"
+    ],
+    "going_to_the_toilet-p5": [
+      "We",
+      "pull up our pants",
+      "We check"
+    ],
+    "going_to_the_doctor-p4": [
+      "The doctor looks in our ears",
+      "and mouth",
+      "We can open wide"
+    ],
+    "brushing_teeth-p1": [
+      "First, we get our toothbrush",
+      "put toothpaste on it",
+      "brush our teeth"
+    ],
+    "brushing_teeth-p5": [
+      "We spit",
+      "Then",
+      "rinse our toothbrush"
+    ],
+    "restaurant-p1": [
+      "First, we sit",
+      "Then we choose",
+      "tell the person"
+    ],
+    "restaurant-p5": [
+      "We say please",
+      "and",
+      "thank you"
+    ],
+    "airport-p1": [
+      "First, we arrive",
+      "we check in",
+      "go through security"
+    ],
+    "airport-p2": [
+      "We show our tickets",
+      "and",
+      "give our big bags"
+    ],
+    "airport-p3": [
+      "We go through security",
+      "put our things in a tray",
+      "The staff help"
+    ],
+    "airport-p5": [
+      "We get on the plane",
+      "find our seat",
+      "We buckle our seatbelt"
+    ],
+    "saying_no-p4": [
+      "If we feel unsafe",
+      "Then",
+      "tell a trusted adult"
+    ],
+    "staying_safe-p4": [
+      "If we get lost",
+      "stay where we are",
+      "ask a helper"
+    ]
+  }
+}
