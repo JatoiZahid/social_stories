@@ -11,3 +11,4 @@ android/key.properties
 *.keystore
 dist/
 story_server.txt
+__pycache__/

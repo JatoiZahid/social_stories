@@ -27,18 +27,37 @@ class PagePreview extends StatelessWidget {
                 alignment: alignment,
                 child: Image.network(
                   api.imageUrl(page.image),
-                  fit: BoxFit.cover,
+                  fit: BoxFit.contain,
                   alignment: alignment,
-                  errorBuilder: (_, _, _) => const Center(child: Icon(Icons.broken_image_outlined)),
+                  errorBuilder: (_, _, _) =>
+                      const Center(child: Icon(Icons.broken_image_outlined)),
                 ),
               ),
             ),
           ),
         ),
         const SizedBox(height: 8),
-        Text(page.lead.isEmpty ? '(no main sentence)' : page.lead,
-            style: theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w800)),
-        if (page.body.isNotEmpty) Text(page.body, style: theme.textTheme.bodyMedium),
+        Text(
+          page.lead.isEmpty ? '(no main sentence)' : page.lead,
+          style: theme.textTheme.titleSmall?.copyWith(
+            fontWeight: FontWeight.w800,
+          ),
+        ),
+        if (page.body.isNotEmpty)
+          Text(page.body, style: theme.textTheme.bodyMedium),
+        if (page.animation != null) ...[
+          const SizedBox(height: 8),
+          Text(
+            'Animation: ${page.animation!['description'] ?? ''}',
+            style: theme.textTheme.bodySmall,
+          ),
+          Text(
+            '${page.animation!['frameCount']} frames at ${page.animation!['fps'] ?? 2} fps; '
+            '${page.animation!['loop'] == false ? 'plays once' : 'repeats'}'
+            '${page.animation!['cue'] == null ? '' : '; starts at "${page.animation!['cue']}"'}',
+            style: theme.textTheme.bodySmall,
+          ),
+        ],
       ],
     );
   }
@@ -46,10 +65,16 @@ class PagePreview extends StatelessWidget {
 
 /// A quiz question with its answers; the right one is ticked.
 class QuestionPreview extends StatelessWidget {
-  const QuestionPreview({super.key, required this.number, required this.question});
+  const QuestionPreview({
+    super.key,
+    required this.number,
+    required this.question,
+    this.api,
+  });
 
   final int number;
   final StoryQuestion question;
+  final AdminApi? api;
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +82,12 @@ class QuestionPreview extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('$number. ${question.question}', style: theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w800)),
+        Text(
+          '$number. ${question.question}',
+          style: theme.textTheme.titleSmall?.copyWith(
+            fontWeight: FontWeight.w800,
+          ),
+        ),
         const SizedBox(height: 4),
         for (var i = 0; i < question.choices.length; i++)
           Padding(
@@ -65,14 +95,36 @@ class QuestionPreview extends StatelessWidget {
             child: Row(
               children: [
                 Icon(
-                  i == question.answer ? Icons.check_circle_rounded : Icons.radio_button_unchecked_rounded,
+                  i == question.answer
+                      ? Icons.check_circle_rounded
+                      : Icons.radio_button_unchecked_rounded,
                   size: 18,
-                  color: i == question.answer ? Colors.green.shade600 : theme.colorScheme.outline,
+                  color: i == question.answer
+                      ? Colors.green.shade600
+                      : theme.colorScheme.outline,
                 ),
                 const SizedBox(width: 8),
+                if (api != null &&
+                    i < question.choiceImages.length &&
+                    question.choiceImages[i] != null) ...[
+                  Image.network(
+                    api!.imageUrl(question.choiceImages[i]!),
+                    width: 64,
+                    height: 64,
+                    fit: BoxFit.contain,
+                    semanticLabel: question.choices[i],
+                    errorBuilder: (context, error, stack) =>
+                        const SizedBox.shrink(),
+                  ),
+                  const SizedBox(width: 8),
+                ],
                 Expanded(
-                  child: Text(question.choices[i],
-                      style: i == question.answer ? const TextStyle(fontWeight: FontWeight.w700) : null),
+                  child: Text(
+                    question.choices[i],
+                    style: i == question.answer
+                        ? const TextStyle(fontWeight: FontWeight.w700)
+                        : null,
+                  ),
                 ),
               ],
             ),
@@ -92,13 +144,16 @@ class BeforeAfter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Widget labelled(String label, Widget? child, Color color) => Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Text(label, style: Theme.of(context).textTheme.labelLarge?.copyWith(color: color)),
-            const SizedBox(height: 4),
-            child ?? const Text('—'),
-          ],
-        );
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          label,
+          style: Theme.of(context).textTheme.labelLarge?.copyWith(color: color),
+        ),
+        const SizedBox(height: 4),
+        child ?? const Text('—'),
+      ],
+    );
     final scheme = Theme.of(context).colorScheme;
     final left = labelled('Now', before, scheme.outline);
     final right = labelled('After approval', after, scheme.primary);
@@ -106,7 +161,11 @@ class BeforeAfter extends StatelessWidget {
       builder: (context, constraints) => constraints.maxWidth >= 560
           ? Row(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: [Expanded(child: left), const SizedBox(width: 16), Expanded(child: right)],
+              children: [
+                Expanded(child: left),
+                const SizedBox(width: 16),
+                Expanded(child: right),
+              ],
             )
           : Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,

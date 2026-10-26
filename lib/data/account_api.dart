@@ -40,7 +40,8 @@ class Account {
       name: json['name'] as String? ?? '',
       subscribed: sub['active'] as bool? ?? false,
       subscriptionSource: sub['source'] as String?,
-      subscribedUntil: DateTime.tryParse(sub['until'] as String? ?? '')?.toLocal(),
+      subscribedUntil:
+          DateTime.tryParse(sub['until'] as String? ?? '')?.toLocal(),
       pendingSubmissions: (json['pendingSubmissions'] as num?)?.toInt() ?? 0,
     );
   }
@@ -72,7 +73,8 @@ enum SubmissionType {
   final String label;
 
   static SubmissionType parse(String? value) =>
-      values.firstWhere((t) => t.wire == value, orElse: () => SubmissionType.editStory);
+      values.firstWhere((t) => t.wire == value,
+          orElse: () => SubmissionType.editStory);
 }
 
 /// A change sent for review, as its sender sees it.
@@ -94,7 +96,8 @@ class Submission {
         status: json['status'] as String? ?? 'pending',
         title: json['title'] as String? ?? '',
         storyId: json['storyId'] as String?,
-        createdAt: DateTime.tryParse(json['createdAt'] as String? ?? '')?.toLocal(),
+        createdAt:
+            DateTime.tryParse(json['createdAt'] as String? ?? '')?.toLocal(),
         reviewNote: json['reviewNote'] as String?,
       );
 
@@ -115,41 +118,61 @@ class Submission {
 
 /// Talks to the story server's account endpoints.
 class AccountApi {
-  AccountApi(this.baseUrl, {http.Client? client, this.timeout = const Duration(seconds: 15)})
+  AccountApi(this.baseUrl,
+      {http.Client? client, this.timeout = const Duration(seconds: 15)})
       : _client = client ?? http.Client();
 
   final Uri baseUrl;
   final Duration timeout;
   final http.Client _client;
 
-  Future<({String token, Account account})> register(String email, String password, String name) async {
-    final json = await _send('POST', '/api/auth/register', body: {'email': email, 'password': password, 'name': name});
-    return (token: json['token'] as String, account: Account.fromJson(json['user'] as Map<String, dynamic>));
+  Future<({String token, Account account})> register(
+      String email, String password, String name) async {
+    final json = await _send('POST', '/api/auth/register',
+        body: {'email': email, 'password': password, 'name': name});
+    return (
+      token: json['token'] as String,
+      account: Account.fromJson(json['user'] as Map<String, dynamic>)
+    );
   }
 
-  Future<({String token, Account account})> signIn(String email, String password) async {
-    final json = await _send('POST', '/api/auth/login', body: {'email': email, 'password': password});
-    return (token: json['token'] as String, account: Account.fromJson(json['user'] as Map<String, dynamic>));
+  Future<({String token, Account account})> signIn(
+      String email, String password) async {
+    final json = await _send('POST', '/api/auth/login',
+        body: {'email': email, 'password': password});
+    return (
+      token: json['token'] as String,
+      account: Account.fromJson(json['user'] as Map<String, dynamic>)
+    );
   }
 
-  Future<void> signOut(String token) => _send('POST', '/api/auth/logout', token: token);
+  Future<void> signOut(String token) =>
+      _send('POST', '/api/auth/logout', token: token);
 
-  Future<Account> me(String token) async => Account.fromJson(await _send('GET', '/api/me', token: token));
+  Future<Account> me(String token) async =>
+      Account.fromJson(await _send('GET', '/api/me', token: token));
 
   /// Sends a Google Play purchase for the server to check with Google.
-  Future<Account> attachGooglePlay(String token, {required String productId, required String purchaseToken}) async =>
+  Future<Account> attachGooglePlay(String token,
+          {required String productId, required String purchaseToken}) async =>
       Account.fromJson(await _send('POST', '/api/me/google-play',
-          token: token, body: {'productId': productId, 'purchaseToken': purchaseToken}));
+          token: token,
+          body: {'productId': productId, 'purchaseToken': purchaseToken}));
 
   Future<List<Submission>> submissions(String token) async {
-    final list = await _send('GET', '/api/me/submissions', token: token) as List<dynamic>;
-    return [for (final item in list) Submission.fromJson(item as Map<String, dynamic>)];
+    final list = await _send('GET', '/api/me/submissions', token: token)
+        as List<dynamic>;
+    return [
+      for (final item in list) Submission.fromJson(item as Map<String, dynamic>)
+    ];
   }
 
   Future<Submission> withdraw(String token, String id) async =>
-      Submission.fromJson(await _send('DELETE', '/api/me/submissions/$id', token: token));
+      Submission.fromJson(
+          await _send('DELETE', '/api/me/submissions/$id', token: token));
 
-  Future<Submission> submit(String token, SubmissionType type, Story story) async {
+  Future<Submission> submit(
+      String token, SubmissionType type, Story story) async {
     final json = await _send('POST', '/api/submissions', token: token, body: {
       'type': type.wire,
       if (type != SubmissionType.newStory) 'storyId': story.id,
@@ -166,12 +189,33 @@ class AccountApi {
     for (final page in json['pages'] as List<dynamic>) {
       final map = page as Map<String, dynamic>;
       final image = map['image'] as String;
-      if (image.startsWith(prefix)) map['image'] = image.substring(prefix.length);
+      if (image.startsWith(prefix)) {
+        map['image'] = image.substring(prefix.length);
+      }
+      final animation = map['animation'];
+      if (animation is Map<String, dynamic> && animation['asset'] is String) {
+        final asset = animation['asset'] as String;
+        if (asset.startsWith(prefix)) {
+          animation['asset'] = asset.substring(prefix.length);
+        }
+      }
+    }
+    for (final question in json['questions'] as List<dynamic>? ?? const []) {
+      final map = question as Map<String, dynamic>;
+      if (map['choiceImages'] is List) {
+        map['choiceImages'] = [
+          for (final image in map['choiceImages'] as List)
+            image is String && image.startsWith(prefix)
+                ? image.substring(prefix.length)
+                : image,
+        ];
+      }
     }
     return json;
   }
 
-  Future<dynamic> _send(String method, String path, {String? token, Object? body}) async {
+  Future<dynamic> _send(String method, String path,
+      {String? token, Object? body}) async {
     final request = http.Request(method, baseUrl.resolve(path));
     if (token != null) request.headers['authorization'] = 'Bearer $token';
     if (body != null) {
@@ -180,15 +224,20 @@ class AccountApi {
     }
     final http.Response response;
     try {
-      response = await http.Response.fromStream(await _client.send(request).timeout(timeout));
+      response = await http.Response.fromStream(
+          await _client.send(request).timeout(timeout));
     } catch (_) {
-      throw const ApiError('Could not reach the story server. Check the internet connection and try again.');
+      throw const ApiError(
+          'Could not reach the story server. Check the internet connection and try again.');
     }
     final text = utf8.decode(response.bodyBytes);
     final Object? json = text.isEmpty ? null : _tryDecode(text);
     if (response.statusCode >= 200 && response.statusCode < 300) return json;
-    final message = json is Map<String, dynamic> ? json['error'] as String? : null;
-    throw ApiError(message ?? 'Something went wrong (${response.statusCode}). Please try again.',
+    final message =
+        json is Map<String, dynamic> ? json['error'] as String? : null;
+    throw ApiError(
+        message ??
+            'Something went wrong (${response.statusCode}). Please try again.',
         status: response.statusCode);
   }
 

@@ -6,7 +6,8 @@ import '../../core/theme/app_dimens.dart';
 
 /// Circular speaker button that fills in while narration is playing.
 class SpeakerBadge extends StatelessWidget {
-  const SpeakerBadge({super.key, required this.isSpeaking, required this.onPressed});
+  const SpeakerBadge(
+      {super.key, required this.isSpeaking, required this.onPressed});
 
   final ValueListenable<bool> isSpeaking;
   final VoidCallback onPressed;
@@ -17,10 +18,10 @@ class SpeakerBadge extends StatelessWidget {
       valueListenable: isSpeaking,
       builder: (context, speaking, _) {
         return Tooltip(
-          message: speaking ? 'Stop reading' : 'Read aloud',
+          message: speaking ? 'Pause reading' : 'Read aloud',
           child: Semantics(
             button: true,
-            label: speaking ? 'Stop reading' : 'Read this page aloud',
+            label: speaking ? 'Pause reading' : 'Read this page aloud',
             excludeSemantics: true,
             onTap: onPressed,
             child: InkResponse(
@@ -33,12 +34,15 @@ class SpeakerBadge extends StatelessWidget {
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: speaking ? AppColors.primary : AppColors.surface,
-                  border: Border.all(color: speaking ? AppColors.primary : AppColors.border),
+                  border: Border.all(
+                      color: speaking ? AppColors.primary : AppColors.border),
                 ),
                 child: AnimatedSwitcher(
                   duration: const Duration(milliseconds: 180),
                   child: Icon(
-                    speaking ? Icons.graphic_eq_rounded : Icons.volume_up_rounded,
+                    speaking
+                        ? Icons.graphic_eq_rounded
+                        : Icons.volume_up_rounded,
                     key: ValueKey<bool>(speaking),
                     color: speaking ? AppColors.onPrimary : AppColors.primary,
                     size: 26,

@@ -38,7 +38,9 @@ class _QuizScreenState extends State<QuizScreen> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted && AppScope.read(context).settings.autoRead) _say(_question.narration);
+      if (mounted && AppScope.read(context).settings.autoRead) {
+        _say(_question.narration);
+      }
     });
   }
 
@@ -54,7 +56,8 @@ class _QuizScreenState extends State<QuizScreen> {
     super.dispose();
   }
 
-  void _say(String text) => _narrator.speak(text, rate: AppScope.read(context).settings.speechRate);
+  void _say(String text) =>
+      _narrator.speak(text, rate: AppScope.read(context).settings.speechRate);
 
   void _choose(int choice) {
     if (_solved || _wrong.contains(choice)) return;
@@ -100,7 +103,8 @@ class _QuizScreenState extends State<QuizScreen> {
                       title: 'Quiz',
                       subtitle: InfoPill(
                         label: '${_index + 1} of ${_questions.length}',
-                        semanticsLabel: 'Question ${_index + 1} of ${_questions.length}',
+                        semanticsLabel:
+                            'Question ${_index + 1} of ${_questions.length}',
                       ),
                       leading: RoundIconButton(
                         icon: Icons.chevron_left_rounded,
@@ -120,13 +124,18 @@ class _QuizScreenState extends State<QuizScreen> {
                           Text(
                             question.question,
                             textAlign: TextAlign.center,
-                            style: (settings.largeText ? textTheme.headlineMedium : textTheme.headlineSmall)
-                                ?.copyWith(fontWeight: FontWeight.w800, color: AppColors.ink),
+                            style: (settings.largeText
+                                    ? textTheme.headlineMedium
+                                    : textTheme.headlineSmall)
+                                ?.copyWith(
+                                    fontWeight: FontWeight.w800,
+                                    color: AppColors.ink),
                           ),
                           const SizedBox(height: AppDimens.gapXL),
                           for (var i = 0; i < question.choices.length; i++) ...[
                             _ChoiceButton(
                               label: question.choices[i],
+                              image: question.imageForChoice(i),
                               state: _solved && i == question.answer
                                   ? _ChoiceState.right
                                   : _wrong.contains(i)
@@ -150,19 +159,26 @@ class _QuizScreenState extends State<QuizScreen> {
                               children: [
                                 Text("That's right!",
                                     style: textTheme.titleLarge?.copyWith(
-                                        fontWeight: FontWeight.w800, color: Colors.green.shade700)),
+                                        fontWeight: FontWeight.w800,
+                                        color: Colors.green.shade700)),
                                 const SizedBox(height: AppDimens.gapM),
                                 PillButton(
                                   label: _isLast ? 'Finish' : 'Next Question',
-                                  trailingIcon: _isLast ? Icons.star_rounded : Icons.chevron_right_rounded,
+                                  trailingIcon: _isLast
+                                      ? Icons.star_rounded
+                                      : Icons.chevron_right_rounded,
                                   onPressed: _next,
                                 ),
                               ],
                             )
                           : Text(
-                              _wrong.isEmpty ? 'Tap the right answer.' : 'Not quite. Try again!',
+                              _wrong.isEmpty
+                                  ? 'Tap the right answer.'
+                                  : 'Not quite. Try again!',
                               key: ValueKey(_wrong.length),
-                              style: textTheme.titleMedium?.copyWith(color: AppColors.inkSoft, fontWeight: FontWeight.w700),
+                              style: textTheme.titleMedium?.copyWith(
+                                  color: AppColors.inkSoft,
+                                  fontWeight: FontWeight.w700),
                             ),
                     ),
                   ],
@@ -185,6 +201,7 @@ class _ChoiceButton extends StatelessWidget {
     required this.enabled,
     required this.largeText,
     required this.onTap,
+    this.image,
   });
 
   final String label;
@@ -192,29 +209,46 @@ class _ChoiceButton extends StatelessWidget {
   final bool enabled;
   final bool largeText;
   final VoidCallback onTap;
+  final String? image;
 
   @override
   Widget build(BuildContext context) {
     final (background, border, icon) = switch (state) {
-      _ChoiceState.right => (Colors.green.shade50, Colors.green.shade600, Icons.check_circle_rounded),
-      _ChoiceState.wrong => (AppColors.tint, AppColors.dotInactive, Icons.close_rounded),
+      _ChoiceState.right => (
+          Colors.green.shade50,
+          Colors.green.shade600,
+          Icons.check_circle_rounded
+        ),
+      _ChoiceState.wrong => (
+          AppColors.tint,
+          AppColors.dotInactive,
+          Icons.close_rounded
+        ),
       _ChoiceState.open => (AppColors.surface, AppColors.border, null),
     };
-    final textStyle = (largeText ? Theme.of(context).textTheme.titleLarge : Theme.of(context).textTheme.titleMedium)
+    final textStyle = (largeText
+            ? Theme.of(context).textTheme.titleLarge
+            : Theme.of(context).textTheme.titleMedium)
         ?.copyWith(
       fontWeight: FontWeight.w700,
       color: state == _ChoiceState.wrong ? AppColors.inkSoft : AppColors.ink,
-      decoration: state == _ChoiceState.wrong ? TextDecoration.lineThrough : null,
+      decoration:
+          state == _ChoiceState.wrong ? TextDecoration.lineThrough : null,
     );
     return Semantics(
       button: true,
-      label: [label, if (state == _ChoiceState.right) 'right answer', if (state == _ChoiceState.wrong) 'not right'].join(', '),
+      label: [
+        label,
+        if (state == _ChoiceState.right) 'right answer',
+        if (state == _ChoiceState.wrong) 'not right'
+      ].join(', '),
       excludeSemantics: true,
       child: Material(
         color: background,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppDimens.radiusL),
-          side: BorderSide(color: border, width: state == _ChoiceState.right ? 2 : 1),
+          side: BorderSide(
+              color: border, width: state == _ChoiceState.right ? 2 : 1),
         ),
         child: InkWell(
           borderRadius: BorderRadius.circular(AppDimens.radiusL),
@@ -222,12 +256,28 @@ class _ChoiceButton extends StatelessWidget {
           child: ConstrainedBox(
             constraints: const BoxConstraints(minHeight: 56),
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: AppDimens.gapL, vertical: AppDimens.gapM),
+              padding: const EdgeInsets.symmetric(
+                  horizontal: AppDimens.gapL, vertical: AppDimens.gapM),
               child: Row(
                 children: [
+                  if (image != null) ...[
+                    SizedBox(
+                      width: 88,
+                      height: 88,
+                      child: Image(
+                        image: imageProviderFor(image!),
+                        fit: BoxFit.contain,
+                        errorBuilder: (_, __, ___) => const SizedBox.shrink(),
+                      ),
+                    ),
+                    const SizedBox(width: AppDimens.gapM),
+                  ],
                   Expanded(child: Text(label, style: textStyle)),
                   if (icon != null)
-                    Icon(icon, color: state == _ChoiceState.right ? Colors.green.shade600 : AppColors.inkSoft),
+                    Icon(icon,
+                        color: state == _ChoiceState.right
+                            ? Colors.green.shade600
+                            : AppColors.inkSoft),
                 ],
               ),
             ),

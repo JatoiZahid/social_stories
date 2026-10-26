@@ -31,10 +31,12 @@ class SceneImage extends StatelessWidget {
     required this.frame,
     this.radius = AppDimens.radiusL,
     this.semanticLabel,
+    this.fit = BoxFit.contain,
   });
 
   final SceneFrame frame;
   final double radius;
+  final BoxFit fit;
 
   /// Leave null for decorative images (the text already tells the story).
   final String? semanticLabel;
@@ -43,7 +45,7 @@ class SceneImage extends StatelessWidget {
   Widget build(BuildContext context) {
     Widget image = Image(
       image: frame.provider,
-      fit: BoxFit.cover,
+      fit: fit,
       alignment: frame.focus,
       width: double.infinity,
       height: double.infinity,
@@ -56,7 +58,8 @@ class SceneImage extends StatelessWidget {
       ),
     );
     if (frame.zoom != 1) {
-      image = Transform.scale(scale: frame.zoom, alignment: frame.focus, child: image);
+      image = Transform.scale(
+          scale: frame.zoom, alignment: frame.focus, child: image);
     }
     return ClipRRect(
       borderRadius: BorderRadius.circular(radius),

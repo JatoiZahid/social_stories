@@ -190,4 +190,40 @@ class ApiTest {
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("Social Stories Admin")));
     }
+
+    @Test
+    void preservesSituationAnimationAndAnswerImages() throws Exception {
+        Path sceneDir = Files.createDirectories(ROOT.resolve("app/assets/images/story_scenes"));
+        Path spriteDir = Files.createDirectories(ROOT.resolve("app/assets/animations/spritesheets"));
+        Files.write(sceneDir.resolve("brush.png"), PNG);
+        Files.write(spriteDir.resolve("brush.png"), PNG);
+        Map<String, Object> animation = Map.of("asset", "assets/animations/spritesheets/brush.png",
+                "columns", 2, "rows", 1, "row", 0, "frameCount", 2,
+                "fps", 2, "posterFrame", 1, "cue", "brush", "loop", false,
+                "frameCues", List.of("We", "brush"));
+        Map<String, Object> story = Map.of("id", "animated", "title", "Brush",
+                "pages", List.of(Map.of("image", "assets/images/story_scenes/brush.png", "lead", "We brush.",
+                        "animation", animation)),
+                "questions", List.of(Map.of("question", "Which picture?", "choices", List.of("Brush", "Other"),
+                        "answer", 0, "choiceImages", java.util.Arrays.asList("assets/images/story_scenes/brush.png", null))));
+        mvc.perform(withJson(post("/api/stories"), story)).andExpect(status().isCreated())
+                .andExpect(jsonPath("$.pages[0].animation.frameCount").value(2))
+                .andExpect(jsonPath("$.pages[0].animation.loop").value(false))
+                .andExpect(jsonPath("$.pages[0].animation.frameCues[1]").value("brush"))
+                .andExpect(jsonPath("$.questions[0].choiceImages[0]").value("assets/images/story_scenes/brush.png"));
+        mvc.perform(get("/api/stories/animated")).andExpect(status().isOk())
+                .andExpect(jsonPath("$.pages[0].animation.cue").value("brush"));
+        mvc.perform(get("/assets/animations/spritesheets/brush.png")).andExpect(status().isOk());
+        mvc.perform(get("/assets/images/story_scenes/brush.png")).andExpect(status().isOk());
+        Map<String, Object> badAnimation = new java.util.HashMap<>(animation);
+        badAnimation.put("frameCount", 3);
+        mvc.perform(withJson(post("/api/stories"), Map.of("id", "bad_atlas", "title", "Bad",
+                "pages", List.of(Map.of("image", "assets/images/story_scenes/brush.png", "lead", "We brush.",
+                        "animation", badAnimation))))).andExpect(status().isBadRequest());
+        badAnimation.put("frameCount", 2);
+        badAnimation.put("frameCues", List.of("brush", "We"));
+        mvc.perform(withJson(post("/api/stories"), Map.of("id", "bad_cues", "title", "Bad",
+                "pages", List.of(Map.of("image", "assets/images/story_scenes/brush.png", "lead", "We brush.",
+                        "animation", badAnimation))))).andExpect(status().isBadRequest());
+    }
 }

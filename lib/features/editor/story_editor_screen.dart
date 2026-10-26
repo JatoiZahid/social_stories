@@ -55,8 +55,8 @@ class _StoryEditorScreenState extends State<StoryEditorScreen> {
     super.dispose();
   }
 
-  void _editPage(StoryPage page) =>
-      Navigator.of(context).push(PageEditorScreen.route(widget.storyId, page.id));
+  void _editPage(StoryPage page) => Navigator.of(context)
+      .push(PageEditorScreen.route(widget.storyId, page.id));
 
   void _addPage() {
     final page = _store.addPage(widget.storyId);
@@ -90,7 +90,8 @@ class _StoryEditorScreenState extends State<StoryEditorScreen> {
         final ok = await ConfirmDialog.show(
           context,
           title: 'Discard your changes?',
-          message: 'Your unsent changes to "${story.displayTitle}" will be undone.',
+          message:
+              'Your unsent changes to "${story.displayTitle}" will be undone.',
           confirmLabel: 'Discard',
           icon: Icons.restart_alt_rounded,
         );
@@ -102,7 +103,8 @@ class _StoryEditorScreenState extends State<StoryEditorScreen> {
         final ok = await ConfirmDialog.show(
           context,
           title: 'Delete this new story?',
-          message: '"${story.displayTitle}" has not been sent for review. It and all its pages will be deleted.',
+          message:
+              '"${story.displayTitle}" has not been sent for review. It and all its pages will be deleted.',
           confirmLabel: 'Delete',
           icon: Icons.delete_outline_rounded,
         );
@@ -121,7 +123,8 @@ class _StoryEditorScreenState extends State<StoryEditorScreen> {
     final ok = await ConfirmDialog.show(
       context,
       title: 'Send for review?',
-      message: 'Our team will check "${story.displayTitle}". Children see it once it is approved. '
+      message:
+          'Our team will check "${story.displayTitle}". Children see it once it is approved. '
           'You can follow it under Account › Sent for review.',
       confirmLabel: 'Send',
       icon: Icons.send_rounded,
@@ -129,9 +132,11 @@ class _StoryEditorScreenState extends State<StoryEditorScreen> {
     if (!ok || !mounted) return;
     setState(() => _sending = true);
     try {
-      final sent = await AppScope.read(context).account.submitDraft(_store, story.id);
+      final sent =
+          await AppScope.read(context).account.submitDraft(_store, story.id);
       if (!mounted) return;
-      _snack('Sent for review: ${sent.map((t) => t.label.toLowerCase()).join(' and ')}.');
+      _snack(
+          'Sent for review: ${sent.map((t) => t.label.toLowerCase()).join(' and ')}.');
       if (isNew) {
         Navigator.of(context).pop();
       } else {
@@ -163,7 +168,10 @@ class _StoryEditorScreenState extends State<StoryEditorScreen> {
                 constraints: const BoxConstraints(maxWidth: 820),
                 child: Padding(
                   padding: const EdgeInsets.all(AppDimens.screenPadding),
-                  child: story == null ? const Center(child: Text('This story no longer exists.')) : _body(story),
+                  child: story == null
+                      ? const Center(
+                          child: Text('This story no longer exists.'))
+                      : _body(story),
                 ),
               ),
             ),
@@ -181,7 +189,12 @@ class _StoryEditorScreenState extends State<StoryEditorScreen> {
       children: [
         ScreenHeader(
           title: 'Edit Story',
-          subtitle: InfoPill(label: !published ? 'New story' : hasDraft ? 'Draft' : 'Published'),
+          subtitle: InfoPill(
+              label: !published
+                  ? 'New story'
+                  : hasDraft
+                      ? 'Draft'
+                      : 'Published'),
           leading: RoundIconButton(
             icon: Icons.chevron_left_rounded,
             tooltip: 'Back',
@@ -194,18 +207,24 @@ class _StoryEditorScreenState extends State<StoryEditorScreen> {
             itemBuilder: (_) => [
               const PopupMenuItem(
                 value: _StoryAction.preview,
-                child: ListTile(leading: Icon(Icons.play_arrow_rounded), title: Text('Preview story')),
+                child: ListTile(
+                    leading: Icon(Icons.play_arrow_rounded),
+                    title: Text('Preview story')),
               ),
               if (published)
                 PopupMenuItem(
                   value: _StoryAction.reset,
                   enabled: hasDraft,
-                  child: const ListTile(leading: Icon(Icons.restart_alt_rounded), title: Text('Discard my changes')),
+                  child: const ListTile(
+                      leading: Icon(Icons.restart_alt_rounded),
+                      title: Text('Discard my changes')),
                 ),
               if (!published)
                 const PopupMenuItem(
                   value: _StoryAction.delete,
-                  child: ListTile(leading: Icon(Icons.delete_outline_rounded), title: Text('Delete story')),
+                  child: ListTile(
+                      leading: Icon(Icons.delete_outline_rounded),
+                      title: Text('Delete story')),
                 ),
             ],
           ),
@@ -218,7 +237,9 @@ class _StoryEditorScreenState extends State<StoryEditorScreen> {
           textCapitalization: TextCapitalization.words,
           onChanged: (value) {
             final current = _story;
-            if (current != null) _store.saveStory(current.copyWith(title: value));
+            if (current != null) {
+              _store.saveStory(current.copyWith(title: value));
+            }
           },
         ),
         const SizedBox(height: AppDimens.gapL),
@@ -233,7 +254,10 @@ class _StoryEditorScreenState extends State<StoryEditorScreen> {
         ),
         Text(
           'Tap a page to change its picture or words. Drag ≡ to reorder.',
-          style: Theme.of(context).textTheme.bodySmall?.copyWith(color: AppColors.inkSoft),
+          style: Theme.of(context)
+              .textTheme
+              .bodySmall
+              ?.copyWith(color: AppColors.inkSoft),
         ),
         const SizedBox(height: AppDimens.gapS),
         Expanded(
@@ -241,8 +265,7 @@ class _StoryEditorScreenState extends State<StoryEditorScreen> {
             buildDefaultDragHandles: false,
             padding: const EdgeInsets.only(bottom: AppDimens.gapL),
             itemCount: story.pages.length,
-            onReorder: (from, to) {
-              if (to > from) to -= 1;
+            onReorderItem: (from, to) {
               _store.movePage(story.id, from, to);
             },
             itemBuilder: (context, index) {
@@ -258,7 +281,8 @@ class _StoryEditorScreenState extends State<StoryEditorScreen> {
                   index: index,
                   child: const Padding(
                     padding: EdgeInsets.all(AppDimens.gapS),
-                    child: Icon(Icons.drag_indicator_rounded, color: AppColors.inkSoft),
+                    child: Icon(Icons.drag_indicator_rounded,
+                        color: AppColors.inkSoft),
                   ),
                 ),
               );
@@ -281,7 +305,8 @@ class _StoryEditorScreenState extends State<StoryEditorScreen> {
               label: 'Quiz (${story.questions.length})',
               leadingIcon: Icons.quiz_rounded,
               variant: PillButtonVariant.soft,
-              onPressed: () => Navigator.of(context).push(QuestionsEditorScreen.route(story.id)),
+              onPressed: () => Navigator.of(context)
+                  .push(QuestionsEditorScreen.route(story.id)),
             ),
             PillButton(
               label: _sending ? 'Sending…' : 'Send for Review',

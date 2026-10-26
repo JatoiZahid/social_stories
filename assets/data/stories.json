@@ -6,54 +6,122 @@
       "title": "Going to School",
       "pages": [
         {
-          "image": "assets/images/stories/going_to_school.png",
+          "image": "assets/images/story_scenes/going_to_school_scene_01.png",
           "lead": "First, we get dressed and put on our backpack.",
-          "body": "Then we go to school with our family."
+          "body": "Then we go to school with our family.",
+          "id": "going_to_school-p1",
+          "animation": {
+            "asset": "assets/animations/spritesheets/going_to_school_scene_01.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 1,
+            "cue": "First, we get dressed and put on our backpack",
+            "description": "home entryway: Boy is fully dressed, finishing button at his shirt collar while grasping blue backpack strap at his side; then Boy slips the blue backpack over his shoulder, arm raised through strap; mother holds door open at same position",
+            "loop": false,
+            "frameCues": [
+              "First, we get dressed",
+              "put on our backpack",
+              "Then we go to school"
+            ]
+          }
         },
         {
-          "image": "assets/images/stories/going_to_school.png",
+          "image": "assets/images/story_scenes/going_to_school_scene_02.png",
           "lead": "We ride the bus or walk to school.",
           "body": "We stay close to our grown-up.",
-          "focus": {
-            "x": 0,
-            "y": 0,
-            "zoom": 1.15
+          "id": "going_to_school-p2",
+          "animation": {
+            "asset": "assets/animations/spritesheets/going_to_school_scene_02.png",
+            "columns": 2,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 2,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We ride the bus or walk to school",
+            "description": "same sidewalk toward school: Boy and mother walk side by side, boy left foot forward and right arm forward; then Same boy right foot forward and left arm forward; mother opposite stride, identical full-body positions and scale",
+            "loop": true
           }
         },
         {
-          "image": "assets/images/stories/going_to_school.png",
+          "image": "assets/images/story_scenes/going_to_school_scene_03.png",
           "lead": "We say goodbye to our family.",
           "body": "They will come back to pick us up.",
-          "focus": {
-            "x": 0.35,
-            "y": -0.6,
-            "zoom": 1.45
+          "id": "going_to_school-p3",
+          "animation": {
+            "asset": "assets/animations/spritesheets/going_to_school_scene_03.png",
+            "columns": 2,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 2,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We say goodbye to our family",
+            "description": "school entrance: Boy and mother face each other at respectful gap, both lift right palms to say goodbye; then Same two standing in same places with palms tilted the other way in a small wrist wave",
+            "loop": true
           }
         },
         {
-          "image": "assets/images/stories/going_to_school.png",
+          "image": "assets/images/story_scenes/going_to_school_scene_04.png",
           "lead": "We say hello to our teacher.",
           "body": "Our teacher is happy to see us.",
-          "focus": {
-            "x": -0.35,
-            "y": -0.1,
-            "zoom": 1.45
+          "id": "going_to_school-p4",
+          "animation": {
+            "asset": "assets/animations/spritesheets/going_to_school_scene_04.png",
+            "columns": 2,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 2,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We say hello to our teacher",
+            "description": "classroom doorway: Distinct teacher wearing teacher lanyard waves with raised right palm; boy raises own palm back; then Teacher and boy tilt raised palms gently the opposite direction, remaining same positions",
+            "loop": true
           }
         },
         {
-          "image": "assets/images/stories/going_to_school.png",
+          "image": "assets/images/story_scenes/going_to_school_scene_05.png",
           "lead": "We find our seat in the classroom.",
           "body": "We listen and learn new things.",
-          "focus": {
-            "x": -0.5,
-            "y": 0.5,
-            "zoom": 1.35
+          "id": "going_to_school-p5",
+          "animation": {
+            "asset": "assets/animations/spritesheets/going_to_school_scene_05.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We find our seat in the classroom",
+            "description": "classroom child-sized desk: Boy bends knees above chair with hand resting on desk, bottom just above seat; then Same boy settles onto chair, knees bent, both feet at floor, open book on desk while looking at teacher",
+            "loop": false,
+            "frameCues": [
+              "We find our seat",
+              "in the classroom",
+              "We listen"
+            ]
           }
         },
         {
-          "image": "assets/images/stories/going_to_school.png",
+          "image": "assets/images/story_scenes/going_to_school_scene_06.png",
           "lead": "At the end of the day, we go home.",
-          "body": "We can tell our family about our day."
+          "body": "We can tell our family about our day.",
+          "id": "going_to_school-p6",
+          "animation": {
+            "asset": "assets/animations/spritesheets/going_to_school_scene_06.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 1,
+            "cue": "At the end of the day, we go home",
+            "description": "school gate after school: Boy with backpack greets mother and takes her hand after pickup; then Both take first walking step toward home beyond gate, boy free hand gestures as he tells mother about day",
+            "loop": false
+          }
         }
       ]
     },
@@ -62,74 +130,168 @@
       "title": "Going to the Toilet",
       "pages": [
         {
-          "image": "assets/images/stories/going_to_the_toilet.png",
+          "image": "assets/images/story_scenes/going_to_the_toilet_scene_01.png",
           "lead": "First, we know we need the toilet.",
-          "body": "We can tell a trusted adult and go to the bathroom."
+          "body": "We can tell a trusted adult and go to the bathroom.",
+          "id": "going_to_the_toilet-p1",
+          "animation": {
+            "asset": "assets/animations/spritesheets/going_to_the_toilet_scene_01.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "First, we know we need the toilet",
+            "description": "bathroom doorway with trusted adult nearby: Boy gestures toward bathroom to tell adult he needs toilet, hand near closed door handle; then Boy turns handle and opens bathroom door slightly as adult nods; no toothbrush",
+            "loop": false,
+            "frameCues": [
+              "First",
+              "and go",
+              "the bathroom"
+            ]
+          }
         },
         {
-          "image": "assets/images/stories/going_to_the_toilet.png",
+          "image": "assets/images/story_scenes/going_to_the_toilet_scene_02.png",
           "lead": "We pull down our pants and sit on the toilet.",
           "body": "We can take our time. That is okay.",
-          "focus": {
-            "x": -0.15,
-            "y": -0.25,
-            "zoom": 1.45
+          "id": "going_to_the_toilet-p2",
+          "animation": {
+            "asset": "assets/animations/spritesheets/going_to_the_toilet_scene_02.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 1,
+            "cue": "We pull down our pants and sit on the toilet",
+            "description": "bathroom stall with waist-height privacy partition: Boy bends knees toward toilet seat behind partition, fully clothed upper body visible and private area completely concealed; then Boy calmly sits on toilet with lower body and lap completely hidden by partition; hands rest safely atop partition; no nudity",
+            "loop": false,
+            "frameCues": [
+              "We pull down our pants",
+              "sit on the toilet",
+              "We can take our time"
+            ]
           }
         },
         {
-          "image": "assets/images/stories/going_to_the_toilet.png",
+          "image": "assets/images/story_scenes/going_to_the_toilet_scene_03.png",
           "lead": "When we are done, we use toilet paper.",
           "body": "We wipe from front to back.",
-          "focus": {
-            "x": 0,
-            "y": 0,
-            "zoom": 1.15
+          "id": "going_to_the_toilet-p3",
+          "animation": {
+            "asset": "assets/animations/spritesheets/going_to_the_toilet_scene_03.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 1,
+            "cue": "When we are done, we use toilet paper",
+            "description": "bathroom stall with privacy partition: Boy seated behind partition with lap fully concealed reaches for toilet-paper roll; then Boy tears a small clean length of toilet paper and moves hand behind partition; all private anatomy and wiping contact concealed",
+            "loop": false,
+            "frameCues": [
+              "When we are done",
+              "use toilet paper",
+              "We wipe"
+            ]
           }
         },
         {
-          "image": "assets/images/stories/going_to_the_toilet.png",
+          "image": "assets/images/story_scenes/going_to_the_toilet_scene_04.png",
           "lead": "We flush the toilet.",
           "body": "It might be loud, and that is okay.",
-          "focus": {
-            "x": 0.6,
-            "y": 0.1,
-            "zoom": 1.4
+          "id": "going_to_the_toilet-p4",
+          "animation": {
+            "asset": "assets/animations/spritesheets/going_to_the_toilet_scene_04.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 1,
+            "cue": "We flush the toilet",
+            "description": "bathroom beside toilet: Fully clothed boy reaches finger toward toilet flush button; then Boy presses flush button with finger as water swirls gently inside toilet bowl",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/going_to_the_toilet.png",
+          "image": "assets/images/story_scenes/going_to_the_toilet_scene_05.png",
           "lead": "We pull up our pants.",
           "body": "We check that our clothes are on right.",
-          "focus": {
-            "x": -0.15,
-            "y": -0.25,
-            "zoom": 1.45
+          "id": "going_to_the_toilet-p5",
+          "animation": {
+            "asset": "assets/animations/spritesheets/going_to_the_toilet_scene_05.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 1,
+            "cue": "We pull up our pants",
+            "description": "bathroom behind waist-high privacy partition: Boy stands behind partition, hands gripping waistband visible just above partition, all private anatomy concealed; then Boy pulls waistband into final secure position, shirt tucked neatly; fully clothed throughout",
+            "loop": false,
+            "frameCues": [
+              "We",
+              "pull up our pants",
+              "We check"
+            ]
           }
         },
         {
-          "image": "assets/images/stories/going_to_the_toilet.png",
+          "image": "assets/images/story_scenes/going_to_the_toilet_scene_06.png",
           "lead": "We wash our hands with soap and water.",
           "body": "We scrub while we sing a little song.",
-          "focus": {
-            "x": -0.8,
-            "y": 0.2,
-            "zoom": 1.4
+          "id": "going_to_the_toilet-p6",
+          "animation": {
+            "asset": "assets/animations/spritesheets/going_to_the_toilet_scene_06.png",
+            "columns": 2,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 2,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We wash our hands with soap and water",
+            "description": "bathroom sink: Boy rubs soapy palms together directly over sink, faucet stream into bowl; then Boy turns hands and rubs backs of fingers with soap over sink; hands in same location near water",
+            "loop": true
           }
         },
         {
-          "image": "assets/images/stories/going_to_the_toilet.png",
+          "image": "assets/images/story_scenes/going_to_the_toilet_scene_07.png",
           "lead": "We dry our hands with a towel.",
           "body": "Now our hands are clean.",
-          "focus": {
-            "x": -0.8,
-            "y": 0.2,
-            "zoom": 1.4
+          "id": "going_to_the_toilet-p7",
+          "animation": {
+            "asset": "assets/animations/spritesheets/going_to_the_toilet_scene_07.png",
+            "columns": 2,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 2,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We dry our hands with a towel",
+            "description": "bathroom towel rail beside sink: Boy presses both wet hands inside yellow towel hanging at his waist; then Boy rubs fingers and backs of hands inside same towel, elbows bend differently",
+            "loop": true
           }
         },
         {
-          "image": "assets/images/stories/going_to_the_toilet.png",
+          "image": "assets/images/story_scenes/going_to_the_toilet_scene_08.png",
           "lead": "We did it!",
-          "body": "Going to the toilet is part of every day."
+          "body": "Going to the toilet is part of every day.",
+          "id": "going_to_the_toilet-p8",
+          "animation": {
+            "asset": "assets/animations/spritesheets/going_to_the_toilet_scene_08.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 1,
+            "cue": "We did it!",
+            "description": "bathroom doorway after finishing: Fully clothed boy holds clean open hands up to check them, calm face; then Boy lowers clean hands and smiles proudly, faucet off and towel neatly hung behind him",
+            "loop": false
+          }
         }
       ]
     },
@@ -138,54 +300,117 @@
       "title": "Going to the Doctor",
       "pages": [
         {
-          "image": "assets/images/stories/going_to_the_doctor.png",
+          "image": "assets/images/story_scenes/going_to_the_doctor_scene_01.png",
           "lead": "First, we go to the doctor.",
-          "body": "The doctor will check how we are feeling and help us stay healthy."
+          "body": "The doctor will check how we are feeling and help us stay healthy.",
+          "id": "going_to_the_doctor-p1",
+          "animation": {
+            "asset": "assets/animations/spritesheets/going_to_the_doctor_scene_01.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 1,
+            "cue": "First, we go to the doctor",
+            "description": "clinic exam-room entry: Boy with trusted adult steps through clinic doorway toward original doctor; then Boy takes next step and doctor gestures toward exam bench, same camera and room",
+            "loop": false
+          }
         },
         {
-          "image": "assets/images/stories/going_to_the_doctor.png",
+          "image": "assets/images/story_scenes/going_to_the_doctor_scene_02.png",
           "lead": "The doctor says hello.",
           "body": "We can say hello back or wave.",
-          "focus": {
-            "x": 0.5,
-            "y": -0.5,
-            "zoom": 1.45
+          "id": "going_to_the_doctor-p2",
+          "animation": {
+            "asset": "assets/animations/spritesheets/going_to_the_doctor_scene_02.png",
+            "columns": 2,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 2,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "The doctor says hello",
+            "description": "clinic exam room: Original woman doctor raises palm hello while boy on exam bench raises own palm; then Doctor and boy tilt their raised palms the other direction to wave, same positions",
+            "loop": true
           }
         },
         {
-          "image": "assets/images/stories/going_to_the_doctor.png",
+          "image": "assets/images/story_scenes/going_to_the_doctor_scene_03.png",
           "lead": "The doctor listens to our heart.",
           "body": "The stethoscope may feel cold. That is okay.",
-          "focus": {
-            "x": 0.3,
-            "y": 0.5,
-            "zoom": 1.4
+          "id": "going_to_the_doctor-p3",
+          "animation": {
+            "asset": "assets/animations/spritesheets/going_to_the_doctor_scene_03.png",
+            "columns": 2,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 2,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "The doctor listens to our heart",
+            "description": "clinic exam room: Doctor holds stethoscope chestpiece against boy's blue shirt over chest, boy breathes in gently; then Same chestpiece remains contacting shirt as boy breathes out, doctor listens attentively",
+            "loop": true
           }
         },
         {
-          "image": "assets/images/stories/going_to_the_doctor.png",
+          "image": "assets/images/story_scenes/going_to_the_doctor_scene_04.png",
           "lead": "The doctor looks in our ears and mouth.",
           "body": "We can open wide and say 'ahh'.",
-          "focus": {
-            "x": 0.5,
-            "y": -0.5,
-            "zoom": 1.45
+          "id": "going_to_the_doctor-p4",
+          "animation": {
+            "asset": "assets/animations/spritesheets/going_to_the_doctor_scene_04.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 1,
+            "cue": "The doctor looks in our ears and mouth",
+            "description": "clinic exam room: Doctor uses otoscope at boy's outer ear, boy calm with mouth closed; then Doctor lowers otoscope and looks with small exam light as same boy opens mouth to say ahh; same seated position",
+            "loop": false,
+            "frameCues": [
+              "The doctor looks in our ears",
+              "and mouth",
+              "We can open wide"
+            ]
           }
         },
         {
-          "image": "assets/images/stories/going_to_the_doctor.png",
+          "image": "assets/images/story_scenes/going_to_the_doctor_scene_05.png",
           "lead": "We can tell the doctor how we feel.",
           "body": "It is okay to ask questions.",
-          "focus": {
-            "x": -0.35,
-            "y": -0.1,
-            "zoom": 1.45
+          "id": "going_to_the_doctor-p5",
+          "animation": {
+            "asset": "assets/animations/spritesheets/going_to_the_doctor_scene_05.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 1,
+            "cue": "We can tell the doctor how we feel",
+            "description": "clinic exam room: Boy points to tummy while looking toward doctor with thoughtful expression; then Boy gestures to simple feelings picture card while doctor nods and listens at his level",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/going_to_the_doctor.png",
+          "image": "assets/images/story_scenes/going_to_the_doctor_scene_06.png",
           "lead": "When we are done, we say thank you.",
-          "body": "Going to the doctor helps us stay well."
+          "body": "Going to the doctor helps us stay well.",
+          "id": "going_to_the_doctor-p6",
+          "animation": {
+            "asset": "assets/animations/spritesheets/going_to_the_doctor_scene_06.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 1,
+            "cue": "When we are done, we say thank you",
+            "description": "clinic exam-room doorway: Boy turns toward doctor and raises palm in grateful goodbye; then Boy lowers hand and takes step toward trusted adult at door, doctor smiles goodbye",
+            "loop": false
+          }
         }
       ]
     },
@@ -194,54 +419,122 @@
       "title": "Brushing Teeth",
       "pages": [
         {
-          "image": "assets/images/stories/brushing_teeth.png",
+          "image": "assets/images/story_scenes/brushing_teeth_scene_01.png",
           "lead": "First, we get our toothbrush.",
-          "body": "Then we put toothpaste on it and brush our teeth."
+          "body": "Then we put toothpaste on it and brush our teeth.",
+          "id": "brushing_teeth-p1",
+          "animation": {
+            "asset": "assets/animations/spritesheets/brushing_teeth_scene_01.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "First, we get our toothbrush",
+            "description": "blue bathroom sink: Boy's hand reaches for yellow toothbrush resting in holder while other hand holds capped toothpaste; then Boy grips yellow toothbrush and raises bristles toward mouth, small pea-sized toothpaste on bristles",
+            "loop": false,
+            "frameCues": [
+              "First, we get our toothbrush",
+              "put toothpaste on it",
+              "brush our teeth"
+            ]
+          }
         },
         {
-          "image": "assets/images/stories/brushing_teeth.png",
+          "image": "assets/images/story_scenes/brushing_teeth_scene_02.png",
           "lead": "We squeeze a little toothpaste.",
           "body": "A tiny bit, like a pea, is just right.",
-          "focus": {
-            "x": 0.4,
-            "y": 0.0,
-            "zoom": 1.45
+          "id": "brushing_teeth-p2",
+          "animation": {
+            "asset": "assets/animations/spritesheets/brushing_teeth_scene_02.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 1,
+            "cue": "We squeeze a little toothpaste",
+            "description": "blue bathroom sink: Boy holds yellow toothbrush horizontally, other hand positions toothpaste tube nozzle over bristles; then Boy squeezes tube gently, single tiny pea-sized paste bead rests on bristles with nozzle directly above",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/brushing_teeth.png",
+          "image": "assets/images/story_scenes/brushing_teeth_scene_03.png",
           "lead": "We brush our front teeth and back teeth.",
           "body": "Round and round, up and down.",
-          "focus": {
-            "x": -0.05,
-            "y": -0.45,
-            "zoom": 1.45
+          "id": "brushing_teeth-p3",
+          "animation": {
+            "asset": "assets/animations/spritesheets/brushing_teeth_scene_03.png",
+            "columns": 2,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 2,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We brush our front teeth and back teeth",
+            "description": "blue bathroom sink: Boy holds toothbrush contacting front teeth, hand and wrist on one side; then Boy angles brush slightly toward back teeth with wrist shifted while bristles remain inside mouth",
+            "loop": true
           }
         },
         {
-          "image": "assets/images/stories/brushing_teeth.png",
+          "image": "assets/images/story_scenes/brushing_teeth_scene_04.png",
           "lead": "We brush for two minutes.",
           "body": "We can count or sing a song.",
-          "focus": {
-            "x": 0,
-            "y": 0,
-            "zoom": 1.15
+          "id": "brushing_teeth-p4",
+          "animation": {
+            "asset": "assets/animations/spritesheets/brushing_teeth_scene_04.png",
+            "columns": 2,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 2,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We brush for two minutes",
+            "description": "blue bathroom sink: Boy brushes teeth with yellow brush, bristles touching left-side teeth and elbow slightly raised; then Boy makes small brushing circle with wrist, bristles touching adjacent teeth and elbow slightly lowered",
+            "loop": true
           }
         },
         {
-          "image": "assets/images/stories/brushing_teeth.png",
+          "image": "assets/images/story_scenes/brushing_teeth_scene_05.png",
           "lead": "We spit out the toothpaste.",
           "body": "Then we rinse our toothbrush.",
-          "focus": {
-            "x": 0.85,
-            "y": 0.3,
-            "zoom": 1.4
+          "id": "brushing_teeth-p5",
+          "animation": {
+            "asset": "assets/animations/spritesheets/brushing_teeth_scene_05.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 1,
+            "cue": "We spit out the toothpaste",
+            "description": "blue bathroom sink: Boy leans forward over sink with mouth directed into bowl to discreetly spit paste, brush safely in hand; then Boy remains leaning over same sink and holds brush bristles directly under running faucet to rinse",
+            "loop": false,
+            "frameCues": [
+              "We spit",
+              "Then",
+              "rinse our toothbrush"
+            ]
           }
         },
         {
-          "image": "assets/images/stories/brushing_teeth.png",
+          "image": "assets/images/story_scenes/brushing_teeth_scene_06.png",
           "lead": "Our teeth are clean and shiny!",
-          "body": "We brush in the morning and at night."
+          "body": "We brush in the morning and at night.",
+          "id": "brushing_teeth-p6",
+          "animation": {
+            "asset": "assets/animations/spritesheets/brushing_teeth_scene_06.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 1,
+            "cue": "Our teeth are clean and shiny!",
+            "description": "blue bathroom sink and mirror: Boy places clean yellow toothbrush into holder, smiling gently at mirror; then Boy hand releases brush into holder, both hands lower and boy shows clean teeth with proud smile",
+            "loop": false
+          }
         }
       ]
     },
@@ -250,54 +543,122 @@
       "title": "Restaurant",
       "pages": [
         {
-          "image": "assets/images/stories/restaurant.png",
+          "image": "assets/images/story_scenes/restaurant_scene_01.png",
           "lead": "First, we sit at the table.",
-          "body": "Then we choose what we want and tell the person."
+          "body": "Then we choose what we want and tell the person.",
+          "id": "restaurant-p1",
+          "animation": {
+            "asset": "assets/animations/spritesheets/restaurant_scene_01.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "First, we sit at the table",
+            "description": "restaurant table: Boy bends knees to sit in chair beside original mother, picture menu on table; then Boy seated securely points to food image on menu toward waiter standing beside table",
+            "loop": false,
+            "frameCues": [
+              "First, we sit",
+              "Then we choose",
+              "tell the person"
+            ]
+          }
         },
         {
-          "image": "assets/images/stories/restaurant.png",
+          "image": "assets/images/story_scenes/restaurant_scene_02.png",
           "lead": "We look at the menu.",
           "body": "We can point to pictures of food we like.",
-          "focus": {
-            "x": 0.0,
-            "y": 0.6,
-            "zoom": 1.4
+          "id": "restaurant-p2",
+          "animation": {
+            "asset": "assets/animations/spritesheets/restaurant_scene_02.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We look at the menu",
+            "description": "restaurant table: Boy holds open picture menu with hands, eyes look at food illustrations; then Same boy points index finger directly at one food picture on same menu, mother beside him",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/restaurant.png",
+          "image": "assets/images/story_scenes/restaurant_scene_03.png",
           "lead": "We wait for our food.",
           "body": "Waiting can be hard. We can draw or talk quietly.",
-          "focus": {
-            "x": -0.5,
-            "y": -0.1,
-            "zoom": 1.45
+          "id": "restaurant-p3",
+          "animation": {
+            "asset": "assets/animations/spritesheets/restaurant_scene_03.png",
+            "columns": 2,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 2,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We wait for our food",
+            "description": "restaurant table before food arrives: Boy holds crayon tip on paper drawing a small circle while mother sits beside him; then Boy bends wrist and moves crayon across same paper adding line, placemat has no served meal yet",
+            "loop": true
           }
         },
         {
-          "image": "assets/images/stories/restaurant.png",
+          "image": "assets/images/story_scenes/restaurant_scene_04.png",
           "lead": "We eat our food with our family.",
           "body": "We use our inside voice.",
-          "focus": {
-            "x": 0,
-            "y": 0,
-            "zoom": 1.15
+          "id": "restaurant-p4",
+          "animation": {
+            "asset": "assets/animations/spritesheets/restaurant_scene_04.png",
+            "columns": 2,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 2,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We eat our food with our family",
+            "description": "restaurant table during meal: Boy holds fork with small bite just above food plate, mother eating beside him; then Boy bends elbow bringing same fork and bite to mouth, plate and table stay fixed",
+            "loop": true
           }
         },
         {
-          "image": "assets/images/stories/restaurant.png",
+          "image": "assets/images/story_scenes/restaurant_scene_05.png",
           "lead": "We say please and thank you.",
           "body": "Good manners are kind.",
-          "focus": {
-            "x": 0.6,
-            "y": -0.3,
-            "zoom": 1.45
+          "id": "restaurant-p5",
+          "animation": {
+            "asset": "assets/animations/spritesheets/restaurant_scene_05.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We say please and thank you",
+            "description": "restaurant table: Boy gestures please toward waiter holding water glass just above table; then Waiter safely places glass on table and boy nods thank you with hand on chest",
+            "loop": false,
+            "frameCues": [
+              "We say please",
+              "and",
+              "thank you"
+            ]
           }
         },
         {
-          "image": "assets/images/stories/restaurant.png",
+          "image": "assets/images/story_scenes/restaurant_scene_06.png",
           "lead": "When we are finished, we go home.",
-          "body": "Eating out can be fun."
+          "body": "Eating out can be fun.",
+          "id": "restaurant-p6",
+          "animation": {
+            "asset": "assets/animations/spritesheets/restaurant_scene_06.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "When we are finished, we go home",
+            "description": "restaurant exit near same dining table: Boy pushes chair back and begins standing beside mother, cleared plate on table; then Boy stands fully and takes mother's hand toward visible exit, same room camera",
+            "loop": false
+          }
         }
       ]
     },
@@ -306,64 +667,150 @@
       "title": "Airport",
       "pages": [
         {
-          "image": "assets/images/stories/airport.png",
+          "image": "assets/images/story_scenes/airport_scene_01.png",
           "lead": "First, we arrive at the airport.",
-          "body": "Then we check in and go through security."
+          "body": "Then we check in and go through security.",
+          "id": "airport-p1",
+          "animation": {
+            "asset": "assets/animations/spritesheets/airport_scene_01.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "First, we arrive at the airport",
+            "description": "Airport arrival, then check-in boarding pass and suitcase, then belongings placed in security tray; boy in original lime shirt and blue backpack stays beside adult.",
+            "loop": false,
+            "frameCues": [
+              "First, we arrive",
+              "we check in",
+              "go through security"
+            ]
+          }
         },
         {
-          "image": "assets/images/stories/airport.png",
+          "image": "assets/images/story_scenes/airport_scene_02.png",
           "lead": "We show our tickets and give our big bags.",
           "body": "Our bags will meet us later.",
-          "focus": {
-            "x": -0.3,
-            "y": 0.3,
-            "zoom": 1.45
+          "id": "airport-p2",
+          "animation": {
+            "asset": "assets/animations/spritesheets/airport_scene_02.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We show our tickets and give our big bags",
+            "description": "airport check-in counter: Boy presents boarding pass to staff while adult lifts large suitcase onto luggage belt; then Staff receives boarding pass and suitcase rests supported on belt, boy hand opens after giving pass",
+            "loop": false,
+            "frameCues": [
+              "We show our tickets",
+              "and",
+              "give our big bags"
+            ]
           }
         },
         {
-          "image": "assets/images/stories/airport.png",
+          "image": "assets/images/story_scenes/airport_scene_03.png",
           "lead": "We go through security.",
           "body": "We put our things in a tray. The staff help keep us safe.",
-          "focus": {
-            "x": 0,
-            "y": 0,
-            "zoom": 1.15
+          "id": "airport-p3",
+          "animation": {
+            "asset": "assets/animations/spritesheets/airport_scene_03.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We go through security",
+            "description": "airport security tray counter: Boy holds small belongings directly over open security tray, friendly staff beside lane; then Boy lowers belongings inside tray with hands contacting objects, staff calmly points toward scanner",
+            "loop": false,
+            "frameCues": [
+              "We go through security",
+              "put our things in a tray",
+              "The staff help"
+            ]
           }
         },
         {
-          "image": "assets/images/stories/airport.png",
+          "image": "assets/images/story_scenes/airport_scene_04.png",
           "lead": "We wait at the gate.",
           "body": "We can look at the planes through the window.",
-          "focus": {
-            "x": 0.5,
-            "y": 0.1,
-            "zoom": 1.45
+          "id": "airport-p4",
+          "animation": {
+            "asset": "assets/animations/spritesheets/airport_scene_04.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We wait at the gate",
+            "description": "airport departure-gate seating: Boy seated beside adult looks through large window toward parked plane; then Same boy raises hand to point at plane through window and turns slightly toward adult",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/airport.png",
+          "image": "assets/images/story_scenes/airport_scene_05.png",
           "lead": "We get on the plane and find our seat.",
           "body": "We buckle our seatbelt.",
-          "focus": {
-            "x": -0.3,
-            "y": 0.3,
-            "zoom": 1.45
+          "id": "airport-p5",
+          "animation": {
+            "asset": "assets/animations/spritesheets/airport_scene_05.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We get on the plane and find our seat",
+            "description": "Airplane cabin boarding: boy in lime polo walks down aisle to row seat; then sits with backpack stowed and holds belt ends; then clips lap belt securely while same green-shirt guardian is seated/buckled beside him.",
+            "loop": false,
+            "frameCues": [
+              "We get on the plane",
+              "find our seat",
+              "We buckle our seatbelt"
+            ]
           }
         },
         {
-          "image": "assets/images/stories/airport.png",
+          "image": "assets/images/story_scenes/airport_scene_06.png",
           "lead": "The plane goes up into the sky.",
           "body": "Our ears may feel funny. We can swallow or yawn.",
-          "focus": {
-            "x": 0.5,
-            "y": 0.1,
-            "zoom": 1.45
+          "id": "airport-p6",
+          "animation": {
+            "asset": "assets/animations/spritesheets/airport_scene_06.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "The plane goes up into the sky",
+            "description": "airplane cabin during takeoff: Boy sits securely buckled, mouth slightly open and clouds visible through cabin window; then Same buckled boy yawns with mouth wider and one hand politely near mouth; ground now lower outside window",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/airport.png",
+          "image": "assets/images/story_scenes/airport_scene_07.png",
           "lead": "We land and ride to where we are going.",
-          "body": "We made it to our trip!"
+          "body": "We made it to our trip!",
+          "id": "airport-p7",
+          "animation": {
+            "asset": "assets/animations/spritesheets/airport_scene_07.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We land and ride to where we are going",
+            "description": "destination pickup vehicle with arrivals building visible through window: Boy seated in age-appropriate booster seat, grown-up helps guide vehicle belt across his shoulder and lap; then Grown-up clips buckle securely, boy smiles relieved with bag safely stowed; vehicle still parked",
+            "loop": false
+          }
         }
       ]
     },
@@ -372,54 +819,112 @@
       "title": "Playground",
       "pages": [
         {
-          "image": "assets/images/stories/playground.png",
+          "image": "assets/images/story_scenes/playground_scene_01.png",
           "lead": "First, we wait for our turn.",
-          "body": "Then we can play together and be kind."
+          "body": "Then we can play together and be kind.",
+          "id": "playground-p1",
+          "animation": {
+            "asset": "assets/animations/spritesheets/playground_scene_01.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "First, we wait for our turn",
+            "description": "playground safe waiting place near slide: Boy waits behind safe marker with hands calmly down while girl finishes using slide; then Girl stands clear of landing area and boy gestures to ask whether his turn, still waiting safely",
+            "loop": false
+          }
         },
         {
-          "image": "assets/images/stories/playground.png",
+          "image": "assets/images/story_scenes/playground_scene_02.png",
           "lead": "We go down the slide one at a time.",
           "body": "We wait until the slide is clear.",
-          "focus": {
-            "x": -0.1,
-            "y": -0.6,
-            "zoom": 1.4
+          "id": "playground-p2",
+          "animation": {
+            "asset": "assets/animations/spritesheets/playground_scene_02.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We go down the slide one at a time",
+            "description": "playground slide with clear landing area: Boy sits at top of slide with feet forward and hands safely at sides, girl waits well away; then Same boy slides to lower part seated feet first, arms and bent knees articulated; girl remains waiting",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/playground.png",
+          "image": "assets/images/story_scenes/playground_scene_03.png",
           "lead": "We can ask a friend to play.",
           "body": "We can say, 'Do you want to play with me?'",
-          "focus": {
-            "x": -0.45,
-            "y": -0.2,
-            "zoom": 1.45
+          "id": "playground-p3",
+          "animation": {
+            "asset": "assets/animations/spritesheets/playground_scene_03.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We can ask a friend to play",
+            "description": "playground open area: Boy turns to original girl and raises open hand inviting her to play; then Girl nods and raises hand in reply, boy gestures toward play equipment without grabbing",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/playground.png",
+          "image": "assets/images/story_scenes/playground_scene_04.png",
           "lead": "We take turns on the swings.",
           "body": "Everyone gets a turn.",
-          "focus": {
-            "x": 0.45,
-            "y": 0.0,
-            "zoom": 1.45
+          "id": "playground-p4",
+          "animation": {
+            "asset": "assets/animations/spritesheets/playground_scene_04.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We take turns on the swings",
+            "description": "Playground swings: boy swings while girl waits clear; swing stops and boy steps off; girl receives her turn as boy waits safely.",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/playground.png",
+          "image": "assets/images/story_scenes/playground_scene_05.png",
           "lead": "If someone gets hurt, we can help.",
           "body": "We can find a trusted adult.",
-          "focus": {
-            "x": 0,
-            "y": 0,
-            "zoom": 1.15
+          "id": "playground-p5",
+          "animation": {
+            "asset": "assets/animations/spritesheets/playground_scene_05.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "If someone gets hurt, we can help",
+            "description": "playground bench: Original girl sits with sad concerned face and small scraped knee, boy nearby with concerned expression; then Boy raises hand toward trusted adult who kneels beside girl to help gently, same bench and sad-to-reassured emotions",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/playground.png",
+          "image": "assets/images/story_scenes/playground_scene_06.png",
           "lead": "When it is time to go, we say goodbye.",
-          "body": "We can come back another day."
+          "body": "We can come back another day.",
+          "id": "playground-p6",
+          "animation": {
+            "asset": "assets/animations/spritesheets/playground_scene_06.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "When it is time to go, we say goodbye",
+            "description": "playground gate: Boy and girl face each other and lift palms goodbye, trusted adult waits beside boy; then Boy tilts wrist in goodbye wave while taking adult's hand, girl waves back",
+            "loop": false
+          }
         }
       ]
     },
@@ -428,54 +933,112 @@
       "title": "Sharing",
       "pages": [
         {
-          "image": "assets/images/stories/sharing.png",
+          "image": "assets/images/story_scenes/sharing_scene_01.png",
           "lead": "Sharing is kind.",
-          "body": "We can take turns and share our toys with friends."
+          "body": "We can take turns and share our toys with friends.",
+          "id": "sharing-p1",
+          "animation": {
+            "asset": "assets/animations/spritesheets/sharing_scene_01.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "Sharing is kind",
+            "description": "indoor playroom table: Boy holds original colorful toy near table edge while friend extends hands to receive; then Boy extends toy and friend's hands support it securely, both smile",
+            "loop": false
+          }
         },
         {
-          "image": "assets/images/stories/sharing.png",
+          "image": "assets/images/story_scenes/sharing_scene_02.png",
           "lead": "We can ask, 'Can I have a turn?'",
           "body": "Then we wait for our friend to answer.",
-          "focus": {
-            "x": -0.4,
-            "y": -0.1,
-            "zoom": 1.45
+          "id": "sharing-p2",
+          "animation": {
+            "asset": "assets/animations/spritesheets/sharing_scene_02.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We can ask, 'Can I have a turn?'",
+            "description": "indoor playroom table: Friend holds toy close, boy extends open palm without touching toy while asking for turn; then Boy lowers open hand and waits calmly, friend looks up and nods acknowledgment",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/sharing.png",
+          "image": "assets/images/story_scenes/sharing_scene_03.png",
           "lead": "We can give a toy to a friend.",
           "body": "Our friend feels happy.",
-          "focus": {
-            "x": 0.1,
-            "y": 0.4,
-            "zoom": 1.45
+          "id": "sharing-p3",
+          "animation": {
+            "asset": "assets/animations/spritesheets/sharing_scene_03.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We can give a toy to a friend",
+            "description": "indoor playroom table: Boy extends toy while supporting its base, friend's hands reach and touch toy sides; then Friend grips toy securely with both hands and boy releases hands slightly away",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/sharing.png",
+          "image": "assets/images/story_scenes/sharing_scene_04.png",
           "lead": "Sharing makes playing more fun.",
           "body": "We can play together.",
-          "focus": {
-            "x": 0.6,
-            "y": -0.1,
-            "zoom": 1.45
+          "id": "sharing-p4",
+          "animation": {
+            "asset": "assets/animations/spritesheets/sharing_scene_04.png",
+            "columns": 2,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 2,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "Sharing makes playing more fun",
+            "description": "indoor playroom table: Boy places blue block on shared construction, friend holds yellow block ready; then Friend places yellow block beside blue block while boy supports construction and both smile",
+            "loop": true
           }
         },
         {
-          "image": "assets/images/stories/sharing.png",
+          "image": "assets/images/story_scenes/sharing_scene_05.png",
           "lead": "Sometimes we have to wait.",
           "body": "We can play with something else while we wait.",
-          "focus": {
-            "x": 0,
-            "y": 0,
-            "zoom": 1.15
+          "id": "sharing-p5",
+          "animation": {
+            "asset": "assets/animations/spritesheets/sharing_scene_05.png",
+            "columns": 2,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 2,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "Sometimes we have to wait",
+            "description": "indoor playroom table: Friend uses original toy at right, boy calmly picks up separate toy car at left; then Boy moves toy car with fingers on his side of table while friend continues own toy, no grabbing",
+            "loop": true
           }
         },
         {
-          "image": "assets/images/stories/sharing.png",
+          "image": "assets/images/story_scenes/sharing_scene_06.png",
           "lead": "We feel proud when we share.",
-          "body": "Sharing is being a good friend."
+          "body": "Sharing is being a good friend.",
+          "id": "sharing-p6",
+          "animation": {
+            "asset": "assets/animations/spritesheets/sharing_scene_06.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We feel proud when we share",
+            "description": "indoor playroom table: Both children support shared toy onto middle of table, relaxed happy faces; then Both release toy safely on table and exchange proud gentle smiles",
+            "loop": false
+          }
         }
       ]
     },
@@ -484,54 +1047,112 @@
       "title": "Asking for Help",
       "pages": [
         {
-          "image": "assets/images/stories/asking_for_help.png",
+          "image": "assets/images/story_scenes/asking_for_help_scene_01.png",
           "lead": "If we need help, we can ask a trusted adult.",
-          "body": "It is okay to ask for help."
+          "body": "It is okay to ask for help.",
+          "id": "asking_for_help-p1",
+          "animation": {
+            "asset": "assets/animations/spritesheets/asking_for_help_scene_01.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "If we need help, we can ask a trusted adult",
+            "description": "home doorway: Boy struggles gently with difficult door handle, concerned thoughtful face, trusted adult nearby; then Boy turns toward trusted adult and raises open hand asking for help, adult bends to listen",
+            "loop": false
+          }
         },
         {
-          "image": "assets/images/stories/asking_for_help.png",
+          "image": "assets/images/story_scenes/asking_for_help_scene_02.png",
           "lead": "Trusted adults are people like our family and teachers.",
           "body": "They want to help us.",
-          "focus": {
-            "x": 1.0,
-            "y": -0.4,
-            "zoom": 1.3
+          "id": "asking_for_help-p2",
+          "animation": {
+            "asset": "assets/animations/spritesheets/asking_for_help_scene_02.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "Trusted adults are people like our family and teachers",
+            "description": "home table with trusted adult: Trusted adult points to family picture on simple communication card and boy looks at it; then Adult points to teacher picture on same card, boy nods and points to trusted helper image",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/asking_for_help.png",
+          "image": "assets/images/story_scenes/asking_for_help_scene_03.png",
           "lead": "We can raise our hand or say, 'Help, please.'",
           "body": "We use a calm voice.",
-          "focus": {
-            "x": 0.85,
-            "y": -0.4,
-            "zoom": 1.4
+          "id": "asking_for_help-p3",
+          "animation": {
+            "asset": "assets/animations/spritesheets/asking_for_help_scene_03.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We can raise our hand or say, 'Help, please",
+            "description": "home doorway: Boy stands with right hand at shoulder height, looking toward original trusted adult; then Boy extends same right arm up with open palm asking help calmly, adult turns toward him",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/asking_for_help.png",
+          "image": "assets/images/story_scenes/asking_for_help_scene_04.png",
           "lead": "We tell them what we need.",
           "body": "We can use words, pictures, or point.",
-          "focus": {
-            "x": -0.5,
-            "y": 0.1,
-            "zoom": 1.45
+          "id": "asking_for_help-p4",
+          "animation": {
+            "asset": "assets/animations/spritesheets/asking_for_help_scene_04.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We tell them what we need",
+            "description": "home doorway: Boy points to difficult door handle with one hand, adult follows point; then Boy points to matching help picture on communication card with other hand and adult nods understanding",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/asking_for_help.png",
+          "image": "assets/images/story_scenes/asking_for_help_scene_05.png",
           "lead": "The adult listens and helps us.",
           "body": "We say thank you.",
-          "focus": {
-            "x": 0.6,
-            "y": -0.6,
-            "zoom": 1.15
+          "id": "asking_for_help-p5",
+          "animation": {
+            "asset": "assets/animations/spritesheets/asking_for_help_scene_05.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "The adult listens and helps us",
+            "description": "home doorway: Adult listens at boy's level with one hand on difficult door handle while child stands clear; then Adult opens door safely and boy places hand on chest nodding thank you",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/asking_for_help.png",
+          "image": "assets/images/story_scenes/asking_for_help_scene_06.png",
           "lead": "Asking for help is brave.",
-          "body": "Everyone needs help sometimes."
+          "body": "Everyone needs help sometimes.",
+          "id": "asking_for_help-p6",
+          "animation": {
+            "asset": "assets/animations/spritesheets/asking_for_help_scene_06.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "Asking for help is brave",
+            "description": "home doorway: Boy stands beside trusted adult with head slightly lowered after asking help; then Boy lifts head with confident gentle smile and adult nods encouragement with open hand",
+            "loop": false
+          }
         }
       ]
     },
@@ -540,54 +1161,112 @@
       "title": "Personal Space",
       "pages": [
         {
-          "image": "assets/images/stories/personal_space.png",
+          "image": "assets/images/story_scenes/personal_space_scene_01.png",
           "lead": "We give people space.",
-          "body": "We do not stand too close to others."
+          "body": "We do not stand too close to others.",
+          "id": "personal_space-p1",
+          "animation": {
+            "asset": "assets/animations/spritesheets/personal_space_scene_01.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We give people space",
+            "description": "indoor hallway: Boy and girl stand near each other with modest gap, relaxed hands down; then Boy takes small backward step creating clear comfortable arm-length gap, girl remains relaxed",
+            "loop": false
+          }
         },
         {
-          "image": "assets/images/stories/personal_space.png",
+          "image": "assets/images/story_scenes/personal_space_scene_02.png",
           "lead": "An arm's length is a good space.",
           "body": "We can stretch out our arm to check.",
-          "focus": {
-            "x": 0.0,
-            "y": 0.0,
-            "zoom": 1.35
+          "id": "personal_space-p2",
+          "animation": {
+            "asset": "assets/animations/spritesheets/personal_space_scene_02.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "An arm's length is a good space",
+            "description": "indoor hallway: Boy starts lifting right arm into empty gap toward girl without touching her; then Boy extends right arm horizontally to check arm-length distance with fingertips still well short of girl",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/personal_space.png",
+          "image": "assets/images/story_scenes/personal_space_scene_03.png",
           "lead": "We ask before we hug.",
           "body": "We can say, 'Can I have a hug?'",
-          "focus": {
-            "x": -0.6,
-            "y": -0.1,
-            "zoom": 1.45
+          "id": "personal_space-p3",
+          "animation": {
+            "asset": "assets/animations/spritesheets/personal_space_scene_03.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We ask before we hug",
+            "description": "indoor hallway: Boy asks for hug with open palms at own chest while remaining arm-length apart from girl; then Boy waits with hands lowered as girl considers response, no hug or touching occurs",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/personal_space.png",
+          "image": "assets/images/story_scenes/personal_space_scene_04.png",
           "lead": "If someone says no, that is okay.",
           "body": "We can wave or give a high five instead.",
-          "focus": {
-            "x": 0.6,
-            "y": 0.0,
-            "zoom": 1.45
+          "id": "personal_space-p4",
+          "animation": {
+            "asset": "assets/animations/spritesheets/personal_space_scene_04.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "If someone says no, that is okay",
+            "description": "indoor hallway: Girl gently indicates no with small head turn, boy listens while staying apart; then Boy accepts with gentle smile and raises palm in friendly wave instead; girl smiles and waves back",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/personal_space.png",
+          "image": "assets/images/story_scenes/personal_space_scene_05.png",
           "lead": "Other people give us space too.",
           "body": "We can say, 'Please give me some space.'",
-          "focus": {
-            "x": 0,
-            "y": 0,
-            "zoom": 1.15
+          "id": "personal_space-p5",
+          "animation": {
+            "asset": "assets/animations/spritesheets/personal_space_scene_05.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "Other people give us space too",
+            "description": "indoor hallway: Boy raises open palm calmly asking for space while girl stands nearby; then Girl takes small backward step, boy lowers palm as comfortable gap opens",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/personal_space.png",
+          "image": "assets/images/story_scenes/personal_space_scene_06.png",
           "lead": "Giving space helps everyone feel comfortable.",
-          "body": "Space is a way to be kind."
+          "body": "Space is a way to be kind.",
+          "id": "personal_space-p6",
+          "animation": {
+            "asset": "assets/animations/spritesheets/personal_space_scene_06.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "Giving space helps everyone feel comfortable",
+            "description": "indoor hallway: Boy and girl stand full-body with comfortable gap and relaxed neutral faces; then Both exchange gentle smile and small open-hand wave while maintaining exact same gap",
+            "loop": false
+          }
         }
       ]
     },
@@ -596,54 +1275,117 @@
       "title": "Saying No",
       "pages": [
         {
-          "image": "assets/images/stories/saying_no.png",
+          "image": "assets/images/story_scenes/saying_no_scene_01.png",
           "lead": "It is okay to say 'No, thank you.'",
-          "body": "We can say no if we don't want something."
+          "body": "We can say no if we don't want something.",
+          "id": "saying_no-p1",
+          "animation": {
+            "asset": "assets/animations/spritesheets/saying_no_scene_01.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "It is okay to say 'No, thank you",
+            "description": "home indoor room: Original girl in pink raises open palm toward lollipop offered at respectful distance by adult; then Adult hand withdraws lollipop slightly, girl keeps calm confident stop palm and gentle face",
+            "loop": false
+          }
         },
         {
-          "image": "assets/images/stories/saying_no.png",
+          "image": "assets/images/story_scenes/saying_no_scene_02.png",
           "lead": "We can use a kind voice.",
           "body": "We can shake our head or say, 'No, thank you.'",
-          "focus": {
-            "x": 0.0,
-            "y": -1.0,
-            "zoom": 1.4
+          "id": "saying_no-p2",
+          "animation": {
+            "asset": "assets/animations/spritesheets/saying_no_scene_02.png",
+            "columns": 2,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 2,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We can use a kind voice",
+            "description": "home indoor room: Original girl in pink gently turns head a little left while raised palm says no kindly; then Same girl turns head a little right, same calm mouth and raised palm; adult keeps offered item at distance",
+            "loop": true
           }
         },
         {
-          "image": "assets/images/stories/saying_no.png",
+          "image": "assets/images/story_scenes/saying_no_scene_03.png",
           "lead": "Other people can say no to us too.",
           "body": "We listen and say okay.",
-          "focus": {
-            "x": 0.8,
-            "y": -1.0,
-            "zoom": 1.3
+          "id": "saying_no-p3",
+          "animation": {
+            "asset": "assets/animations/spritesheets/saying_no_scene_03.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "Other people can say no to us too",
+            "description": "home indoor room: Original girl in pink offers toy to friend with open hand; friend raises palm to decline; then Girl nods okay and brings toy back toward herself, friend relaxes hand",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/saying_no.png",
+          "image": "assets/images/story_scenes/saying_no_scene_04.png",
           "lead": "If we feel unsafe, we can say 'No!' loudly.",
           "body": "Then we tell a trusted adult.",
-          "focus": {
-            "x": -0.8,
-            "y": 0.4,
-            "zoom": 1.15
+          "id": "saying_no-p4",
+          "animation": {
+            "asset": "assets/animations/spritesheets/saying_no_scene_04.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "If we feel unsafe, we can say 'No!' loudly",
+            "description": "public indoor space beside trusted adult: Original girl has serious assertive face and raised firm stop palm toward uncomfortable offscreen interaction; then Girl turns toward nearby trusted adult and gestures to explain, adult bends to listen; no threatening touch",
+            "loop": false,
+            "frameCues": [
+              "If we feel unsafe",
+              "Then",
+              "tell a trusted adult"
+            ]
           }
         },
         {
-          "image": "assets/images/stories/saying_no.png",
+          "image": "assets/images/story_scenes/saying_no_scene_05.png",
           "lead": "Our body belongs to us.",
           "body": "We can say no to touches we do not want.",
-          "focus": {
-            "x": 0,
-            "y": -1.0,
-            "zoom": 1.12
+          "id": "saying_no-p5",
+          "animation": {
+            "asset": "assets/animations/spritesheets/saying_no_scene_05.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "Our body belongs to us",
+            "description": "home indoor room: Original girl raises clear stop palm before another person's approaching hand reaches her, comfortable visible gap; then Other person withdraws hand and steps back, girl relaxes slightly while maintaining personal gap",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/saying_no.png",
+          "image": "assets/images/story_scenes/saying_no_scene_06.png",
           "lead": "Saying no is okay.",
-          "body": "We can be kind and still say no."
+          "body": "We can be kind and still say no.",
+          "id": "saying_no-p6",
+          "animation": {
+            "asset": "assets/animations/spritesheets/saying_no_scene_06.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "Saying no is okay",
+            "description": "home indoor room: Original girl finishes kind no with raised palm toward adult's offer; then Adult nods acceptance and removes offered object, girl lowers palm and gives gentle confident smile",
+            "loop": false
+          }
         }
       ]
     },
@@ -652,54 +1394,117 @@
       "title": "Staying Safe",
       "pages": [
         {
-          "image": "assets/images/stories/staying_safe.png",
+          "image": "assets/images/story_scenes/staying_safe_scene_01.png",
           "lead": "We stay with our trusted adults.",
-          "body": "We follow safety rules like looking both ways before we cross."
+          "body": "We follow safety rules like looking both ways before we cross.",
+          "id": "staying_safe-p1",
+          "animation": {
+            "asset": "assets/animations/spritesheets/staying_safe_scene_01.png",
+            "columns": 2,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 2,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We stay with our trusted adults",
+            "description": "sidewalk behind curb at zebra crossing: Boy holds mother's hand and turns head LEFT checking road; both feet stay on sidewalk behind curb; then Same boy turns head RIGHT checking road while mother stays holding hand; both remain behind curb, cars stopped",
+            "loop": true
+          }
         },
         {
-          "image": "assets/images/stories/staying_safe.png",
+          "image": "assets/images/story_scenes/staying_safe_scene_02.png",
           "lead": "We hold hands near busy roads.",
           "body": "We stay on the sidewalk.",
-          "focus": {
-            "x": 0.0,
-            "y": 0.8,
-            "zoom": 1.35
+          "id": "staying_safe-p2",
+          "animation": {
+            "asset": "assets/animations/spritesheets/staying_safe_scene_02.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We hold hands near busy roads",
+            "description": "wide sidewalk beside busy road: Boy reaches hand toward mother's hand while both stand fully on sidewalk; then Their hands clasp securely and boy takes small walking step along sidewalk, cars remain entirely in road",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/staying_safe.png",
+          "image": "assets/images/story_scenes/staying_safe_scene_03.png",
           "lead": "We wait for the green light.",
           "body": "Green means walk. Red means stop.",
-          "focus": {
-            "x": -0.3,
-            "y": -0.7,
-            "zoom": 1.45
+          "id": "staying_safe-p3",
+          "animation": {
+            "asset": "assets/animations/spritesheets/staying_safe_scene_03.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We wait for the green light",
+            "description": "sidewalk behind curb at pedestrian crossing: Boy and mother hold hands waiting with both feet well behind curb; pedestrian signal shows RED standing person; then Same positions, both still behind curb checking road; pedestrian signal changes to GREEN walking person and cars stopped",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/staying_safe.png",
+          "image": "assets/images/story_scenes/staying_safe_scene_04.png",
           "lead": "If we get lost, we stay where we are.",
           "body": "We can ask a helper, like a police officer or a shop worker.",
-          "focus": {
-            "x": -0.1,
-            "y": 0.1,
-            "zoom": 1.45
+          "id": "staying_safe-p4",
+          "animation": {
+            "asset": "assets/animations/spritesheets/staying_safe_scene_04.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "If we get lost, we stay where we are",
+            "description": "public shop entrance safe waiting spot: Boy stands still beside clear shop landmark with worried face, no mother present; uniformed shop worker nearby; then Boy raises open hand asking worker for help, worker comes to boy while boy stays at exact landmark, reassured face",
+            "loop": false,
+            "frameCues": [
+              "If we get lost",
+              "stay where we are",
+              "ask a helper"
+            ]
           }
         },
         {
-          "image": "assets/images/stories/staying_safe.png",
+          "image": "assets/images/story_scenes/staying_safe_scene_05.png",
           "lead": "We know our grown-up's name.",
           "body": "This helps people find them.",
-          "focus": {
-            "x": 0.6,
-            "y": -0.4,
-            "zoom": 1.45
+          "id": "staying_safe-p5",
+          "animation": {
+            "asset": "assets/animations/spritesheets/staying_safe_scene_05.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "We know our grown-up's name",
+            "description": "safe shop entrance waiting spot: Boy shows small family picture card to uniformed shop helper, thoughtful face; then Boy points to mother in picture and gestures name while helper writes note and listens; child remains in same place",
+            "loop": false
           }
         },
         {
-          "image": "assets/images/stories/staying_safe.png",
+          "image": "assets/images/story_scenes/staying_safe_scene_06.png",
           "lead": "Staying safe keeps us happy and healthy.",
-          "body": "We can always ask for help."
+          "body": "We can always ask for help.",
+          "id": "staying_safe-p6",
+          "animation": {
+            "asset": "assets/animations/spritesheets/staying_safe_scene_06.png",
+            "columns": 3,
+            "rows": 1,
+            "row": 0,
+            "frameCount": 3,
+            "fps": 1.5,
+            "posterFrame": 0,
+            "cue": "Staying safe keeps us happy and healthy",
+            "description": "safe sidewalk beside shop after reunion: Mother kneels to boy's level and reaches open hand, boy relieved; uniformed helper nearby; then Boy holds mother's hand securely and waves thanks to helper, both remain on sidewalk, happy and relieved",
+            "loop": false
+          }
         }
       ]
     }

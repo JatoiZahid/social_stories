@@ -5,6 +5,7 @@ import 'package:flutter/foundation.dart';
 
 import 'models/story.dart';
 import 'scene_catalog.dart';
+import 'scene_asset_upgrade.dart';
 import 'story_repository.dart';
 import 'story_storage.dart';
 
@@ -19,7 +20,11 @@ import 'story_storage.dart';
 /// published stories, plus new stories). Children never see drafts. A draft
 /// is sent to the admin for review and published only once approved.
 class StoryStore extends ChangeNotifier {
-  StoryStore({required this.repository, required this.storage, this.remote, this.serverCache});
+  StoryStore(
+      {required this.repository,
+      required this.storage,
+      this.remote,
+      this.serverCache});
 
   final StoryRepository repository;
   final StoryStorage storage;
@@ -31,6 +36,8 @@ class StoryStore extends ChangeNotifier {
   final StoryStorage? serverCache;
 
   List<Story> _builtIn = const [];
+  List<Story> _bundled = const [];
+  List<Story> _legacySignatures = const [];
   final Map<String, Story> _overrides = {};
   final List<Story> _custom = [];
   Future<void>? _loading;
@@ -70,7 +77,8 @@ class StoryStore extends ChangeNotifier {
   bool isPublished(String id) => _builtIn.any((s) => s.id == id);
 
   /// True if this device has unsent changes to the story (or it is a new story).
-  bool hasDraft(String id) => _overrides.containsKey(id) || _custom.any((s) => s.id == id);
+  bool hasDraft(String id) =>
+      _overrides.containsKey(id) || _custom.any((s) => s.id == id);
 
   // ── Loading ────────────────────────────────────────────────────────────
 
@@ -83,16 +91,17 @@ class StoryStore extends ChangeNotifier {
 
   Future<void> _load() async {
     final cached = await _readServerCache();
-    if (cached != null) {
-      _builtIn = cached;
-    } else {
-      try {
-        _builtIn = await repository.loadStories();
-      } catch (_) {
+    try {
+      _bundled = await repository.loadStories();
+    } catch (_) {
+      if (cached == null) {
         _loading = null; // allow retry
         rethrow;
       }
+      _bundled = const [];
     }
+    _legacySignatures = await repository.loadLegacySceneSignatures();
+    _builtIn = cached == null ? _bundled : _upgradeScenes(cached);
     try {
       final raw = await storage.read();
       if (raw != null) _restore(raw);
@@ -123,7 +132,8 @@ class StoryStore extends ChangeNotifier {
   Future<bool> refresh() {
     final remote = this.remote;
     if (remote == null) return Future.value(false);
-    return _refreshing ??= _refresh(remote).whenComplete(() => _refreshing = null);
+    return _refreshing ??=
+        _refresh(remote).whenComplete(() => _refreshing = null);
   }
 
   Future<bool> _refresh(RemoteStoryRepository remote) async {
@@ -131,7 +141,7 @@ class StoryStore extends ChangeNotifier {
     try {
       final raw = await remote.fetch();
       if (_disposed) return false;
-      _builtIn = parseStories(raw);
+      _builtIn = _upgradeScenes(parseStories(raw));
       notifyListeners();
       try {
         await serverCache?.write(raw);
@@ -144,6 +154,12 @@ class StoryStore extends ChangeNotifier {
       return false;
     }
   }
+
+  List<Story> _upgradeScenes(List<Story> published) => upgradeLegacySceneAssets(
+        published: published,
+        bundled: _bundled,
+        signatures: _legacySignatures,
+      );
 
   void _restore(String raw) {
     final json = jsonDecode(raw) as Map<String, dynamic>;
@@ -213,7 +229,13 @@ class StoryStore extends ChangeNotifier {
     final story = Story(
       id: newId('story'),
       title: 'My New Story',
-      pages: [StoryPage(id: newId('page'), image: SceneCatalog.fallback.asset, lead: '', body: '')],
+      pages: [
+        StoryPage(
+            id: newId('page'),
+            image: SceneCatalog.fallback.asset,
+            lead: '',
+            body: '')
+      ],
     );
     _custom.add(story);
     _changed();
@@ -238,7 +260,8 @@ class StoryStore extends ChangeNotifier {
 
   // ── Pages ──────────────────────────────────────────────────────────────
 
-  void _editPages(String storyId, List<StoryPage> Function(List<StoryPage> pages) edit) {
+  void _editPages(
+      String storyId, List<StoryPage> Function(List<StoryPage> pages) edit) {
     final story = draft(storyId);
     if (story == null) return;
     final pages = edit([...story.pages]);
@@ -251,7 +274,8 @@ class StoryStore extends ChangeNotifier {
   StoryPage? addPage(String storyId, {int? afterIndex}) {
     final story = draft(storyId);
     if (story == null) return null;
-    final index = (afterIndex ?? story.pages.length - 1).clamp(0, story.pages.length - 1);
+    final index =
+        (afterIndex ?? story.pages.length - 1).clamp(0, story.pages.length - 1);
     final template = story.pages[index];
     final page = StoryPage(
       id: newId('page'),
@@ -265,7 +289,8 @@ class StoryStore extends ChangeNotifier {
     return page;
   }
 
-  void updatePage(String storyId, StoryPage page) => _editPages(storyId, (pages) {
+  void updatePage(String storyId, StoryPage page) =>
+      _editPages(storyId, (pages) {
         final index = pages.indexWhere((p) => p.id == page.id);
         if (index != -1) pages[index] = page;
         return pages;
@@ -276,9 +301,12 @@ class StoryStore extends ChangeNotifier {
         (pages) => pages..insert(index.clamp(0, pages.length), page),
       );
 
-  void duplicatePage(String storyId, String pageId) => _editPages(storyId, (pages) {
+  void duplicatePage(String storyId, String pageId) =>
+      _editPages(storyId, (pages) {
         final index = pages.indexWhere((p) => p.id == pageId);
-        if (index != -1) pages.insert(index + 1, pages[index].copyWith(id: newId('page')));
+        if (index != -1) {
+          pages.insert(index + 1, pages[index].copyWith(id: newId('page')));
+        }
         return pages;
       });
 
@@ -291,7 +319,8 @@ class StoryStore extends ChangeNotifier {
   }
 
   /// [to] is the final position after the move.
-  void movePage(String storyId, int from, int to) => _editPages(storyId, (pages) {
+  void movePage(String storyId, int from, int to) =>
+      _editPages(storyId, (pages) {
         if (from < 0 || from >= pages.length) return pages;
         final page = pages.removeAt(from);
         pages.insert(to.clamp(0, pages.length), page);

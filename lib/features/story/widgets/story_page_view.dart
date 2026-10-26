@@ -1,7 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
+import '../../../core/animation/scene_playback.dart';
 import '../../../core/theme/app_dimens.dart';
+import 'animated_story_scene.dart';
 import '../../../data/models/story.dart';
 import '../../../shared/widgets/widgets.dart';
 
@@ -14,16 +16,23 @@ class StoryPageView extends StatelessWidget {
     required this.isSpeaking,
     required this.onSpeakerPressed,
     this.largeText = false,
+    this.playback,
+    this.reducedMotion = false,
   });
 
   final StoryPage page;
   final ValueListenable<bool> isSpeaking;
   final VoidCallback onSpeakerPressed;
   final bool largeText;
+  final ScenePlayback? playback;
+  final bool reducedMotion;
 
   @override
   Widget build(BuildContext context) {
-    final image = SceneImage(frame: page.frame);
+    final image = playback == null
+        ? SceneImage(frame: page.frame)
+        : AnimatedStoryScene(
+            page: page, playback: playback!, reducedMotion: reducedMotion);
     final narration = NarrationCard(
       lead: page.lead,
       body: page.body,
@@ -34,7 +43,8 @@ class StoryPageView extends StatelessWidget {
 
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth >= AppDimens.wideStoryLayout) {
+        if (constraints.maxWidth >= AppDimens.wideStoryLayout &&
+            MediaQuery.orientationOf(context) == Orientation.landscape) {
           return Row(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [

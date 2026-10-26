@@ -22,10 +22,24 @@ class QuizRepository extends StoryRepository {
         Story(
           id: 'quiz',
           title: 'Quiz Story',
-          pages: [StoryPage(id: 'p1', image: 'assets/images/stories/sharing.png', lead: 'We share.', body: 'Nice.')],
+          pages: [
+            StoryPage(
+                id: 'p1',
+                image: 'assets/images/stories/sharing.png',
+                lead: 'We share.',
+                body: 'Nice.')
+          ],
           questions: [
-            StoryQuestion(id: 'q1', question: 'Do we share?', choices: ['No', 'Yes'], answer: 1),
-            StoryQuestion(id: 'q2', question: 'Is sharing kind?', choices: ['Yes', 'No', 'Maybe'], answer: 0),
+            StoryQuestion(
+                id: 'q1',
+                question: 'Do we share?',
+                choices: ['No', 'Yes'],
+                answer: 1),
+            StoryQuestion(
+                id: 'q2',
+                question: 'Is sharing kind?',
+                choices: ['Yes', 'No', 'Maybe'],
+                answer: 0),
           ],
         ),
       ];
@@ -48,8 +62,12 @@ void main() {
     settings = AppSettings();
     store = StoryStore(repository: repository, storage: MemoryStoryStorage());
     server = FakeServer(subscribed: subscribed);
-    account = AccountService(api: server.api(), tokenStorage: MemoryStoryStorage());
-    if (signedIn) await account.signIn(email: 'parent@example.com', password: 'password123');
+    account =
+        AccountService(api: server.api(), tokenStorage: MemoryStoryStorage());
+    if (signedIn) {
+      await account.signIn(
+          email: 'parent@example.com', password: 'password123');
+    }
     await tester.pumpWidget(
       StorybookApp(
         settings: settings,
@@ -62,7 +80,8 @@ void main() {
     await tester.pumpAndSettle();
   }
 
-  testWidgets('opens a story, narrates, pages forward and finishes', (tester) async {
+  testWidgets('opens a story, narrates, pages forward and finishes',
+      (tester) async {
     await pumpApp(tester);
 
     await tester.tap(find.text('Demo Story'));
@@ -97,7 +116,9 @@ void main() {
     expect(find.text('2 of 2'), findsOneWidget);
   });
 
-  testWidgets('the quiz comes after the last page; a wrong answer can be tried again', (tester) async {
+  testWidgets(
+      'the quiz comes after the last page; a wrong answer can be tried again',
+      (tester) async {
     await pumpApp(tester, repository: const QuizRepository());
     await tester.tap(find.text('Quiz Story'));
     await tester.pumpAndSettle();
@@ -126,7 +147,8 @@ void main() {
     expect(find.text('Great job!'), findsOneWidget);
   });
 
-  testWidgets('the account area is behind the grown-ups question', (tester) async {
+  testWidgets('the account area is behind the grown-ups question',
+      (tester) async {
     await pumpApp(tester);
     await tester.tap(find.byTooltip('Settings'));
     await tester.pumpAndSettle();
@@ -145,7 +167,8 @@ void main() {
     await pumpApp(tester, signedIn: true, subscribed: false);
     settings.editMode = true;
     await tester.pumpAndSettle();
-    expect(find.text('New story'), findsNothing, reason: 'not subscribed, so the library stays in reading mode');
+    expect(find.text('New story'), findsNothing,
+        reason: 'not subscribed, so the library stays in reading mode');
 
     server.subscribed = true;
     await account.refresh();
@@ -153,7 +176,8 @@ void main() {
     expect(find.text('New story'), findsOneWidget);
   });
 
-  testWidgets('a subscriber edits a story and sends it for review', (tester) async {
+  testWidgets('a subscriber edits a story and sends it for review',
+      (tester) async {
     await pumpApp(tester, signedIn: true);
     settings.editMode = true;
     await tester.pumpAndSettle();
@@ -162,17 +186,21 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Edit Story'), findsOneWidget);
 
-    await tester.enterText(find.widgetWithText(TextField, 'Story title'), 'Our Day');
+    await tester.enterText(
+        find.widgetWithText(TextField, 'Story title'), 'Our Day');
     await tester.pump();
     expect(store.draft('demo')!.title, 'Our Day');
-    expect(store.stories.single.title, 'Demo Story', reason: 'children still see the published story');
+    expect(store.stories.single.title, 'Demo Story',
+        reason: 'children still see the published story');
 
     await tester.tap(find.text('Add Page'));
     await tester.pumpAndSettle();
     expect(find.text('Edit Page'), findsOneWidget);
     expect(find.text('3 of 3'), findsOneWidget);
 
-    await tester.enterText(find.widgetWithText(TextField, 'Main sentence (shown in bold)'), 'We wave goodbye.');
+    await tester.enterText(
+        find.widgetWithText(TextField, 'Main sentence (shown in bold)'),
+        'We wave goodbye.');
     await tester.pump();
     expect(store.draft('demo')!.pages.last.lead, 'We wave goodbye.');
 
@@ -181,7 +209,8 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(airport);
     await tester.pump();
-    expect(store.draft('demo')!.pages.last.image, 'assets/images/stories/airport.png');
+    expect(store.draft('demo')!.pages.last.image,
+        'assets/images/stories/airport.png');
 
     await tester.tap(find.byTooltip('Back to pages'));
     await tester.pumpAndSettle();
@@ -193,7 +222,8 @@ void main() {
     expect(server.submissions, hasLength(1));
     expect(server.submissions.single['type'], 'edit_story');
     expect(server.submissions.single['title'], 'Our Day');
-    expect(store.hasDraft('demo'), isFalse, reason: 'the draft is removed once sent');
+    expect(store.hasDraft('demo'), isFalse,
+        reason: 'the draft is removed once sent');
     expect(find.textContaining('Sent for review'), findsOneWidget);
 
     await store.flush(); // no pending timers at test end
@@ -211,9 +241,11 @@ void main() {
     await tester.tap(find.text('Add Question'));
     await tester.pumpAndSettle();
 
-    await tester.enterText(find.widgetWithText(TextField, 'Question'), 'Who shares?');
+    await tester.enterText(
+        find.widgetWithText(TextField, 'Question'), 'Who shares?');
     await tester.enterText(find.widgetWithText(TextField, 'Answer 1'), 'Me');
-    await tester.enterText(find.widgetWithText(TextField, 'Answer 2'), 'Nobody');
+    await tester.enterText(
+        find.widgetWithText(TextField, 'Answer 2'), 'Nobody');
     await tester.tap(find.byTooltip('Mark as the right answer').first);
     await tester.pump();
 
@@ -231,6 +263,37 @@ void main() {
     await tester.pumpAndSettle();
     expect(server.submissions.single['type'], 'edit_questions');
 
+    await store.flush();
+  });
+
+  testWidgets(
+      'a subscriber can drag the first page after the last without changing the published story',
+      (tester) async {
+    tester.view.devicePixelRatio = 1;
+    tester.view.physicalSize = const Size(900, 1000);
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    await pumpApp(tester, signedIn: true);
+    settings.editMode = true;
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Demo Story'));
+    await tester.pumpAndSettle();
+    final before = store.draft('demo')!.pages.map((page) => page.id).toList();
+    final handles = find.byType(ReorderableDragStartListener);
+    expect(handles.hitTestable(), findsNWidgets(2));
+    final start = tester.getCenter(handles.first);
+    final end = tester.getCenter(handles.last);
+    final gesture = await tester.startGesture(start);
+    await tester.pump(const Duration(milliseconds: 600));
+    await gesture.moveBy(const Offset(0, 20));
+    await tester.pump(const Duration(milliseconds: 250));
+    await gesture.moveTo(Offset(start.dx, end.dy + 120));
+    await tester.pump(const Duration(milliseconds: 500));
+    await gesture.up();
+    await tester.pumpAndSettle();
+    expect(store.draft('demo')!.pages.map((page) => page.id).toList(),
+        before.reversed.toList());
+    expect(store.stories.single.pages.map((page) => page.id).toList(), before);
     await store.flush();
   });
 }

@@ -25,3 +25,5 @@ flutter:
   assets:
     - assets/data/
     - assets/images/stories/
+    - assets/images/story_scenes/
+    - assets/animations/spritesheets/

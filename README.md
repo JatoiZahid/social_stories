@@ -281,15 +281,78 @@ checks that every image path exists.
 }
 ```
 
-## About the artwork
+## Situation-specific artwork and action playback
 
-Each story has one sharp illustration (`assets/images/stories/<id>.png`). It was upscaled 4× from the design export with an anime-style AI upscaler (Real-ESRGAN), with the white card edges trimmed off.
+The 12 original illustrations in `assets/images/stories/` remain unchanged and
+serve as the character identity references. `docs/story_assets_baseline.json`
+records their hashes and the original 75 narrated scenes. The scene-by-scene
+requirements and generation specifications are in `docs/scene_asset_inventory.json`.
 
-The design only contains page 1's art at a usable size. Pages 2+ exist only as tiny thumbnails, too small to upscale without losing the faces. So every page uses the story's sharp illustration, and the optional `focus` on a page zooms in on part of it (`x`/`y` from -1 to 1, `zoom` > 1). That way each page looks different and stays crisp.
+Each reviewed scene uses its own poster in `assets/images/story_scenes/` and a
+fixed-grid action strip in `assets/animations/spritesheets/`. The source prompts,
+review notes, native dimensions and hashes are recorded in
+`docs/generated_scene_assets.json`. These are limited animations made from two
+or three distinct illustrated action poses, rather than camera movement over a
+static picture. Exports preserve native pixels using original PNG atlases and lossless PNG poster crops; they are not
+native 4K art or full skeletal rigs. Frame dimensions vary by strip and are
+recorded honestly for tablet review.
 
-To use real page art, add the files and point each page's `image` at its own picture. Drop the `focus` if you want the whole picture shown. Pages and thumbnails pick up the change automatically.
+`StoryPage.animation` describes its atlas, grid, narration cue, frame count,
+speed, meaningful still pose and whether the action loops. Optional `frameCues`
+trigger specific multi-step poses at exact narration phrases; those phrase maps
+are maintained in `docs/scene_frame_cues.json`. `AnimatedStoryScene`
+draws exactly one atlas cell with `BoxFit.contain` geometry. A handover or other
+one-shot sequence holds its final pose; repeated actions loop gently. Static
+posters, library cards and thumbnails also preserve image proportions.
 
-`tools/gen_stories.py` regenerates `stories.json` (text and framing):
-`python tools/gen_stories.py assets/data/stories.json`
+`ScenePlayback` shares a clock with narration. Native TTS word boundaries drive
+narration progress when available; other engines use a speech-rate-based timing
+estimate. Resume restarts at the last whole word, which can repeat a word on
+some engines. Pause, replay, scene skips, settings and app backgrounding cancel
+or freeze the corresponding speech and visual work. Navigation remains paced
+by the child. Reduced motion, including the system setting, holds a meaningful
+pose while retaining narration and all controls.
 
-The page text for pages 2+ was written to match each scene. The page counts follow the design (6 pages; Toilet 8; Airport 7). Review the text before release.
+Changing a page's narration or image clears its previously reviewed animation.
+New or edited stories need artwork review against their new text; the player
+does not guess an animation from keywords. Optional quiz `choiceImages` stay
+attached to matching answer text and survive storage, submission and admin
+review. The original bundled stories contained no questions; remotely authored
+questions and existing gentle retry behavior are preserved.
+
+Older cached/server scenes receive new bundled art only when their title,
+page order, text, image and framing exactly match the immutable original
+signatures. This local upgrade preserves remote questions, server ordering,
+removed stories and parent-authored edits. It never rewrites server data.
+
+The maintenance scripts require Python 3.10+ and Pillow (`pip install Pillow`).
+The checked build uses Flutter 3.47.5 / Dart 3.13.4. An iOS runner is included;
+build and sign it with Xcode on a Mac for iPhone/iPad testing.
+
+Useful maintenance commands:
+
+```bash
+python tools/audit_story_assets.py
+python tools/generate_scene_manifest.py
+python tools/integrate_scene_assets.py
+python tools/integrate_scene_assets.py --check
+flutter analyze
+flutter test
+cd admin_app && flutter test
+cd ../server && gradlew test
+```
+
+The manifest exporter only processes already generated and visually reviewed
+files. It does not call an image API. The integration checker verifies coverage,
+original hashes, narrated text, asset hashes, atlas dimensions, distinct frames,
+exact poster crops and references. These structural checks complement visual
+review; they do not prove smooth motion or physical-device rendering.
+
+`assets/data/stories.json` is now the authored source of truth.
+`python tools/gen_stories.py assets/data/stories.json` validates/reformats it
+without throwing away animations, quizzes or other authored metadata. A different
+output path copies the current bundle unless `--source` is explicitly supplied.
+
+Device-specific voice timing, performance and sharpness on Android/iOS tablets
+still require physical-device review. See `docs/scene_asset_verification.json`
+for completed structural checks and outstanding device checks.

@@ -9,7 +9,11 @@ import '../widgets/story_preview.dart';
 /// One submission: what changes, compared with the published story, and
 /// the Approve / Reject buttons. Pops with true after a decision.
 class SubmissionScreen extends StatefulWidget {
-  const SubmissionScreen({super.key, required this.api, required this.submissionId});
+  const SubmissionScreen({
+    super.key,
+    required this.api,
+    required this.submissionId,
+  });
 
   final AdminApi api;
   final String submissionId;
@@ -38,13 +42,20 @@ class _SubmissionScreenState extends State<SubmissionScreen> {
       }
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(approve ? 'Approved and published.' : 'Rejected. The sender can see your note.')),
+        SnackBar(
+          content: Text(
+            approve
+                ? 'Approved and published.'
+                : 'Rejected. The sender can see your note.',
+          ),
+        ),
       );
       Navigator.of(context).pop(true);
     } on ApiError catch (e) {
       if (!mounted) return;
       setState(() => _busy = false);
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(e.message)));
+      ScaffoldMessenger.of(context)
+          .showSnackBar(SnackBar(content: Text(e.message)));
     }
   }
 
@@ -58,19 +69,22 @@ class _SubmissionScreenState extends State<SubmissionScreen> {
           appBar: AppBar(title: Text(s?.title ?? 'Submission')),
           body: snapshot.hasError
               ? Center(
-                  child: Column(mainAxisSize: MainAxisSize.min, children: [
-                    Text('${snapshot.error}'),
-                    TextButton(
-                      onPressed: () => setState(() {
-                        _loading = widget.api.submission(widget.submissionId);
-                      }),
-                      child: const Text('Try again'),
-                    ),
-                  ]),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text('${snapshot.error}'),
+                      TextButton(
+                        onPressed: () => setState(() {
+                          _loading = widget.api.submission(widget.submissionId);
+                        }),
+                        child: const Text('Try again'),
+                      ),
+                    ],
+                  ),
                 )
               : s == null
-                  ? const Center(child: CircularProgressIndicator())
-                  : _body(s),
+              ? const Center(child: CircularProgressIndicator())
+              : _body(s),
           bottomNavigationBar: s == null || !s.isPending
               ? null
               : SafeArea(
@@ -80,7 +94,9 @@ class _SubmissionScreenState extends State<SubmissionScreen> {
                       children: [
                         Expanded(
                           child: OutlinedButton.icon(
-                            onPressed: _busy ? null : () => _decide(approve: false),
+                            onPressed: _busy
+                                ? null
+                                : () => _decide(approve: false),
                             icon: const Icon(Icons.close_rounded),
                             label: const Text('Reject'),
                           ),
@@ -88,7 +104,9 @@ class _SubmissionScreenState extends State<SubmissionScreen> {
                         const SizedBox(width: 12),
                         Expanded(
                           child: FilledButton.icon(
-                            onPressed: _busy ? null : () => _decide(approve: true),
+                            onPressed: _busy
+                                ? null
+                                : () => _decide(approve: true),
                             icon: const Icon(Icons.check_rounded),
                             label: const Text('Approve'),
                           ),
@@ -114,14 +132,17 @@ class _SubmissionScreenState extends State<SubmissionScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(children: [
-                  Icon(typeIcon(s.type), color: theme.colorScheme.primary),
-                  const SizedBox(width: 8),
-                  Text(s.type.label, style: theme.textTheme.titleMedium),
-                ]),
+                Row(
+                  children: [
+                    Icon(typeIcon(s.type), color: theme.colorScheme.primary),
+                    const SizedBox(width: 8),
+                    Text(s.type.label, style: theme.textTheme.titleMedium),
+                  ],
+                ),
                 const SizedBox(height: 8),
                 Text('From ${s.submitter}'),
-                if (s.createdAt != null) Text('Sent ${formatDateTime(s.createdAt!)}'),
+                if (s.createdAt != null)
+                  Text('Sent ${formatDateTime(s.createdAt!)}'),
                 Text(statusLabel(s.status)),
                 if (s.reviewNote != null) Text('Note: ${s.reviewNote}'),
               ],
@@ -154,29 +175,43 @@ class _SubmissionScreenState extends State<SubmissionScreen> {
   }
 
   Widget _section(String title) => Padding(
-        padding: const EdgeInsets.only(top: 8, bottom: 8),
-        child: Text(title, style: Theme.of(context).textTheme.titleLarge),
-      );
+    padding: const EdgeInsets.only(top: 8, bottom: 8),
+    child: Text(title, style: Theme.of(context).textTheme.titleLarge),
+  );
 
   Widget _card(Widget child) => Card(
-        margin: const EdgeInsets.only(bottom: 12),
-        child: Padding(padding: const EdgeInsets.all(12), child: child),
-      );
+    margin: const EdgeInsets.only(bottom: 12),
+    child: Padding(padding: const EdgeInsets.all(12), child: child),
+  );
 
   List<Widget> _newStory(Submission s) => [
-        _section(s.proposed.title),
-        for (var i = 0; i < s.proposed.pages.length; i++)
-          _card(Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-            Text('Page ${i + 1}', style: Theme.of(context).textTheme.labelLarge),
+    _section(s.proposed.title),
+    for (var i = 0; i < s.proposed.pages.length; i++)
+      _card(
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(
+              'Page ${i + 1}',
+              style: Theme.of(context).textTheme.labelLarge,
+            ),
             const SizedBox(height: 6),
             PagePreview(page: s.proposed.pages[i], api: widget.api),
-          ])),
-        if (s.proposed.questions.isNotEmpty) ...[
-          _section('Quiz'),
-          for (var i = 0; i < s.proposed.questions.length; i++)
-            _card(QuestionPreview(number: i + 1, question: s.proposed.questions[i])),
-        ],
-      ];
+          ],
+        ),
+      ),
+    if (s.proposed.questions.isNotEmpty) ...[
+      _section('Quiz'),
+      for (var i = 0; i < s.proposed.questions.length; i++)
+        _card(
+          QuestionPreview(
+            number: i + 1,
+            question: s.proposed.questions[i],
+            api: widget.api,
+          ),
+        ),
+    ],
+  ];
 
   List<Widget> _storyChanges(Submission s) {
     final before = s.base!;
@@ -190,27 +225,61 @@ class _SubmissionScreenState extends State<SubmissionScreen> {
       final same = a != null && b != null && a.sameAs(b);
       if (!same) changed++;
       if (same && _onlyChanges) continue;
-      final label = b == null ? 'new page' : a == null ? 'removed' : same ? 'unchanged' : 'changed';
-      rows.add(_card(Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-        Text('Page ${i + 1} · $label', style: Theme.of(context).textTheme.labelLarge),
-        const SizedBox(height: 6),
-        same
-            ? PagePreview(page: a, api: widget.api)
-            : BeforeAfter(
-                before: b == null ? null : PagePreview(page: b, api: widget.api),
-                after: a == null ? null : PagePreview(page: a, api: widget.api),
+      final label = b == null
+          ? 'new page'
+          : a == null
+          ? 'removed'
+          : same
+          ? 'unchanged'
+          : 'changed';
+      rows.add(
+        _card(
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(
+                'Page ${i + 1} · $label',
+                style: Theme.of(context).textTheme.labelLarge,
               ),
-      ])));
+              const SizedBox(height: 6),
+              same
+                  ? PagePreview(page: a, api: widget.api)
+                  : BeforeAfter(
+                      before: b == null
+                          ? null
+                          : PagePreview(page: b, api: widget.api),
+                      after: a == null
+                          ? null
+                          : PagePreview(page: a, api: widget.api),
+                    ),
+            ],
+          ),
+        ),
+      );
     }
     return [
       if (before.title != after.title)
-        _card(BeforeAfter(
-          before: Text(before.title, style: Theme.of(context).textTheme.titleMedium),
-          after: Text(after.title, style: Theme.of(context).textTheme.titleMedium),
-        )),
-      Row(children: [
-        Expanded(child: _section('Pages: ${after.pages.length} (was ${before.pages.length}), $changed changed')),
-      ]),
+        _card(
+          BeforeAfter(
+            before: Text(
+              before.title,
+              style: Theme.of(context).textTheme.titleMedium,
+            ),
+            after: Text(
+              after.title,
+              style: Theme.of(context).textTheme.titleMedium,
+            ),
+          ),
+        ),
+      Row(
+        children: [
+          Expanded(
+            child: _section(
+              'Pages: ${after.pages.length} (was ${before.pages.length}), $changed changed',
+            ),
+          ),
+        ],
+      ),
       SwitchListTile(
         contentPadding: EdgeInsets.zero,
         title: const Text('Show only changed pages'),
@@ -232,7 +301,11 @@ class _SubmissionScreenState extends State<SubmissionScreen> {
               for (var i = 0; i < qs.length; i++)
                 Padding(
                   padding: const EdgeInsets.only(bottom: 12),
-                  child: QuestionPreview(number: i + 1, question: qs[i]),
+                  child: QuestionPreview(
+                    number: i + 1,
+                    question: qs[i],
+                    api: widget.api,
+                  ),
                 ),
             ],
           );
@@ -264,28 +337,37 @@ class _NoteDialogState extends State<_NoteDialog> {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: Text(widget.approve ? 'Approve and publish?' : 'Reject this change?'),
+      title: Text(
+        widget.approve ? 'Approve and publish?' : 'Reject this change?',
+      ),
       content: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(widget.approve
-              ? 'Children will see it the next time their app loads stories.'
-              : 'The story stays as it is. Tell the sender why, so they can fix it.'),
+          Text(
+            widget.approve
+                ? 'Children will see it the next time their app loads stories.'
+                : 'The story stays as it is. Tell the sender why, so they can fix it.',
+          ),
           const SizedBox(height: 12),
           TextField(
             controller: _note,
             maxLines: 3,
             maxLength: 1000,
             decoration: InputDecoration(
-              labelText: widget.approve ? 'Note for the sender (optional)' : 'Reason for the sender',
+              labelText: widget.approve
+                  ? 'Note for the sender (optional)'
+                  : 'Reason for the sender',
               border: const OutlineInputBorder(),
             ),
           ),
         ],
       ),
       actions: [
-        TextButton(onPressed: () => Navigator.pop(context), child: const Text('Cancel')),
+        TextButton(
+          onPressed: () => Navigator.pop(context),
+          child: const Text('Cancel'),
+        ),
         FilledButton(
           onPressed: () => Navigator.pop(context, _note.text.trim()),
           child: Text(widget.approve ? 'Approve' : 'Reject'),

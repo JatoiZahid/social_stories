@@ -350,7 +350,7 @@
     const select = el('select', {
       onchange: (e) => {
         if (e.target.value === '__upload') { e.target.value = page.image; return upload(page, () => renderPages()); }
-        page.image = e.target.value; applyFrame(); setDirty(true);
+        page.image = e.target.value; page.animation = undefined; applyFrame(); setDirty(true);
       },
     },
       known ? null : el('option', { value: page.image }, page.image),
@@ -385,10 +385,10 @@
         ),
         el('label', {}, 'Main sentence (shown in bold)'),
         el('textarea', { rows: 2, maxLength: 500, value: page.lead || '', placeholder: 'First, we…',
-          oninput: (e) => { page.lead = e.target.value; setDirty(true); } }),
+          oninput: (e) => { page.lead = e.target.value; page.animation = undefined; setDirty(true); } }),
         el('label', {}, 'More detail'),
         el('textarea', { rows: 3, maxLength: 500, value: page.body || '',
-          oninput: (e) => { page.body = e.target.value; setDirty(true); } }),
+          oninput: (e) => { page.body = e.target.value; page.animation = undefined; setDirty(true); } }),
         el('div', { class: 'row', style: 'margin-top:10px' },
           el('button', { class: 'icon', onclick: () => addPage(index) }, '+ Add page after this'),
         ),
@@ -436,6 +436,7 @@
         const { path } = await api('POST', '/api/images', file, file.type || 'application/octet-stream');
         await loadImages();
         page.image = path;
+        page.animation = undefined;
         page.focus = undefined;
         setDirty(true);
         toast('Picture uploaded.');
