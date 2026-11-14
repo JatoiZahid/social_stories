@@ -1,0 +1,24 @@
+pc_memory_init: above 4g size: 40000000
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cpp:translator::gles2::glBindFramebuffer:663 error null ctx
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cpp:translator::gles2::glGetIntegerv:2472 error null ctx
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cpp:translator::gles2::glPixelStorei:3272 error null ctx
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cpp:translator::gles2::glReadPixels:3297 error null ctx
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cpp:translator::gles2::glPixelStorei:3272 error null ctx
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cpp:translator::gles2::glBindFramebuffer:663 error null ctx
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cpp:translator::gles2::glGetIntegerv:2472 error null ctx
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cpp:translator::gles2::glPixelStorei:3272 error null ctx
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cpp:translator::gles2::glGenTextures:1869 error null ctx
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cpp:translator::gles2::glBindTexture:734 error null ctx
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cpp:translator::gles2::glTexImage2D:3588 error null ctx
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cpp:translator::gles2::glTexParameteri:3663 error null ctx
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cpp:translator::gles2::glTexParameteri:3663 error null ctx
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cpp:translator::gles2::glTexParameteri:3663 error null ctx
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cpp:translator::gles2::glTexParameteri:3663 error null ctx
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cpp:translator::gles2::glGenTextures:1869 error null ctx
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cpp:translator::gles2::glBindTexture:734 error null ctx
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cpp:translator::gles2::glTexImage2D:3588 error null ctx
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cpp:translator::gles2::glTexParameteri:3663 error null ctx
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cpp:translator::gles2::glTexParameteri:3663 error null ctx
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cpp:translator::gles2::glTexParameteri:3663 error null ctx
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cpp:translator::gles2::glTexParameteri:3663 error null ctx
+C:/buildbot/src/googleplex-android/emu-37-1-release/hardware/google/gfxstream/host/gl/glestranslator/gles_v2/gles_v2_imp.cp

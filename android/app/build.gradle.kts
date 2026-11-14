@@ -16,7 +16,11 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "com.socialstories.social_stories"
+        // Opt-in preview packaging keeps the installed story app and its data
+        // separate. Ordinary builds retain the existing application ID/label.
+        val carPreview = providers.gradleProperty("carPreview").orNull == "true"
+        applicationId = if (carPreview) "com.socialstories.social_stories.carpreview" else "com.socialstories.social_stories"
+        manifestPlaceholders["appLabel"] = if (carPreview) "Car Game Preview" else "social_stories"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion

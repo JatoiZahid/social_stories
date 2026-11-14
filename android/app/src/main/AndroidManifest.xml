@@ -2,7 +2,7 @@
     <!-- Fetches the latest stories from the story server. -->
     <uses-permission android:name="android.permission.INTERNET" />
     <application
-        android:label="social_stories"
+        android:label="${appLabel}"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
         android:usesCleartextTraffic="true">

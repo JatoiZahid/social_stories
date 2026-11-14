@@ -1,0 +1,27 @@
+﻿{
+    "status":  "awaiting_explicit_approval",
+    "branch":  "preview/fix-my-broken-car",
+    "date":  "2026-11-03",
+    "timezone":  "Asia/Dubai",
+    "baselineTests":  54,
+    "finalTests":  66,
+    "previewTests":  12,
+    "analyze":  "zero issues",
+    "nativeMissions":  5,
+    "flutterScreenshots":  48,
+    "apk":  "dist/fix-my-broken-car-preview.apk",
+    "androidId":  "com.socialstories.social_stories.carpreview",
+    "apkSha256":  "6398AABD35BE3243C35A49701022A539E0C157CA8C00601E55756E8E2E52FBC9",
+    "productionIntegration":  false,
+    "storiesImplemented":  0,
+    "iosTested":  false,
+    "originalFigmaAvailable":  false,
+    "video":  "docs/car_preview/gameplay-android.mp4",
+    "videoSeconds":  170.6542,
+    "caveats":  [
+                    "in-memory progress",
+                    "debug emulator cold-start skipped frames",
+                    "no physical-device or release-performance certification",
+                    "no recorded mechanical sound pack"
+                ]
+}

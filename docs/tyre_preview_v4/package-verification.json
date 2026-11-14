@@ -1,0 +1,20 @@
+{
+  "apk": "dist\\fix-my-broken-car-tyre-preview-v4.apk",
+  "bytes": 410042610,
+  "sha256": "079f555420fdd676cbe7b9b00064e4b9855a029807caeb0dd5a0ed589ec9fa48",
+  "applicationId": "com.socialstories.social_stories.carpreview",
+  "versionName": "1.0.0-tyre.4",
+  "versionCode": 4,
+  "packagedArtworkMatchesWorkspace": {
+    "tyre_v3_character.png": true,
+    "tyre_v3_faces_0.png": true,
+    "tyre_v3_faces_1.png": true,
+    "tyre_v3_faces_2.png": true,
+    "tyre_v3_faces_3.png": true,
+    "tyre_v3_rig.json": true,
+    "tyre_v3_tools.png": true,
+    "tyre_v3_workshop.png": true
+  },
+  "kernelMatchesBuildOutput": true,
+  "kernelSha256": "324a20855440dae22cea7758ff675e97b39170f1bcaaf3c7e99e781f17d152c4"
+}

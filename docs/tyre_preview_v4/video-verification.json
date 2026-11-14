@@ -1,0 +1,18 @@
+[
+  {
+    "file": "gameplay-android-final.mp4",
+    "metadataFrames": 1048,
+    "decodedFrames": 1048,
+    "durationSeconds": 176.7121,
+    "width": 1024,
+    "height": 768
+  },
+  {
+    "file": "gameplay-android-finish.mp4",
+    "metadataFrames": 135,
+    "decodedFrames": 135,
+    "durationSeconds": 41.20181111111111,
+    "width": 1024,
+    "height": 768
+  }
+]

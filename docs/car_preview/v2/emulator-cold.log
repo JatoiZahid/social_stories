@@ -1,0 +1,56 @@
+INFO         | Android emulator version 37.1.11.0 (build_id 15917651) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+INFO         | Found systemPath C:\Users\jatoi\AppData\Local\Android\sdk\system-images\android-37.2\google_apis_playstore_ps16k\x86_64\
+INFO         | Guest usage of host flag 'VulkanVirtualQueue' will be ignored.
+INFO         | Increasing RAM size to 4096MB
+INFO         | IPv4 server found: 192.168.1.1
+INFO         | Ignore IPv6 address: e814:5f5:8b01:0:400f:5f5:8b01:0
+INFO         | Ignore IPv6 address: e814:5f5:8b01:0:400f:5f5:8b01:0
+INFO         | Ignore IPv6 address: e814:5f5:8b01:0:400f:5f5:8b01:0
+INFO         | Ignore IPv6 address: 1b:5f5:8b01:0:400f:5f5:8b01:0
+INFO         | Ignore IPv6 address: 1b:5f5:8b01:0:400f:5f5:8b01:0
+INFO         | Ignore IPv6 address: 1b:5f5:8b01:0:400f:5f5:8b01:0
+INFO         | Ignore IPv6 address: f830:5f5:8b01:0:400f:5f5:8b01:0
+INFO         | Ignore IPv6 address: f830:5f5:8b01:0:400f:5f5:8b01:0
+INFO         | Ignore IPv6 address: f830:5f5:8b01:0:400f:5f5:8b01:0
+INFO         | Ignore IPv6 address: 5837:5f5:8b01:0:400f:5f5:8b01:0
+INFO         | Ignore IPv6 address: 5837:5f5:8b01:0:400f:5f5:8b01:0
+INFO         | Ignore IPv6 address: 5837:5f5:8b01:0:400f:5f5:8b01:0
+INFO         | Guest GLES Driver: Auto (ext controls)
+INFO         | emuglConfig_init: vulkan_mode_selected:swiftshader gles_mode_selected:swiftshader
+INFO         | Checking system compatibility:
+INFO         |   Checking: hasCompatibleHypervisor
+INFO         |      Ok: Hypervisor compatibility to run avd: `Pixel_10` are met
+INFO         |   Checking: hasSufficientSystem
+INFO         |      Warning: Suggested minimum system RAM to run avd 'Pixel_10' is 16384 MiB (available: 16040 MiB)
+INFO         |   Checking: hasSufficientHwGpu
+INFO         |      Ok: Hardware GPU compatibility checks are not required
+INFO         |   Checking: hasSufficientDiskSpace
+INFO         |      Ok: Disk space requirements to run avd: `Pixel_10` are met
+USER_WARNING | Suggested minimum system RAM to run avd 'Pixel_10' is 16384 MiB (available: 16040 MiB).
+INFO         | Critical: Failed to load opengl32sw (The specified module could not be found.) (:0, )
+INFO         | Warning: Software OpenGL failed. Falling back to system OpenGL. (:0, )
+INFO         | Storing crashdata in: C:\Users\jatoi\AppData\Local\Temp\\AndroidEmulator\emu-crash-37.1.11.db, detection is enabled for process: 2984
+INFO         | Showing crashdialog to get consent.
+  module_list[0].crashpad_annotations["ERRLOG"] (type = 1) = bad color buffer handle 351
+bad color buffer handle 542
+
+  module_list[0].crashpad_annotations["ro.build.fingerprint"] (type = 1) = google/generic_system_google/generic:17/CP41.260828.004.A7/16296984:user/dev-keys
+  module_list[0].crashpad_annotations["free_ram"] (type = 1) = 1525
+  module_list[0].crashpad_annotations["cpu_cores"] (type = 1) = 12
+  module_list[0].crashpad_annotations["PlayStore.enabled"] (type = 1) = true
+  module_list[0].crashpad_annotations["hw.lcd.width"] (type = 1) = 1080
+  module_list[0].crashpad_annotations["hw.ramSize"] (type = 1) = 2048
+  module_list[0].crashpad_annotations["hw.lcd.height"] (type = 1) = 2424
+  module_list[0].crashpad_annotations["hw.gpu.mode"] (type = 1) = auto
+  module_list[0].crashpad_annotations["hw.sensor.hinge"] (type = 1) = ?
+  module_list[0].crashpad_annotations["disk.dataPartition.size"] (type = 1) = 10G
+  module_list[0].crashpad_annotations["avd_space"] (type = 1) = 439627021088
+  module_list[0].crashpad_annotations["hw.cpu.ncore"] (type = 1) = 4
+  module_list[0].crashpad_annotations["hw.gpu.enabled"] (type = 1) = yes
+  module_list[0].crashpad_annotations["grpc"] (type = 1) = cn:T,adv,
+  module_list[0].crashpad_annotations["AVD_FLAVOR"] (type = 1) = AVD_OTHER
+  module_list[0].crashpad_annotations["gfxstream_features"] (type = 1) = GlPipeChecksum, Vulkan, HasSharedSlotsHostMemoryAllocator, VulkanShaderFloat16Int8, GlAsyncSwap, GlDma, GlDirectMem, GlesDynamicVersion, RefCountPipe, HostComposition, VulkanNullOptionalStrings, YuvCache, VulkanIgnoredHandles, VulkanQueueSubmitWithCommands, HwcMultiConfigs, VulkanVirtualQueue, 
+  module_list[0].crashpad_annotations["internal-msg"] (type = 1) = gpu found. vendor id 8086 device id 0xa721
+emuglConfig_init: gpu_mode_requested: auto, no_window: 0
+emuglConfig_init: GPU emulation enabled using Vulkan:'host' 

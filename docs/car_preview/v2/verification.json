@@ -1,0 +1,27 @@
+﻿{
+    "status":  "preview_verified_awaiting_approval",
+    "date":  "2026-11-03",
+    "timezone":  "Asia/Dubai",
+    "branch":  "preview/fix-my-broken-car",
+    "versionName":  "1.0.0-preview.2",
+    "versionCode":  2,
+    "androidId":  "com.socialstories.social_stories.carpreview",
+    "apk":  "dist/fix-my-broken-car-preview-v2.apk",
+    "apkBytes":  401879655,
+    "sha256":  "2DCBB58F14E91E853CF39FDA5B45062147546AD94C7B6D5463315385ABA51780",
+    "tests":  72,
+    "previewTests":  18,
+    "analyzer":  "zero issues",
+    "flutterScreenshots":  53,
+    "nativeMissionsCompleted":  5,
+    "nativeStarsCollected":  3,
+    "productionIntegrated":  false,
+    "previousPreviewPreserved":  true,
+    "nativeIosTested":  false,
+    "physicalDevicesTested":  false,
+    "reducedMotionPixelComparison":  "passed",
+    "videos":  [
+                   "gameplay-repairs-android.mp4",
+                   "gameplay-drive-android.mp4"
+               ]
+}
