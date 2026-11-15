@@ -1,4 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'dart:convert';
 import 'package:social_stories/data/models/story.dart';
 import 'package:social_stories/data/story_repository.dart';
 import 'package:social_stories/data/story_storage.dart';
@@ -13,14 +14,54 @@ class FakeRepository extends StoryRepository {
           id: 'demo',
           title: 'Demo Story',
           pages: [
-            StoryPage(id: 'p1', image: 'assets/images/stories/sharing.png', lead: 'Page one lead.', body: 'One.'),
-            StoryPage(id: 'p2', image: 'assets/images/stories/sharing.png', lead: 'Page two lead.', body: 'Two.'),
+            StoryPage(
+                id: 'p1',
+                image: 'assets/images/stories/sharing.png',
+                lead: 'Page one lead.',
+                body: 'One.'),
+            StoryPage(
+                id: 'p2',
+                image: 'assets/images/stories/sharing.png',
+                lead: 'Page two lead.',
+                body: 'Two.'),
           ],
         ),
       ];
 }
 
+class MoralRepository extends FakeRepository {
+  const MoralRepository();
+  @override
+  Future<List<Story>> loadStories() async => [
+        for (final story in await super.loadStories())
+          story.copyWith(
+              moral: 'Ask for help.',
+              moralExplanation: 'A trusted helper can support us.'),
+      ];
+}
+
 void main() {
+  test('older cached stories gain bundled morals only when story text matches',
+      () async {
+    final original = (await const FakeRepository().loadStories()).single;
+    for (final edited in [false, true]) {
+      final cached = edited
+          ? original.copyWith(pages: [
+              original.pages.first.copyWith(body: 'A different lesson.'),
+              original.pages.last,
+            ])
+          : original;
+      final store = StoryStore(
+          repository: const MoralRepository(),
+          storage: MemoryStoryStorage(),
+          serverCache: MemoryStoryStorage(jsonEncode({
+            'stories': [cached.toJson()]
+          })));
+      await store.load();
+      expect(store.stories.single.moral, edited ? '' : 'Ask for help.');
+      store.dispose();
+    }
+  });
   late MemoryStoryStorage storage;
   late StoryStore store;
 
@@ -30,15 +71,18 @@ void main() {
     await store.load();
   });
 
-  test('editing a published story makes a draft that children do not see', () async {
+  test('editing a published story makes a draft that children do not see',
+      () async {
     final story = store.draft('demo')!;
     store.saveStory(story.copyWith(title: 'Changed'));
     expect(store.draft('demo')!.title, 'Changed');
     expect(store.hasDraft('demo'), isTrue);
-    expect(store.stories.single.title, 'Demo Story', reason: 'children still see the published story');
+    expect(store.stories.single.title, 'Demo Story',
+        reason: 'children still see the published story');
 
     await store.flush();
-    final reopened = StoryStore(repository: const FakeRepository(), storage: storage);
+    final reopened =
+        StoryStore(repository: const FakeRepository(), storage: storage);
     await reopened.load();
     expect(reopened.draft('demo')!.title, 'Changed');
 
@@ -70,11 +114,13 @@ void main() {
   test('parents can create and delete their own stories', () async {
     final story = store.createStory();
     expect(store.editableStories.last.id, story.id);
-    expect(store.stories.any((s) => s.id == story.id), isFalse, reason: 'drafts are not shown to children');
+    expect(store.stories.any((s) => s.id == story.id), isFalse,
+        reason: 'drafts are not shown to children');
     expect(store.isPublished(story.id), isFalse);
 
     await store.flush();
-    final reopened = StoryStore(repository: const FakeRepository(), storage: storage);
+    final reopened =
+        StoryStore(repository: const FakeRepository(), storage: storage);
     await reopened.load();
     expect(reopened.draft(story.id), isNotNull);
 

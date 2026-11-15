@@ -1,0 +1,182 @@
+[
+  {
+    "group": "cars",
+    "name": "Cars: McQueen & Mater",
+    "scene": 1,
+    "title": "Desert Service Station",
+    "characters": [
+      "mcqueen",
+      "mater"
+    ],
+    "expectedAsset": "assets/images/puzzles/cars_1.png",
+    "status": "Queued at user request; artwork not generated"
+  },
+  {
+    "group": "cars",
+    "name": "Cars: McQueen & Mater",
+    "scene": 2,
+    "title": "Mountain View",
+    "characters": [
+      "mcqueen",
+      "mater"
+    ],
+    "expectedAsset": "assets/images/puzzles/cars_2.png",
+    "status": "Queued at user request; artwork not generated"
+  },
+  {
+    "group": "cars",
+    "name": "Cars: McQueen & Mater",
+    "scene": 3,
+    "title": "Practice Cones",
+    "characters": [
+      "mcqueen",
+      "mater"
+    ],
+    "expectedAsset": "assets/images/puzzles/cars_3.png",
+    "status": "Queued at user request; artwork not generated"
+  },
+  {
+    "group": "cars",
+    "name": "Cars: McQueen & Mater",
+    "scene": 4,
+    "title": "Tidy Workshop",
+    "characters": [
+      "mcqueen",
+      "mater"
+    ],
+    "expectedAsset": "assets/images/puzzles/cars_4.png",
+    "status": "Queued at user request; artwork not generated"
+  },
+  {
+    "group": "cars",
+    "name": "Cars: McQueen & Mater",
+    "scene": 5,
+    "title": "Countryside Stop",
+    "characters": [
+      "mcqueen",
+      "mater"
+    ],
+    "expectedAsset": "assets/images/puzzles/cars_5.png",
+    "status": "Queued at user request; artwork not generated"
+  },
+  {
+    "group": "mario_luigi",
+    "name": "Mario & Luigi",
+    "scene": 1,
+    "title": "Sunflower Brothers",
+    "characters": [
+      "mario",
+      "luigi"
+    ],
+    "expectedAsset": "assets/images/puzzles/mario_luigi_1.png",
+    "status": "Queued at user request; artwork not generated"
+  },
+  {
+    "group": "mario_luigi",
+    "name": "Mario & Luigi",
+    "scene": 2,
+    "title": "Block Castle",
+    "characters": [
+      "mario",
+      "luigi"
+    ],
+    "expectedAsset": "assets/images/puzzles/mario_luigi_2.png",
+    "status": "Queued at user request; artwork not generated"
+  },
+  {
+    "group": "mario_luigi",
+    "name": "Mario & Luigi",
+    "scene": 3,
+    "title": "Kite Adventure",
+    "characters": [
+      "mario",
+      "luigi"
+    ],
+    "expectedAsset": "assets/images/puzzles/mario_luigi_3.png",
+    "status": "Queued at user request; artwork not generated"
+  },
+  {
+    "group": "mario_luigi",
+    "name": "Mario & Luigi",
+    "scene": 4,
+    "title": "Picnic Helpers",
+    "characters": [
+      "mario",
+      "luigi"
+    ],
+    "expectedAsset": "assets/images/puzzles/mario_luigi_4.png",
+    "status": "Queued at user request; artwork not generated"
+  },
+  {
+    "group": "mario_luigi",
+    "name": "Mario & Luigi",
+    "scene": 5,
+    "title": "Go-Kart Workshop",
+    "characters": [
+      "mario",
+      "luigi"
+    ],
+    "expectedAsset": "assets/images/puzzles/mario_luigi_5.png",
+    "status": "Queued at user request; artwork not generated"
+  },
+  {
+    "group": "mickey_minnie",
+    "name": "Mickey & Minnie",
+    "scene": 1,
+    "title": "Flower Garden",
+    "characters": [
+      "mickey",
+      "minnie"
+    ],
+    "expectedAsset": "assets/images/puzzles/mickey_minnie_1.png",
+    "status": "Queued at user request; artwork not generated"
+  },
+  {
+    "group": "mickey_minnie",
+    "name": "Mickey & Minnie",
+    "scene": 2,
+    "title": "Kite Together",
+    "characters": [
+      "mickey",
+      "minnie"
+    ],
+    "expectedAsset": "assets/images/puzzles/mickey_minnie_2.png",
+    "status": "Queued at user request; artwork not generated"
+  },
+  {
+    "group": "mickey_minnie",
+    "name": "Mickey & Minnie",
+    "scene": 3,
+    "title": "Cookie Bakers",
+    "characters": [
+      "mickey",
+      "minnie"
+    ],
+    "expectedAsset": "assets/images/puzzles/mickey_minnie_3.png",
+    "status": "Queued at user request; artwork not generated"
+  },
+  {
+    "group": "mickey_minnie",
+    "name": "Mickey & Minnie",
+    "scene": 4,
+    "title": "Painting Day",
+    "characters": [
+      "mickey",
+      "minnie"
+    ],
+    "expectedAsset": "assets/images/puzzles/mickey_minnie_4.png",
+    "status": "Queued at user request; artwork not generated"
+  },
+  {
+    "group": "mickey_minnie",
+    "name": "Mickey & Minnie",
+    "scene": 5,
+    "title": "Pond Picnic",
+    "characters": [
+      "mickey",
+      "minnie"
+    ],
+    "expectedAsset": "assets/images/puzzles/mickey_minnie_5.png",
+    "status": "Queued at user request; artwork not generated"
+  }
+]

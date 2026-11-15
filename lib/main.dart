@@ -12,24 +12,30 @@ import 'data/story_repository.dart';
 import 'data/story_storage.dart';
 import 'data/story_store.dart';
 
-void main() {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  final settings = AppSettings(
+    puzzlePreferences: const SharedPrefsStoryStorage('puzzle_preferences_v1'),
+  );
+  await settings.restorePuzzlePreferences();
   final server = AppConfig.storyServer;
   final onAndroid = !kIsWeb && defaultTargetPlatform == TargetPlatform.android;
   final account = AccountService(
     api: server == null ? null : AccountApi(server),
-    tokenStorage: const SharedPrefsStoryStorage(SharedPrefsStoryStorage.sessionKey),
+    tokenStorage:
+        const SharedPrefsStoryStorage(SharedPrefsStoryStorage.sessionKey),
     billing: onAndroid && server != null ? PlayBilling() : NoBilling(),
   )..restore();
   runApp(
     StorybookApp(
-      settings: AppSettings(),
+      settings: settings,
       narrator: TtsNarrator(),
       store: StoryStore(
         repository: const StoryRepository(),
         storage: const SharedPrefsStoryStorage(),
         remote: server == null ? null : RemoteStoryRepository(server),
-        serverCache: const SharedPrefsStoryStorage(SharedPrefsStoryStorage.serverCacheKey),
+        serverCache: const SharedPrefsStoryStorage(
+            SharedPrefsStoryStorage.serverCacheKey),
       ),
       account: account,
     ),

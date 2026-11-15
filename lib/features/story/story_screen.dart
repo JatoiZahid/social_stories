@@ -7,6 +7,7 @@ import '../../core/theme/app_dimens.dart';
 import '../../data/models/story.dart';
 import '../../shared/widgets/widgets.dart';
 import 'quiz_screen.dart';
+import 'story_moral_screen.dart';
 import 'widgets/story_controls.dart';
 import 'widgets/story_page_view.dart';
 
@@ -237,6 +238,13 @@ class _StoryScreenState extends State<StoryScreen> with WidgetsBindingObserver {
     if (!_isLastPage) return _goTo(_index + 1);
     final request = await _stopScene();
     if (!mounted || request != _request) return;
+    if (widget.story.moral.trim().isNotEmpty) {
+      final continued = await Navigator.of(context).push<bool>(
+        MaterialPageRoute(
+            builder: (_) => StoryMoralScreen(story: widget.story)),
+      );
+      if (continued != true || !mounted) return;
+    }
     if (widget.story.questions.isNotEmpty) {
       final finished =
           await Navigator.of(context).push(QuizScreen.route(widget.story));

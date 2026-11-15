@@ -8,7 +8,7 @@ import 'package:social_stories/data/models/story.dart';
 import 'package:social_stories/features/story/widgets/animated_story_scene.dart';
 
 void main() {
-  testWidgets('all 84 classic tale illustrations decode in the story player',
+  testWidgets('all 132 classic tale illustrations decode in the story player',
       (tester) async {
     final raw = jsonDecode(File('assets/data/stories.json').readAsStringSync())
         as Map<String, dynamic>;
@@ -34,7 +34,7 @@ void main() {
         count++;
       }
     }
-    expect(count, 84);
+    expect(count, 132);
   });
 
   testWidgets(
@@ -62,7 +62,17 @@ void main() {
           'great_race',
           'anansi_pot_of_wisdom',
           'ugly_duckling',
-        }.contains(story.id)) continue;
+          'goldilocks',
+          'gingerbread_man',
+          'north_wind_and_sun',
+          'fox_and_stork',
+          'town_mouse_country_mouse',
+          'honest_woodcutter',
+          'boy_cried_wolf',
+          'fox_and_crow',
+        }.contains(story.id)) {
+          continue;
+        }
         count++;
         final config = page.animation!;
         final clock = ScenePlayback()

@@ -5,6 +5,7 @@ import '../../core/settings/app_settings.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_dimens.dart';
 import '../../features/account/account_screen.dart';
+import '../../features/puzzles/puzzle_parent_screen.dart';
 import 'parent_gate.dart';
 
 /// Reading preferences, opened from the gear icon on any screen.
@@ -56,6 +57,25 @@ class SettingsSheet extends StatelessWidget {
                 subtitle: const Text('Show still poses while reading'),
                 value: settings.reducedMotion,
                 onChanged: (value) => settings.reducedMotion = value,
+              ),
+              ListTile(
+                key: const ValueKey('parent-puzzle-settings'),
+                contentPadding: EdgeInsets.zero,
+                leading: const Icon(Icons.extension_rounded,
+                    color: AppColors.primary),
+                title: const Text('Puzzle settings'),
+                subtitle: const Text(
+                    'For grown-ups: blurred guide or plain background'),
+                trailing: const Icon(Icons.chevron_right_rounded),
+                onTap: () async {
+                  final navigator = Navigator.of(context);
+                  if (!await ParentGate.show(context)) return;
+                  if (!navigator.mounted) return;
+                  navigator
+                    ..pop()
+                    ..push(MaterialPageRoute<void>(
+                        builder: (_) => const PuzzleParentScreen()));
+                },
               ),
               ListTile(
                 contentPadding: EdgeInsets.zero,

@@ -22,6 +22,8 @@ class QuizRepository extends StoryRepository {
         Story(
           id: 'quiz',
           title: 'Quiz Story',
+          moral: 'Sharing can be kind.',
+          moralExplanation: 'Taking turns helps friends play together.',
           pages: [
             StoryPage(
                 id: 'p1',
@@ -125,6 +127,12 @@ void main() {
     await tester.tap(find.text('Finish'));
     await tester.pumpAndSettle();
 
+    expect(find.text('Moral of the story'), findsOneWidget);
+    expect(find.text('Sharing can be kind.'), findsOneWidget);
+    expect(narrator.spoken.last,
+        contains('Taking turns helps friends play together.'));
+    await tester.tap(find.text('Continue'));
+    await tester.pumpAndSettle();
     expect(find.text('Do we share?'), findsOneWidget);
     expect(find.text('1 of 2'), findsOneWidget);
 

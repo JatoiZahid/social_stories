@@ -229,7 +229,9 @@ class Story {
       {required this.id,
       required this.title,
       required this.pages,
-      this.questions = const []});
+      this.questions = const [],
+      this.moral = '',
+      this.moralExplanation = ''});
 
   factory Story.fromJson(Map<String, dynamic> json) {
     final id = json['id'] as String;
@@ -253,6 +255,8 @@ class Story {
       title: json['title'] as String,
       pages: List.unmodifiable(pages),
       questions: List.unmodifiable(questions),
+      moral: json['moral'] as String? ?? '',
+      moralExplanation: json['moralExplanation'] as String? ?? '',
     );
   }
 
@@ -262,6 +266,8 @@ class Story {
 
   /// The quiz after the last page. May be empty.
   final List<StoryQuestion> questions;
+  final String moral;
+  final String moralExplanation;
 
   /// Title for display; never empty.
   String get displayTitle =>
@@ -273,13 +279,17 @@ class Story {
   Story copyWith(
           {String? title,
           List<StoryPage>? pages,
-          List<StoryQuestion>? questions}) =>
+          List<StoryQuestion>? questions,
+          String? moral,
+          String? moralExplanation}) =>
       Story(
         id: id,
         title: title ?? this.title,
         pages: pages == null ? this.pages : List.unmodifiable(pages),
         questions:
             questions == null ? this.questions : List.unmodifiable(questions),
+        moral: moral ?? this.moral,
+        moralExplanation: moralExplanation ?? this.moralExplanation,
       );
 
   Map<String, dynamic> toJson() => {
@@ -288,6 +298,8 @@ class Story {
         'pages': [for (final page in pages) page.toJson()],
         if (questions.isNotEmpty)
           'questions': [for (final q in questions) q.toJson()],
+        if (moral.isNotEmpty) 'moral': moral,
+        if (moralExplanation.isNotEmpty) 'moralExplanation': moralExplanation,
       };
 
   /// Same title and pages (ignoring page ids).

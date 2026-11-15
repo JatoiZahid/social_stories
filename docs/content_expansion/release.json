@@ -1,0 +1,19 @@
+{
+  "apk": "dist\\social-stories-expanded-release.apk",
+  "bytes": 354861102,
+  "sha256": "ad46a36d76b0971ba0aab15b09630c7f02ed79e21970fbf1836f11d6b911aa97",
+  "stories": 31,
+  "playable_puzzles": 25,
+  "new_stories": 5,
+  "new_ant_grasshopper_puzzles": 5,
+  "queued_sets": [
+    "Cars",
+    "Mario & Luigi",
+    "Mickey & Minnie"
+  ],
+  "tests_passed": 32,
+  "static_analysis": "No issues found",
+  "signing": "Existing project test key",
+  "icon": "Existing elephant icon unchanged",
+  "image_generation": "Built-in imagegen; see artwork_prompts.json"
+}

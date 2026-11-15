@@ -17,13 +17,15 @@ void main() {
         .toList();
   });
 
-  test('has all 26 stories with unique ids', () {
-    expect(stories, hasLength(26));
-    expect(stories.map((s) => s.id).toSet(), hasLength(26));
+  test('has all 34 stories with unique ids', () {
+    expect(stories, hasLength(34));
+    expect(stories.map((s) => s.id).toSet(), hasLength(34));
   });
 
   test('every page has text, a unique id and an image that exists', () {
     for (final story in stories) {
+      expect(story.moral.trim(), isNotEmpty, reason: story.id);
+      expect(story.moralExplanation.trim(), isNotEmpty, reason: story.id);
       expect(
           story.pages.map((p) => p.id).toSet(), hasLength(story.pages.length),
           reason: story.id);
@@ -51,6 +53,14 @@ void main() {
       'great_race': 'The Great Race',
       'anansi_pot_of_wisdom': 'Anansi and the Pot of Wisdom',
       'ugly_duckling': 'The Ugly Duckling',
+      'goldilocks': 'Goldilocks and the Three Bears',
+      'gingerbread_man': 'The Gingerbread Man',
+      'north_wind_and_sun': 'The North Wind and the Sun',
+      'fox_and_stork': 'The Fox and the Stork',
+      'town_mouse_country_mouse': 'The Town Mouse and the Country Mouse',
+      'honest_woodcutter': 'The Honest Woodcutter',
+      'boy_cried_wolf': 'The Boy Who Cried Wolf',
+      'fox_and_crow': 'The Fox and the Crow',
     };
     for (final entry in titles.entries) {
       final story = stories.singleWhere((story) => story.id == entry.key);
@@ -96,7 +106,17 @@ void main() {
           'great_race',
           'anansi_pot_of_wisdom',
           'ugly_duckling',
-        }.contains(story.id)) continue;
+          'goldilocks',
+          'gingerbread_man',
+          'north_wind_and_sun',
+          'fox_and_stork',
+          'town_mouse_country_mouse',
+          'honest_woodcutter',
+          'boy_cried_wolf',
+          'fox_and_crow',
+        }.contains(story.id)) {
+          continue;
+        }
         sceneCount++;
         final animation = page.animation;
         expect(animation, isNotNull,
@@ -133,6 +153,9 @@ void main() {
     final copy = Story.fromJson(
         jsonDecode(jsonEncode(story.toJson())) as Map<String, dynamic>);
     expect(copy.title, story.title);
+    expect(copy.moral, story.moral);
+    expect(copy.moralExplanation, story.moralExplanation);
+    expect(story.copyWith(title: 'Changed').moral, story.moral);
     expect(copy.pages.length, story.pages.length);
     for (var i = 0; i < story.pages.length; i++) {
       expect(copy.pages[i].id, story.pages[i].id);

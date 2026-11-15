@@ -1,0 +1,35 @@
+{
+  "app": "Social Stories",
+  "version": "1.0.0+1",
+  "build_mode": "release",
+  "apk": "dist\\social-stories-puzzles-release.apk",
+  "bytes": 335298119,
+  "sha256": "a031e132bd949c865fa2a07100b89818073d02635555c975fc2303195fa8af0a",
+  "signing": "Existing project Android Debug certificate; installable test/share build",
+  "content": {
+    "stories": 26,
+    "puzzles": 20,
+    "characters": [
+      "Bluey",
+      "Bingo",
+      "Dora",
+      "Sonic"
+    ],
+    "puzzles_per_character": 5,
+    "background_default": "blurred",
+    "parent_background_options": [
+      "blurred",
+      "plain"
+    ]
+  },
+  "verification": [
+    "29 puzzle/story regression tests passed",
+    "Final 13 puzzle tests passed after touch-target adjustment",
+    "Static analysis: no issues",
+    "APK signature verified with apksigner",
+    "Installed and cold-launched on emulator-5554",
+    "Opened puzzle library and Bluey game; matched piece 1 into space 1",
+    "Confirmed screenshot with blurred guide and 1 of 4 pieces placed",
+    "Existing elephant launcher icon unchanged"
+  ]
+}

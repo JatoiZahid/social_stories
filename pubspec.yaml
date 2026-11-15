@@ -26,5 +26,6 @@ flutter:
     - assets/data/
     - assets/images/stories/
     - assets/images/story_scenes/
+    - assets/images/puzzles/
     - assets/animations/spritesheets/
     - assets/audio/tyre_preview/

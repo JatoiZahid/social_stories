@@ -1,5 +1,7 @@
 import 'package:flutter/foundation.dart';
 
+import '../../data/story_storage.dart';
+
 /// User-adjustable reading preferences, shared by every story.
 class AppSettings extends ChangeNotifier {
   AppSettings({
@@ -7,10 +9,42 @@ class AppSettings extends ChangeNotifier {
     bool largeText = false,
     bool reducedMotion = false,
     double speechRate = defaultSpeechRate,
+    bool puzzleBlurredBackground = true,
+    StoryStorage? puzzlePreferences,
   })  : _autoRead = autoRead,
         _largeText = largeText,
         _reducedMotion = reducedMotion,
-        _speechRate = speechRate;
+        _speechRate = speechRate,
+        _puzzleBlurredBackground = puzzleBlurredBackground,
+        _puzzlePreferences = puzzlePreferences;
+
+  final StoryStorage? _puzzlePreferences;
+  bool _puzzleBlurredBackground;
+  Future<void> _puzzleWrite = Future<void>.value();
+
+  /// Parent-selected picture guide. Missing/older preferences use blurred.
+  bool get puzzleBlurredBackground => _puzzleBlurredBackground;
+  set puzzleBlurredBackground(bool value) {
+    if (value == _puzzleBlurredBackground) return;
+    _puzzleBlurredBackground = value;
+    notifyListeners();
+    _puzzleWrite = _puzzleWrite.then((_) async {
+      await _puzzlePreferences?.write(value ? 'blurred' : 'plain');
+    }).catchError((Object error) {
+      debugPrint('Could not save puzzle preferences: $error');
+    });
+  }
+
+  Future<void> restorePuzzlePreferences() async {
+    try {
+      final saved = await _puzzlePreferences?.read();
+      _puzzleBlurredBackground = saved != 'plain';
+    } catch (error) {
+      debugPrint('Using default puzzle background: $error');
+    }
+  }
+
+  Future<void> flushPuzzlePreferences() => _puzzleWrite;
 
   static const double minSpeechRate = 0.2;
   static const double maxSpeechRate = 0.6;

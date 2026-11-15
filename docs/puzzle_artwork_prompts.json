@@ -1,0 +1,22 @@
+[
+  {
+    "id": "bluey",
+    "mode": "built-in imagegen",
+    "prompt": "Use case: illustration-story. Asset type: children's picture puzzle artwork sheet. EXACTLY six panels arranged 2 columns by 3 equal rows, no borders, gutters, captions or insets. Each landscape panel complete and self contained with wide safe margins, colorful scenery and large central character with clear details useful for matching puzzle pieces. Soft polished storybook illustration, vivid friendly colors, consistent recognizable character design. Reading order left to right then down: Bluey, the recognizable small blue Australian cattle dog puppy from Bluey, consistent character design and blue markings. Five distinct gentle scenes plus bonus sixth: 1 Bluey flying a colorful kite in sunny meadow. 2 Bluey watering sunflowers with small watering can in garden. 3 Bluey building colorful block tower on playroom rug. 4 Bluey with toy sailboat by shallow park pond on dry bank. 5 Bluey painting a rainbow on paper at child sized art table. 6 Bluey reading on cozy cushion. Absolutely no pigs or pig-like animals, no text, words, logos, watermark, or frightening scenes."
+  },
+  {
+    "id": "bingo",
+    "mode": "built-in imagegen",
+    "prompt": "Use case: illustration-story. Asset type: children's picture puzzle artwork sheet. EXACTLY six panels arranged 2 columns by 3 equal rows, no borders, gutters, captions or insets. Each landscape panel complete and self contained with wide safe margins, colorful scenery and large central character with clear details useful for matching puzzle pieces. Soft polished storybook illustration, vivid friendly colors, consistent recognizable character design. Reading order left to right then down: Bingo, the recognizable little orange Australian cattle dog puppy from Bluey, consistent orange fur and cream markings. Five distinct scenes plus bonus sixth: 1 Bingo having picnic with basket apples in park. 2 Bingo looking at butterfly in flower meadow. 3 Bingo building sandcastle with bucket at beach. 4 Bingo using toy telescope beneath evening stars outside home. 5 Bingo playing xylophone in colorful playroom. 6 Bingo cuddling plush rabbit on cushion. Absolutely no pigs or pig-like animals, no text, words, logos, watermark, or frightening scenes."
+  },
+  {
+    "id": "dora",
+    "mode": "built-in imagegen",
+    "prompt": "Use case: illustration-story. Asset: children's puzzle illustration sheet, EXACTLY 2 columns and 3 equal rows of six full self contained landscape scenes, no panels within panels, no gutters or borders. Soft colorful polished storybook illustration. Large character, simple recognizable scenery useful for matching pieces. Reading order left to right then down: Dora the Explorer, the fictional animated young Latina explorer with short straight dark brown bob hair, pink t-shirt, orange shorts and purple backpack, cheerful and fully clothed in safe outdoor play. Six complete separate scenes: 1 Dora looking at butterfly in flower garden. 2 Dora holding a map beside woodland trail. 3 Dora planting sunflower seed in pot at garden table. 4 Dora arranging colorful blocks in park play area. 5 Dora on dry bank watching little paper boat in shallow stream. 6 Dora sitting reading picture book on picnic blanket. No text, logos, watermark, pigs, or other characters."
+  },
+  {
+    "id": "sonic",
+    "mode": "built-in imagegen",
+    "prompt": "Use case: illustration-story. Asset: children's puzzle illustration sheet, EXACTLY 2 columns and 3 equal rows of six full self contained landscape scenes, no panels within panels, no gutters or borders. Soft colorful polished storybook illustration. Large character, simple recognizable scenery useful for matching pieces. Reading order left to right then down: Sonic the Hedgehog, the fictional blue cartoon hedgehog with spiky blue quills, white gloves and red shoes, friendly and fully recognizable. Six complete separate scenes: 1 Sonic jogging along sunny meadow path. 2 Sonic flying bright kite in park. 3 Sonic stacking colorful toy blocks at play table. 4 Sonic watering daisies in garden. 5 Sonic holding a picnic basket beside tree. 6 Sonic reading storybook on bench. No text, logos, watermark, pigs, or other characters."
+  }
+]

@@ -80,7 +80,7 @@ class _ParentGateState extends State<ParentGate> {
               Text('Grown-ups only', style: textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800)),
               const SizedBox(height: AppDimens.gapS),
               Text(
-                'To edit stories, answer:',
+                'To open grown-up controls, answer:',
                 style: textTheme.bodyMedium?.copyWith(color: AppColors.inkSoft),
               ),
               const SizedBox(height: AppDimens.gapM),

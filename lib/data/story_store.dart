@@ -155,11 +155,33 @@ class StoryStore extends ChangeNotifier {
     }
   }
 
-  List<Story> _upgradeScenes(List<Story> published) => upgradeLegacySceneAssets(
-        published: published,
-        bundled: _bundled,
-        signatures: _legacySignatures,
-      );
+  List<Story> _upgradeScenes(List<Story> published) {
+    final upgraded = upgradeLegacySceneAssets(
+      published: published,
+      bundled: _bundled,
+      signatures: _legacySignatures,
+    );
+    final bundledById = {for (final story in _bundled) story.id: story};
+    return upgraded.map((story) {
+      final bundled = bundledById[story.id];
+      if (story.moral.isEmpty &&
+          bundled != null &&
+          story.title == bundled.title &&
+          story.pages.length == bundled.pages.length) {
+        final textMatches = List.generate(
+                story.pages.length,
+                (i) =>
+                    story.pages[i].lead == bundled.pages[i].lead &&
+                    story.pages[i].body == bundled.pages[i].body)
+            .every((matches) => matches);
+        if (textMatches) {
+          return story.copyWith(
+              moral: bundled.moral, moralExplanation: bundled.moralExplanation);
+        }
+      }
+      return story;
+    }).toList();
+  }
 
   void _restore(String raw) {
     final json = jsonDecode(raw) as Map<String, dynamic>;

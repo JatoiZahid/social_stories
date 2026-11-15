@@ -7,6 +7,7 @@ import '../../data/models/story.dart';
 import '../../shared/widgets/widgets.dart';
 import '../editor/story_editor_screen.dart';
 import '../story/story_screen.dart';
+import '../puzzles/puzzle_library_screen.dart';
 
 /// Grid of every story. Children tap to read; in edit mode (subscribers) a
 /// tap opens the editor and a "New story" tile appears.
@@ -35,7 +36,9 @@ class _LibraryScreenState extends State<LibraryScreen> {
     final ok = await AppScope.read(context).store.refresh();
     if (ok || !mounted) return;
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Could not reach the story server. Showing saved stories.')),
+      const SnackBar(
+          content:
+              Text('Could not reach the story server. Showing saved stories.')),
     );
   }
 
@@ -59,7 +62,8 @@ class _LibraryScreenState extends State<LibraryScreen> {
 
     return ListenableBuilder(
       listenable: scope.account,
-      builder: (context, _) => _build(context, scope, editing: scope.settings.editMode && scope.account.subscribed),
+      builder: (context, _) => _build(context, scope,
+          editing: scope.settings.editMode && scope.account.subscribed),
     );
   }
 
@@ -68,7 +72,8 @@ class _LibraryScreenState extends State<LibraryScreen> {
       body: SafeArea(
         child: Center(
           child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: AppDimens.maxLibraryWidth),
+            constraints:
+                const BoxConstraints(maxWidth: AppDimens.maxLibraryWidth),
             child: Padding(
               padding: const EdgeInsets.all(AppDimens.screenPadding),
               child: Column(
@@ -76,7 +81,9 @@ class _LibraryScreenState extends State<LibraryScreen> {
                   ScreenHeader(
                     title: 'Social Stories',
                     subtitle: Text(
-                      editing ? 'Tap a story to edit it' : 'Pick a story to read together',
+                      editing
+                          ? 'Tap a story to edit it'
+                          : 'Pick a story to read together',
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                             color: AppColors.inkSoft,
                             fontWeight: FontWeight.w600,
@@ -90,28 +97,49 @@ class _LibraryScreenState extends State<LibraryScreen> {
                   ),
                   if (editing) ...[
                     const SizedBox(height: AppDimens.gapM),
-                    _EditModeBanner(onExit: () => scope.settings.editMode = false),
+                    _EditModeBanner(
+                        onExit: () => scope.settings.editMode = false),
+                  ],
+                  if (!editing) ...[
+                    const SizedBox(height: AppDimens.gapM),
+                    SizedBox(
+                        width: double.infinity,
+                        child: FilledButton.icon(
+                          key: const ValueKey('open-picture-puzzles'),
+                          icon: const Icon(Icons.extension_rounded),
+                          label: const Text('Play picture puzzles'),
+                          onPressed: () => Navigator.of(context).push(
+                            MaterialPageRoute<void>(
+                                builder: (_) => const PuzzleLibraryScreen()),
+                          ),
+                        )),
                   ],
                   const SizedBox(height: AppDimens.gapL),
                   Expanded(
                     child: FutureBuilder<void>(
                       future: _loading,
                       builder: (context, snapshot) {
-                        if (snapshot.hasError) return _LoadError(onRetry: _retry);
+                        if (snapshot.hasError) {
+                          return _LoadError(onRetry: _retry);
+                        }
                         if (snapshot.connectionState != ConnectionState.done) {
-                          return const Center(child: CircularProgressIndicator());
+                          return const Center(
+                              child: CircularProgressIndicator());
                         }
                         return ListenableBuilder(
                           listenable: scope.store,
                           builder: (context, _) {
                             final grid = _StoryGrid(
-                              stories: editing ? scope.store.editableStories : scope.store.stories,
+                              stories: editing
+                                  ? scope.store.editableStories
+                                  : scope.store.stories,
                               editing: editing,
                               onOpen: (story) => _open(story, editing: editing),
                               onCreate: _createStory,
                             );
                             if (!scope.store.hasServer) return grid;
-                            return RefreshIndicator(onRefresh: _refresh, child: grid);
+                            return RefreshIndicator(
+                                onRefresh: _refresh, child: grid);
                           },
                         );
                       },
@@ -141,7 +169,8 @@ class _EditModeBanner extends StatelessWidget {
         border: Border.all(color: AppColors.border),
       ),
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(AppDimens.gapL, AppDimens.gapS, AppDimens.gapS, AppDimens.gapS),
+        padding: const EdgeInsets.fromLTRB(
+            AppDimens.gapL, AppDimens.gapS, AppDimens.gapS, AppDimens.gapS),
         child: Row(
           children: [
             const Icon(Icons.lock_open_rounded, color: AppColors.primary),
@@ -149,10 +178,16 @@ class _EditModeBanner extends StatelessWidget {
             Expanded(
               child: Text(
                 'Editing is on. Your changes are saved on this phone and published after review.',
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w700),
+                style: Theme.of(context)
+                    .textTheme
+                    .bodyMedium
+                    ?.copyWith(fontWeight: FontWeight.w700),
               ),
             ),
-            PillButton(label: 'Done', leadingIcon: Icons.check_rounded, onPressed: onExit),
+            PillButton(
+                label: 'Done',
+                leadingIcon: Icons.check_rounded,
+                onPressed: onExit),
           ],
         ),
       ),
@@ -176,7 +211,8 @@ class _StoryGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      physics: const AlwaysScrollableScrollPhysics(), // so pull-to-refresh works with few stories
+      physics:
+          const AlwaysScrollableScrollPhysics(), // so pull-to-refresh works with few stories
       padding: const EdgeInsets.only(bottom: AppDimens.gapL),
       gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
         maxCrossAxisExtent: 280,
@@ -210,11 +246,15 @@ class _LoadError extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const Icon(Icons.menu_book_rounded, size: 48, color: AppColors.inkSoft),
+          const Icon(Icons.menu_book_rounded,
+              size: 48, color: AppColors.inkSoft),
           const SizedBox(height: AppDimens.gapM),
           const Text('We could not open the stories.'),
           const SizedBox(height: AppDimens.gapL),
-          PillButton(label: 'Try Again', leadingIcon: Icons.refresh_rounded, onPressed: onRetry),
+          PillButton(
+              label: 'Try Again',
+              leadingIcon: Icons.refresh_rounded,
+              onPressed: onRetry),
         ],
       ),
     );

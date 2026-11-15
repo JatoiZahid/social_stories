@@ -123,7 +123,9 @@
             "loop": false
           }
         }
-      ]
+      ],
+      "moral": "New routines become easier with support.",
+      "moralExplanation": "School brings new people and activities. Taking one step at a time and asking a trusted grown-up for help can make the day feel more familiar."
     },
     {
       "id": "going_to_the_toilet",
@@ -293,7 +295,9 @@
             "loop": false
           }
         }
-      ]
+      ],
+      "moral": "Listen to your body and ask for help.",
+      "moralExplanation": "Everyone learns bathroom routines at their own pace. We can notice what our body needs, ask for privacy or support, and wash our hands afterward."
     },
     {
       "id": "going_to_the_doctor",
@@ -412,7 +416,9 @@
             "loop": false
           }
         }
-      ]
+      ],
+      "moral": "It is okay to ask questions about your care.",
+      "moralExplanation": "A doctor helps us look after our bodies. We can tell a trusted grown-up how we feel and ask the doctor to explain what will happen."
     },
     {
       "id": "brushing_teeth",
@@ -536,7 +542,9 @@
             "loop": false
           }
         }
-      ]
+      ],
+      "moral": "Small daily habits help us care for ourselves.",
+      "moralExplanation": "Brushing helps keep our teeth clean. Practising regularly with support makes this routine easier to remember."
     },
     {
       "id": "restaurant",
@@ -660,7 +668,9 @@
             "loop": false
           }
         }
-      ]
+      ],
+      "moral": "Patience and clear communication help us enjoy time together.",
+      "moralExplanation": "A restaurant can be busy and unfamiliar. We can ask for what we need, take turns, and get support if waiting feels difficult."
     },
     {
       "id": "airport",
@@ -812,7 +822,9 @@
             "loop": false
           }
         }
-      ]
+      ],
+      "moral": "Staying together helps us navigate new places.",
+      "moralExplanation": "Airports have many people and steps to follow. Staying near our trusted grown-up and asking questions helps us move through the journey safely."
     },
     {
       "id": "playground",
@@ -926,7 +938,9 @@
             "loop": false
           }
         }
-      ]
+      ],
+      "moral": "Play is happier when everyone feels safe and included.",
+      "moralExplanation": "We can take turns and notice how others feel. Asking for help when something feels unsafe helps everyone enjoy the playground."
     },
     {
       "id": "sharing",
@@ -1040,7 +1054,9 @@
             "loop": false
           }
         }
-      ]
+      ],
+      "moral": "Kindness includes taking turns and respecting choices.",
+      "moralExplanation": "We can offer to share or agree on turns. It is also okay to keep a special belonging for ourselves and explain that kindly."
     },
     {
       "id": "asking_for_help",
@@ -1154,7 +1170,9 @@
             "loop": false
           }
         }
-      ]
+      ],
+      "moral": "Asking for help is a useful skill.",
+      "moralExplanation": "We do not have to solve every problem alone. Telling a trusted person what we need gives us a chance to learn and feel supported."
     },
     {
       "id": "personal_space",
@@ -1268,7 +1286,9 @@
             "loop": false
           }
         }
-      ]
+      ],
+      "moral": "Everyone has a right to comfortable personal space.",
+      "moralExplanation": "Different people like different amounts of space. We can ask before touching someone and tell others when we need more room."
     },
     {
       "id": "saying_no",
@@ -1387,7 +1407,9 @@
             "loop": false
           }
         }
-      ]
+      ],
+      "moral": "Your boundaries matter.",
+      "moralExplanation": "We can say no to unwanted touch or something that feels uncomfortable. A trusted grown-up can help us speak up and stay safe."
     },
     {
       "id": "staying_safe",
@@ -1506,7 +1528,9 @@
             "loop": false
           }
         }
-      ]
+      ],
+      "moral": "Trusted helpers can support us when we need them.",
+      "moralExplanation": "Staying close to our grown-up and following agreed safety routines can help. If we feel lost or worried, we can stop and ask a trusted helper for support."
     },
     {
       "id": "ant_and_grasshopper",
@@ -1570,7 +1594,9 @@
           ],
           "answer": 1
         }
-      ]
+      ],
+      "moral": "Plan ahead and help others with kindness.",
+      "moralExplanation": "Ant saved food for winter and still helped Grasshopper when he was hungry. Their friendship grew when they learned to prepare and work together."
     },
     {
       "id": "ant_and_pigeon",
@@ -1634,7 +1660,9 @@
           ],
           "answer": 1
         }
-      ]
+      ],
+      "moral": "Even a small friend can make a big difference.",
+      "moralExplanation": "Pigeon helped Ant with a leaf, and Ant later helped Pigeon escape danger. A kind action can matter regardless of how big or small we are."
     },
     {
       "id": "clever_crow",
@@ -1698,7 +1726,9 @@
           ],
           "answer": 1
         }
-      ]
+      ],
+      "moral": "Think carefully and keep trying.",
+      "moralExplanation": "Crow could not reach the water at first. By noticing the pebbles and trying a new idea patiently, she found a solution."
     },
     {
       "id": "tortoise_and_hare",
@@ -1762,7 +1792,9 @@
           ],
           "answer": 1
         }
-      ]
+      ],
+      "moral": "Steady effort helps us reach our goals.",
+      "moralExplanation": "Hare relied on being fast and stopped trying. Tortoise kept moving at his own pace and reached the finish through persistence."
     },
     {
       "id": "lion_and_mouse",
@@ -1826,7 +1858,9 @@
           ],
           "answer": 1
         }
-      ]
+      ],
+      "moral": "Treat others kindly, whatever their size.",
+      "moralExplanation": "Lion gave Mouse a chance to leave safely. Later, Mouse used his own special skill to help Lion, showing that everyone can contribute."
     },
     {
       "id": "fox_and_grapes",
@@ -1890,7 +1924,9 @@
           ],
           "answer": 1
         }
-      ]
+      ],
+      "moral": "Be honest about disappointment.",
+      "moralExplanation": "Fox could not reach the grapes, but that did not tell him how they tasted. We can admit that we feel disappointed without pretending something is worthless."
     },
     {
       "id": "dog_and_reflection",
@@ -1954,7 +1990,9 @@
           ],
           "answer": 1
         }
-      ]
+      ],
+      "moral": "Appreciate what you already have.",
+      "moralExplanation": "Dog mistook his reflection for another dog and tried to get more bread. He lost his own roll because he did not stop to understand what he was seeing."
     },
     {
       "id": "bundle_of_sticks",
@@ -2018,7 +2056,9 @@
           ],
           "answer": 0
         }
-      ]
+      ],
+      "moral": "Working together can make us stronger.",
+      "moralExplanation": "A single stick bent easily, while the bundle held together. The family learned that helping one another made their shared work easier."
     },
     {
       "id": "enormous_turnip",
@@ -2080,7 +2120,9 @@
           ],
           "answer": 1
         }
-      ]
+      ],
+      "moral": "Every helper matters.",
+      "moralExplanation": "The turnip came out when everyone pulled together, including the tiny mouse. Small contributions can help a group achieve something big."
     },
     {
       "id": "little_red_hen",
@@ -2142,7 +2184,9 @@
           ],
           "answer": 1
         }
-      ]
+      ],
+      "moral": "Shared work is a way to care for each other.",
+      "moralExplanation": "Hen and her chicks did many jobs to make their bread. The other animals learned to join in next time so the work could be shared."
     },
     {
       "id": "cap_seller_and_monkeys",
@@ -2204,7 +2248,9 @@
           ],
           "answer": 1
         }
-      ]
+      ],
+      "moral": "Pause and notice before solving a problem.",
+      "moralExplanation": "The seller saw that the monkeys copied his movements. Observing carefully helped him find a calm way to collect his caps."
     },
     {
       "id": "great_race",
@@ -2266,7 +2312,9 @@
           ],
           "answer": 1
         }
-      ]
+      ],
+      "moral": "Different strengths help us through challenges.",
+      "moralExplanation": "The animals crossed the river in different ways, and some worked together. We can value our own abilities and the help that others offer."
     },
     {
       "id": "anansi_pot_of_wisdom",
@@ -2328,7 +2376,9 @@
           ],
           "answer": 1
         }
-      ]
+      ],
+      "moral": "Everyone has something to teach and something to learn.",
+      "moralExplanation": "Anansi thought he knew everything, but his child offered a helpful idea. Listening and sharing let more people benefit from what we know."
     },
     {
       "id": "ugly_duckling",
@@ -2387,6 +2437,520 @@
           "choices": [
             "Only swans",
             "Everyone"
+          ],
+          "answer": 1
+        }
+      ],
+      "moral": "Everyone deserves kindness and belonging.",
+      "moralExplanation": "The little bird felt different as he grew. He deserved care from the beginning, and growing into a swan did not change his worth."
+    },
+    {
+      "id": "goldilocks",
+      "title": "Goldilocks and the Three Bears",
+      "pages": [
+        {
+          "id": "goldilocks-p1",
+          "image": "assets/images/story_scenes/goldilocks_scene_01.png",
+          "lead": "Goldilocks found a little cottage in the woods.",
+          "body": "She went inside without asking who lived there."
+        },
+        {
+          "id": "goldilocks-p2",
+          "image": "assets/images/story_scenes/goldilocks_scene_02.png",
+          "lead": "On the table were three bowls of porridge.",
+          "body": "One was too hot, one was too cold, and one was just right."
+        },
+        {
+          "id": "goldilocks-p3",
+          "image": "assets/images/story_scenes/goldilocks_scene_03.png",
+          "lead": "Goldilocks tried three chairs.",
+          "body": "The little chair wobbled, and she stood up carefully."
+        },
+        {
+          "id": "goldilocks-p4",
+          "image": "assets/images/story_scenes/goldilocks_scene_04.png",
+          "lead": "Upstairs, she found three beds.",
+          "body": "She lay on the little bed and fell asleep."
+        },
+        {
+          "id": "goldilocks-p5",
+          "image": "assets/images/story_scenes/goldilocks_scene_05.png",
+          "lead": "The bear family came home, and Goldilocks woke up.",
+          "body": "She realized she had used their things without permission."
+        },
+        {
+          "id": "goldilocks-p6",
+          "image": "assets/images/story_scenes/goldilocks_scene_06.png",
+          "lead": "Goldilocks said sorry and left with her grown-up.",
+          "body": "She learned to ask before entering a home or using someone else's things."
+        }
+      ],
+      "questions": [
+        {
+          "id": "goldilocks-q1",
+          "question": "Who lived in the cottage?",
+          "choices": [
+            "Three bears",
+            "Three birds"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "goldilocks-q2",
+          "question": "What should Goldilocks do before using others' things?",
+          "choices": [
+            "Take them",
+            "Ask permission"
+          ],
+          "answer": 1
+        }
+      ],
+      "moral": "Ask permission before using someone else's things.",
+      "moralExplanation": "Goldilocks entered a home and used the bears' belongings without asking. Saying sorry and respecting other people's space helps repair mistakes."
+    },
+    {
+      "id": "gingerbread_man",
+      "title": "The Gingerbread Man",
+      "pages": [
+        {
+          "id": "gingerbread_man-p1",
+          "image": "assets/images/story_scenes/gingerbread_man_scene_01.png",
+          "lead": "A baker rolled out dough and cut a little shape.",
+          "body": "The baker made a gingerbread man with bright buttons."
+        },
+        {
+          "id": "gingerbread_man-p2",
+          "image": "assets/images/story_scenes/gingerbread_man_scene_02.png",
+          "lead": "On the cooling tray, the gingerbread man opened his eyes.",
+          "body": "He smiled, stretched, and jumped down."
+        },
+        {
+          "id": "gingerbread_man-p3",
+          "image": "assets/images/story_scenes/gingerbread_man_scene_03.png",
+          "lead": "Run, run! he called as he ran through the garden.",
+          "body": "The baker watched to see where he would go."
+        },
+        {
+          "id": "gingerbread_man-p4",
+          "image": "assets/images/story_scenes/gingerbread_man_scene_04.png",
+          "lead": "A dog and a cat watched him hurry past.",
+          "body": "He waved hello as he ran along the path."
+        },
+        {
+          "id": "gingerbread_man-p5",
+          "image": "assets/images/story_scenes/gingerbread_man_scene_05.png",
+          "lead": "At a little stream, the gingerbread man stopped.",
+          "body": "He could not cross safely, so he thought about what to do."
+        },
+        {
+          "id": "gingerbread_man-p6",
+          "image": "assets/images/story_scenes/gingerbread_man_scene_06.png",
+          "lead": "He turned around and went back to the baker.",
+          "body": "His adventure taught him to stop and think before rushing ahead."
+        }
+      ],
+      "questions": [
+        {
+          "id": "gingerbread_man-q1",
+          "question": "Who made the gingerbread man?",
+          "choices": [
+            "A baker",
+            "A mouse"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "gingerbread_man-q2",
+          "question": "What did he do at the stream?",
+          "choices": [
+            "Jumped without looking",
+            "Stopped to think"
+          ],
+          "answer": 1
+        }
+      ],
+      "moral": "Stop and think before rushing ahead.",
+      "moralExplanation": "The gingerbread man enjoyed his adventure but stopped when he reached the stream. Noticing a risk gave him time to choose a safer next step."
+    },
+    {
+      "id": "north_wind_and_sun",
+      "title": "The North Wind and the Sun",
+      "pages": [
+        {
+          "id": "north_wind_and_sun-p1",
+          "image": "assets/images/story_scenes/north_wind_and_sun_scene_01.png",
+          "lead": "North Wind and Sun wondered who was stronger.",
+          "body": "Below them, a traveler walked in a warm coat."
+        },
+        {
+          "id": "north_wind_and_sun-p2",
+          "image": "assets/images/story_scenes/north_wind_and_sun_scene_02.png",
+          "lead": "Wind tried to blow the traveler's coat off.",
+          "body": "The traveler held it closed."
+        },
+        {
+          "id": "north_wind_and_sun-p3",
+          "image": "assets/images/story_scenes/north_wind_and_sun_scene_03.png",
+          "lead": "Wind blew harder and harder.",
+          "body": "The traveler wrapped the coat even more tightly around himself."
+        },
+        {
+          "id": "north_wind_and_sun-p4",
+          "image": "assets/images/story_scenes/north_wind_and_sun_scene_04.png",
+          "lead": "Then Sun had a turn.",
+          "body": "Sun shone gently, and the air grew warm."
+        },
+        {
+          "id": "north_wind_and_sun-p5",
+          "image": "assets/images/story_scenes/north_wind_and_sun_scene_05.png",
+          "lead": "The traveler felt warm and comfortable.",
+          "body": "He unbuttoned his coat and took it off."
+        },
+        {
+          "id": "north_wind_and_sun-p6",
+          "image": "assets/images/story_scenes/north_wind_and_sun_scene_06.png",
+          "lead": "Sun smiled, and Wind grew quiet.",
+          "body": "Gentleness can succeed where pushing harder does not."
+        }
+      ],
+      "questions": [
+        {
+          "id": "north_wind_and_sun-q1",
+          "question": "What did the traveler hold tighter when Wind blew?",
+          "choices": [
+            "His coat",
+            "A basket"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "north_wind_and_sun-q2",
+          "question": "Who made the traveler feel warm?",
+          "choices": [
+            "Wind",
+            "Sun"
+          ],
+          "answer": 1
+        }
+      ],
+      "moral": "Gentleness can be more effective than force.",
+      "moralExplanation": "The stronger Wind blew, the tighter the traveler held his coat. Sun's gentle warmth helped the traveler choose to take it off himself."
+    },
+    {
+      "id": "fox_and_stork",
+      "title": "The Fox and the Stork",
+      "pages": [
+        {
+          "id": "fox_and_stork-p1",
+          "image": "assets/images/story_scenes/fox_and_stork_scene_01.png",
+          "lead": "Fox invited Stork to share some soup.",
+          "body": "Stork was happy to visit her friend."
+        },
+        {
+          "id": "fox_and_stork-p2",
+          "image": "assets/images/story_scenes/fox_and_stork_scene_02.png",
+          "lead": "Fox served the soup in shallow plates.",
+          "body": "Fox could eat easily from his plate."
+        },
+        {
+          "id": "fox_and_stork-p3",
+          "image": "assets/images/story_scenes/fox_and_stork_scene_03.png",
+          "lead": "Stork's long beak could not scoop up the soup.",
+          "body": "She was still hungry, and Fox noticed her difficulty."
+        },
+        {
+          "id": "fox_and_stork-p4",
+          "image": "assets/images/story_scenes/fox_and_stork_scene_04.png",
+          "lead": "Another day, Stork invited Fox for a meal.",
+          "body": "She served the food in tall, narrow jars."
+        },
+        {
+          "id": "fox_and_stork-p5",
+          "image": "assets/images/story_scenes/fox_and_stork_scene_05.png",
+          "lead": "Stork could eat, but Fox could not reach inside his jar.",
+          "body": "Now Fox understood how Stork had felt."
+        },
+        {
+          "id": "fox_and_stork-p6",
+          "image": "assets/images/story_scenes/fox_and_stork_scene_06.png",
+          "lead": "They changed the dishes so both friends could eat.",
+          "body": "Good friends think about what each other needs."
+        }
+      ],
+      "questions": [
+        {
+          "id": "fox_and_stork-q1",
+          "question": "Why was the shallow plate difficult for Stork?",
+          "choices": [
+            "Her beak was long",
+            "She was asleep"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "fox_and_stork-q2",
+          "question": "What helped both friends enjoy the meal?",
+          "choices": [
+            "Only one friend eating",
+            "Using dishes that suited each friend"
+          ],
+          "answer": 1
+        }
+      ],
+      "moral": "Think about what others need.",
+      "moralExplanation": "A dish that worked for one friend was difficult for the other. Changing the dishes helped both friends feel welcome and enjoy the meal."
+    },
+    {
+      "id": "town_mouse_country_mouse",
+      "title": "The Town Mouse and the Country Mouse",
+      "pages": [
+        {
+          "id": "town_mouse_country_mouse-p1",
+          "image": "assets/images/story_scenes/town_mouse_country_mouse_scene_01.png",
+          "lead": "Country Mouse welcomed Town Mouse to his little home.",
+          "body": "The fields around them were quiet and green."
+        },
+        {
+          "id": "town_mouse_country_mouse-p2",
+          "image": "assets/images/story_scenes/town_mouse_country_mouse_scene_02.png",
+          "lead": "They shared a simple meal of seeds and berries.",
+          "body": "Town Mouse invited his friend to visit the town."
+        },
+        {
+          "id": "town_mouse_country_mouse-p3",
+          "image": "assets/images/story_scenes/town_mouse_country_mouse_scene_03.png",
+          "lead": "In town, there was a pantry full of tasty food.",
+          "body": "Country Mouse looked at the bread and fruit in surprise."
+        },
+        {
+          "id": "town_mouse_country_mouse-p4",
+          "image": "assets/images/story_scenes/town_mouse_country_mouse_scene_04.png",
+          "lead": "The two mice sat down to enjoy a feast.",
+          "body": "Then they heard footsteps at the pantry door."
+        },
+        {
+          "id": "town_mouse_country_mouse-p5",
+          "image": "assets/images/story_scenes/town_mouse_country_mouse_scene_05.png",
+          "lead": "A cat looked into the pantry.",
+          "body": "The mice waited safely behind a basket until the cat left."
+        },
+        {
+          "id": "town_mouse_country_mouse-p6",
+          "image": "assets/images/story_scenes/town_mouse_country_mouse_scene_06.png",
+          "lead": "Country Mouse chose to return to his peaceful home.",
+          "body": "He learned that feeling safe and content mattered more than a fancy meal."
+        }
+      ],
+      "questions": [
+        {
+          "id": "town_mouse_country_mouse-q1",
+          "question": "Where did Country Mouse feel most comfortable?",
+          "choices": [
+            "At his quiet home",
+            "In the busy pantry"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "town_mouse_country_mouse-q2",
+          "question": "What mattered most to Country Mouse?",
+          "choices": [
+            "Having the fanciest food",
+            "Feeling safe and content"
+          ],
+          "answer": 1
+        }
+      ],
+      "moral": "Choose what helps you feel safe and content.",
+      "moralExplanation": "Country Mouse enjoyed visiting but preferred the peace of his own home. A fancy meal was less important to him than feeling comfortable."
+    },
+    {
+      "id": "honest_woodcutter",
+      "title": "The Honest Woodcutter",
+      "pages": [
+        {
+          "id": "honest_woodcutter-p1",
+          "image": "assets/images/story_scenes/honest_woodcutter_scene_01.png",
+          "lead": "A woodcutter worked beside a quiet stream.",
+          "body": "His old iron axe helped him cut fallen branches."
+        },
+        {
+          "id": "honest_woodcutter-p2",
+          "image": "assets/images/story_scenes/honest_woodcutter_scene_02.png",
+          "lead": "The axe slipped from his hands into the water.",
+          "body": "The woodcutter sat on the bank, worried about his tool."
+        },
+        {
+          "id": "honest_woodcutter-p3",
+          "image": "assets/images/story_scenes/honest_woodcutter_scene_03.png",
+          "lead": "A woodland fairy appeared with a golden axe.",
+          "body": "Is this yours? she asked. No, said the woodcutter."
+        },
+        {
+          "id": "honest_woodcutter-p4",
+          "image": "assets/images/story_scenes/honest_woodcutter_scene_04.png",
+          "lead": "Next, the fairy showed him a silver axe.",
+          "body": "That is not mine either, he answered honestly."
+        },
+        {
+          "id": "honest_woodcutter-p5",
+          "image": "assets/images/story_scenes/honest_woodcutter_scene_05.png",
+          "lead": "Then she held up his old iron axe.",
+          "body": "That is mine! said the woodcutter with a happy smile."
+        },
+        {
+          "id": "honest_woodcutter-p6",
+          "image": "assets/images/story_scenes/honest_woodcutter_scene_06.png",
+          "lead": "The fairy returned his axe and gave him a gift for his honesty.",
+          "body": "The woodcutter thanked her and kept telling the truth."
+        }
+      ],
+      "moral": "Honesty helps people trust us.",
+      "moralExplanation": "The woodcutter told the truth even when he was offered something valuable. Being honest matters because it helps others understand and trust us, whether or not there is a reward.",
+      "questions": [
+        {
+          "id": "honest_woodcutter-q1",
+          "question": "Which axe belonged to the woodcutter?",
+          "choices": [
+            "The iron axe",
+            "The golden axe"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "honest_woodcutter-q2",
+          "question": "What did he do when offered the wrong axe?",
+          "choices": [
+            "Claimed it",
+            "Told the truth"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "boy_cried_wolf",
+      "title": "The Boy Who Cried Wolf",
+      "pages": [
+        {
+          "id": "boy_cried_wolf-p1",
+          "image": "assets/images/story_scenes/boy_cried_wolf_scene_01.png",
+          "lead": "A shepherd boy watched sheep on a grassy hill.",
+          "body": "The villagers worked nearby."
+        },
+        {
+          "id": "boy_cried_wolf-p2",
+          "image": "assets/images/story_scenes/boy_cried_wolf_scene_02.png",
+          "lead": "One day, he called Wolf! as a joke.",
+          "body": "The villagers hurried up the hill to help."
+        },
+        {
+          "id": "boy_cried_wolf-p3",
+          "image": "assets/images/story_scenes/boy_cried_wolf_scene_03.png",
+          "lead": "There was no wolf, and the sheep were safe.",
+          "body": "The villagers asked the boy to call for help only when he meant it."
+        },
+        {
+          "id": "boy_cried_wolf-p4",
+          "image": "assets/images/story_scenes/boy_cried_wolf_scene_04.png",
+          "lead": "Later, a wolf appeared near the trees.",
+          "body": "The boy called for help, but the villagers were unsure what to believe."
+        },
+        {
+          "id": "boy_cried_wolf-p5",
+          "image": "assets/images/story_scenes/boy_cried_wolf_scene_05.png",
+          "lead": "The boy gathered the sheep into their strong pen.",
+          "body": "He kept calling clearly, and the villagers came to check."
+        },
+        {
+          "id": "boy_cried_wolf-p6",
+          "image": "assets/images/story_scenes/boy_cried_wolf_scene_06.png",
+          "lead": "The sheep were safe, and the boy said sorry for his joke.",
+          "body": "He learned to tell the truth and to rebuild trust through his actions."
+        }
+      ],
+      "moral": "Tell the truth so others can understand when you need help.",
+      "moralExplanation": "The boy's earlier joke made the villagers uncertain. Honest words and reliable actions help rebuild trust, and it is always okay to ask for help in a real emergency.",
+      "questions": [
+        {
+          "id": "boy_cried_wolf-q1",
+          "question": "Why were the villagers unsure at first?",
+          "choices": [
+            "The boy had joked before",
+            "The sheep were asleep"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "boy_cried_wolf-q2",
+          "question": "What did the boy learn?",
+          "choices": [
+            "Never ask for help",
+            "Tell the truth"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "fox_and_crow",
+      "title": "The Fox and the Crow",
+      "pages": [
+        {
+          "id": "fox_and_crow-p1",
+          "image": "assets/images/story_scenes/fox_and_crow_scene_01.png",
+          "lead": "Crow found a piece of cheese and sat on a branch.",
+          "body": "Fox noticed the cheese from the ground below."
+        },
+        {
+          "id": "fox_and_crow-p2",
+          "image": "assets/images/story_scenes/fox_and_crow_scene_02.png",
+          "lead": "What lovely feathers you have! said Fox.",
+          "body": "I am sure your singing is lovely too."
+        },
+        {
+          "id": "fox_and_crow-p3",
+          "image": "assets/images/story_scenes/fox_and_crow_scene_03.png",
+          "lead": "Crow felt proud and wanted to show off her voice.",
+          "body": "She lifted her head, still holding the cheese in her beak."
+        },
+        {
+          "id": "fox_and_crow-p4",
+          "image": "assets/images/story_scenes/fox_and_crow_scene_04.png",
+          "lead": "Crow opened her beak to sing.",
+          "body": "The cheese fell from the branch."
+        },
+        {
+          "id": "fox_and_crow-p5",
+          "image": "assets/images/story_scenes/fox_and_crow_scene_05.png",
+          "lead": "Fox picked up the cheese and walked away.",
+          "body": "Crow realized he had wanted her food all along."
+        },
+        {
+          "id": "fox_and_crow-p6",
+          "image": "assets/images/story_scenes/fox_and_crow_scene_06.png",
+          "lead": "Crow rested quietly and thought about what had happened.",
+          "body": "Next time, she would pause before acting on flattering words."
+        }
+      ],
+      "moral": "Think before acting on flattery.",
+      "moralExplanation": "Fox used praise to get Crow to drop her food. We can enjoy kind words while still thinking about what someone is asking us to do and whether it feels right.",
+      "questions": [
+        {
+          "id": "fox_and_crow-q1",
+          "question": "What fell when Crow opened her beak?",
+          "choices": [
+            "Cheese",
+            "A hat"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "fox_and_crow-q2",
+          "question": "What can we do before acting on praise?",
+          "choices": [
+            "Rush",
+            "Pause and think"
           ],
           "answer": 1
         }
