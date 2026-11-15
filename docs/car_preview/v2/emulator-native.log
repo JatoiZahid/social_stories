@@ -116,3 +116,111 @@ INFO         | getEnvironmentConfig: Using default configuration for mode mesh3d
 INFO         | Initializing a scene with mode: mesh3d, argument: Toren1BD.obj
 USER_INFO    | Emulator is performing a full startup. This may take upto two minutes, or more.
 INFO         | Boot completed in 136241 ms
+INFO         | Increasing screen off timeout, logcat buffer size to 2M.
+INFO         | IPv4 server found: 192.168.1.1
+INFO         | Ignore IPv6 address: 78a3:9e39:2702:0:d09d:9e39:2702:0
+INFO         | Ignore IPv6 address: 78a3:9e39:2702:0:d09d:9e39:2702:0
+INFO         | Ignore IPv6 address: 78a3:9e39:2702:0:d09d:9e39:2702:0
+INFO         | Ignore IPv6 address: 90a9:9e39:2702:0:d09d:9e39:2702:0
+INFO         | Ignore IPv6 address: 90a9:9e39:2702:0:d09d:9e39:2702:0
+INFO         | Ignore IPv6 address: 90a9:9e39:2702:0:d09d:9e39:2702:0
+INFO         | Ignore IPv6 address: 88bf:9e39:2702:0:d09d:9e39:2702:0
+INFO         | Ignore IPv6 address: 88bf:9e39:2702:0:d09d:9e39:2702:0
+INFO         | Ignore IPv6 address: 88bf:9e39:2702:0:d09d:9e39:2702:0
+INFO         | Ignore IPv6 address: e8c5:9e39:2702:0:d09d:9e39:2702:0
+INFO         | Ignore IPv6 address: e8c5:9e39:2702:0:d09d:9e39:2702:0
+INFO         | Ignore IPv6 address: e8c5:9e39:2702:0:d09d:9e39:2702:0
+INFO         | IPv4 server found: 192.168.1.1
+INFO         | Ignore IPv6 address: 88e3:9e39:2702:0:e0dd:9e39:2702:0
+INFO         | Ignore IPv6 address: 88e3:9e39:2702:0:e0dd:9e39:2702:0
+INFO         | Ignore IPv6 address: 88e3:9e39:2702:0:e0dd:9e39:2702:0
+INFO         | Ignore IPv6 address: a0e9:9e39:2702:0:e0dd:9e39:2702:0
+INFO         | Ignore IPv6 address: a0e9:9e39:2702:0:e0dd:9e39:2702:0
+INFO         | Ignore IPv6 address: a0e9:9e39:2702:0:e0dd:9e39:2702:0
+INFO         | Ignore IPv6 address: 98ff:9e39:2702:0:e0dd:9e39:2702:0
+INFO         | Ignore IPv6 address: 98ff:9e39:2702:0:e0dd:9e39:2702:0
+INFO         | Ignore IPv6 address: 98ff:9e39:2702:0:e0dd:9e39:2702:0
+INFO         | Ignore IPv6 address: f805:9f39:2702:0:e0dd:9e39:2702:0
+INFO         | Ignore IPv6 address: f805:9f39:2702:0:e0dd:9e39:2702:0
+INFO         | Ignore IPv6 address: f805:9f39:2702:0:e0dd:9e39:2702:0
+INFO         | IPv4 server found: 192.168.1.1
+INFO         | Ignore IPv6 address: 88e3:9e39:2702:0:e0dd:9e39:2702:0
+INFO         | Ignore IPv6 address: 88e3:9e39:2702:0:e0dd:9e39:2702:0
+INFO         | Ignore IPv6 address: 88e3:9e39:2702:0:e0dd:9e39:2702:0
+INFO         | Ignore IPv6 address: a0e9:9e39:2702:0:e0dd:9e39:2702:0
+INFO         | Ignore IPv6 address: a0e9:9e39:2702:0:e0dd:9e39:2702:0
+INFO         | Ignore IPv6 address: a0e9:9e39:2702:0:e0dd:9e39:2702:0
+INFO         | Ignore IPv6 address: 98ff:9e39:2702:0:e0dd:9e39:2702:0
+INFO         | Ignore IPv6 address: 98ff:9e39:2702:0:e0dd:9e39:2702:0
+INFO         | Ignore IPv6 address: 98ff:9e39:2702:0:e0dd:9e39:2702:0
+INFO         | Ignore IPv6 address: f805:9f39:2702:0:e0dd:9e39:2702:0
+INFO         | Ignore IPv6 address: f805:9f39:2702:0:e0dd:9e39:2702:0
+INFO         | Ignore IPv6 address: f805:9f39:2702:0:e0dd:9e39:2702:0
+ERROR        | Failed to find ColorBuffer: 318
+ERROR        | Failed to find ColorBuffer: 490
+INFO         | Created VkInstance:00000227198FF090 for application:'' engine:''.
+INFO         | Destroyed VkInstance:00000227198FF090 for application:'' engine:''.
+ERROR        | bad color buffer handle 899
+INFO         | Boot completed in 27348797 ms
+INFO         | Increasing screen off timeout, logcat buffer size to 2M.
+INFO         | IPv4 server found: 192.168.1.1
+INFO         | Ignore IPv6 address: 18c5:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 18c5:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 18c5:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 30cb:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 30cb:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 30cb:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 28e1:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 28e1:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 28e1:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 88e7:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 88e7:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 88e7:4719:2702:0:70bf:4719:2702:0
+INFO         | IPv4 server found: 192.168.1.1
+INFO         | Ignore IPv6 address: 18c5:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 18c5:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 18c5:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 30cb:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 30cb:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 30cb:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 28e1:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 28e1:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 28e1:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 88e7:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 88e7:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 88e7:4719:2702:0:70bf:4719:2702:0
+INFO         | IPv4 server found: 192.168.1.1
+INFO         | Ignore IPv6 address: 18c5:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 18c5:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 18c5:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 30cb:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 30cb:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 30cb:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 28e1:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 28e1:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 28e1:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 88e7:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 88e7:4719:2702:0:70bf:4719:2702:0
+INFO         | Ignore IPv6 address: 88e7:4719:2702:0:70bf:4719:2702:0
+ERROR        | bad color buffer handle 1626
+ERROR        | bad color buffer handle 1776
+ERROR        | bad color buffer handle 1778
+ERROR        | bad color buffer handle 1927
+INFO         | IPv4 server found: 192.168.1.1
+INFO         | Ignore IPv6 address: 284c:ea49:2702:0:8046:ea49:2702:0
+INFO         | Ignore IPv6 address: 284c:ea49:2702:0:8046:ea49:2702:0
+INFO         | Ignore IPv6 address: 284c:ea49:2702:0:8046:ea49:2702:0
+INFO         | Ignore IPv6 address: 4052:ea49:2702:0:8046:ea49:2702:0
+INFO         | Ignore IPv6 address: 4052:ea49:2702:0:8046:ea49:2702:0
+INFO         | Ignore IPv6 address: 4052:ea49:2702:0:8046:ea49:2702:0
+INFO         | Ignore IPv6 address: 7868:ea49:2702:0:8046:ea49:2702:0
+INFO         | Ignore IPv6 address: 7868:ea49:2702:0:8046:ea49:2702:0
+INFO         | Ignore IPv6 address: 7868:ea49:2702:0:8046:ea49:2702:0
+INFO         | Ignore IPv6 address: d86e:ea49:2702:0:8046:ea49:2702:0
+INFO         | Ignore IPv6 address: d86e:ea49:2702:0:8046:ea49:2702:0
+INFO         | Ignore IPv6 address: d86e:ea49:2702:0:8046:ea49:2702:0
+INFO         | IPv4 server found: 192.168.1.1
+INFO         | Ignore IPv6 address: 284c:ea49:2702:0:8046:ea49:2702:0
+INFO         | Ignore IPv6 address: 284c:ea49:2702:0:8046:ea49:2702:0
+INFO         | Ignore IPv6 address: 284c:ea49:2702:0:8046:ea49:2702:0
+INFO         | Ignore IPv6 address: 4052:ea49:27

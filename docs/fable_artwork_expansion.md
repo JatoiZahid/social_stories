@@ -1,0 +1,21 @@
+Five additional fables use the same built-in imagegen workflow and asset directory, with prefixes `tortoise_and_hare`, `lion_and_mouse`, `fox_and_grapes`, `dog_and_reflection`, `bundle_of_sticks`. The Bundle of Sticks sheet was split at its actual panel boundaries; the introductory portrait was omitted, and the final gardening inset supplies page six.
+
+tortoise_and_hare
+
+Use case: illustration-story. Asset type: six-panel children's picture book illustration sheet. Precisely 2 columns by 3 rows equal rectangular panels edge to edge, no gutters or borders. Soft colorful polished children's picture book artwork, expressive friendly characters, clear simple scenes. Each panel complete with safe margins, consistent characters throughout. Reading order left to right top to bottom: friendly green tortoise and tan hare; panel 1 hare boasts beside tortoise in meadow; panel 2 woodland animals at starting line tortoise and hare begin race; panel 3 hare far ahead looks back at slow tortoise; panel 4 hare asleep beneath tree tortoise walks past; panel 5 hare wakes surprised and runs toward distant finish; panel 6 tortoise crosses ribbon finish first hare arrives behind both smiling. No captions, text, letters, watermark, frightening details or violence.
+
+lion_and_mouse
+
+Use case: illustration-story. Create one six-panel children's story illustration sheet, precisely 2 columns by 3 rows equal panels, edge to edge no gutters. Soft colorful polished picture book style, friendly characters consistent in every panel, clear simple scenes, safe margins. Scenes reading order left to right then down: A gentle golden lion and tiny gray mouse become friends. 1 mouse meets sleeping lion. 2 lion and mouse chat kindly. 3 lion waves goodbye to mouse. 4 lion sits inside loose rope net in sunny forest waiting calmly for help. 5 mouse nibbles a rope knot opening net. 6 lion free and mouse smiling together beside loose rope. No text, letters, captions or watermarks. Gentle educational family story, no injuries.
+
+fox_and_grapes
+
+Use case: illustration-story. Create one six-panel children's story illustration sheet, precisely 2 columns by 3 rows equal panels, edge to edge no gutters. Soft colorful polished picture book style, friendly characters consistent in every panel, clear simple scenes, safe margins. Scenes reading order left to right then down: Friendly orange fox in sunny vineyard. 1 fox walks down path. 2 fox sees purple grapes hanging high. 3 fox stretches up unable to reach grapes. 4 fox jumps but grapes too high. 5 fox walks away disappointed. 6 fox sits under tree thinking calmly, grapes far behind. No text, letters, captions or watermarks. Gentle educational family story, no injuries.
+
+dog_and_reflection
+
+Use case: illustration-story. Create one six-panel children's story illustration sheet, precisely 2 columns by 3 rows equal panels, edge to edge no gutters. Soft colorful polished picture book style, friendly characters consistent in every panel, clear simple scenes, safe margins. Scenes reading order left to right then down: Friendly brown dog and a bread roll. 1 kindly baker gives dog roll. 2 dog walks wooden bridge carrying roll in mouth. 3 dog looks at own reflection holding roll in quiet stream. 4 dog opens mouth surprised and roll falls toward water. 5 bread floats away dog watches from bridge. 6 dog rests thoughtfully on grassy bank. No text, letters, captions or watermarks. Gentle educational family story, no injuries.
+
+bundle_of_sticks
+
+Use case: illustration-story. Create one six-panel children's story illustration sheet, precisely 2 columns by 3 rows equal panels, edge to edge no gutters. Soft colorful polished picture book style, friendly characters consistent in every panel, clear simple scenes, safe margins. Scenes reading order left to right then down: Kind elderly farmer in blue vest with three adult children at sunny farm. 1 family disagreeing mildly. 2 father holds bundle of thin twigs tied with twine. 3 adult child tries bending bundle, bundle stays together. 4 father unties bundle separates twigs. 5 child bends single thin twig into two pieces. 6 family happily plants garden together. No text, letters, captions or watermarks. Gentle educational family story, no injuries.

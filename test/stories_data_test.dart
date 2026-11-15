@@ -17,9 +17,9 @@ void main() {
         .toList();
   });
 
-  test('has all 12 stories with unique ids', () {
-    expect(stories, hasLength(12));
-    expect(stories.map((s) => s.id).toSet(), hasLength(12));
+  test('has all 26 stories with unique ids', () {
+    expect(stories, hasLength(26));
+    expect(stories.map((s) => s.id).toSet(), hasLength(26));
   });
 
   test('every page has text, a unique id and an image that exists', () {
@@ -35,6 +35,38 @@ void main() {
     }
   });
 
+  test('classic tales have six illustrated pages and valid quizzes', () {
+    const titles = {
+      'ant_and_grasshopper': 'The Ant and the Grasshopper',
+      'ant_and_pigeon': 'The Ant and the Pigeon',
+      'clever_crow': 'The Clever Crow',
+      'tortoise_and_hare': 'The Tortoise and the Hare',
+      'lion_and_mouse': 'The Lion and the Mouse',
+      'fox_and_grapes': 'The Fox and the Grapes',
+      'dog_and_reflection': 'The Dog and His Reflection',
+      'bundle_of_sticks': 'The Bundle of Sticks',
+      'enormous_turnip': 'The Enormous Turnip',
+      'little_red_hen': 'The Little Red Hen',
+      'cap_seller_and_monkeys': 'The Cap Seller and the Monkeys',
+      'great_race': 'The Great Race',
+      'anansi_pot_of_wisdom': 'Anansi and the Pot of Wisdom',
+      'ugly_duckling': 'The Ugly Duckling',
+    };
+    for (final entry in titles.entries) {
+      final story = stories.singleWhere((story) => story.id == entry.key);
+      expect(story.title, entry.value);
+      expect(story.pages, hasLength(6));
+      expect(story.pages.map((page) => page.image).toSet(), hasLength(6));
+      expect(story.questions, hasLength(2));
+      for (final question in story.questions) {
+        expect(question.question.trim(), isNotEmpty);
+        expect(question.choices.length, inInclusiveRange(2, 4));
+        expect(
+            question.answer, inInclusiveRange(0, question.choices.length - 1));
+      }
+    }
+  });
+
   test('every scene in the picker exists', () {
     expect(SceneCatalog.all, hasLength(12));
     for (final scene in SceneCatalog.all) {
@@ -43,12 +75,28 @@ void main() {
   });
 
   test(
-      'every bundled scene has its own reviewed action atlas and uncropped poster',
+      'every animated scene has its own reviewed action atlas and uncropped poster',
       () {
     final images = <String>{};
     var sceneCount = 0;
     for (final story in stories) {
       for (final page in story.pages) {
+        if (const {
+          'ant_and_grasshopper',
+          'ant_and_pigeon',
+          'clever_crow',
+          'tortoise_and_hare',
+          'lion_and_mouse',
+          'fox_and_grapes',
+          'dog_and_reflection',
+          'bundle_of_sticks',
+          'enormous_turnip',
+          'little_red_hen',
+          'cap_seller_and_monkeys',
+          'great_race',
+          'anansi_pot_of_wisdom',
+          'ugly_duckling',
+        }.contains(story.id)) continue;
         sceneCount++;
         final animation = page.animation;
         expect(animation, isNotNull,

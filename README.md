@@ -1,12 +1,25 @@
 # Social Stories (Flutter)
 
-A children's social-story book built from the Figma reference. All 12 stories
+A children's social-story book built from the Figma reference. All 26 stories
 (School, Toilet, Doctor, Brushing Teeth, Restaurant, Airport, Playground,
-Sharing, Asking for Help, Personal Space, Saying No, Staying Safe) are **data**
+Sharing, Asking for Help, Personal Space, Saying No, Staying Safe, The Ant and the Grasshopper, The Ant and the Pigeon,
+The Clever Crow, The Tortoise and the Hare, The Lion and the Mouse, The Fox and the Grapes,
+The Dog and His Reflection, The Bundle of Sticks, The Enormous Turnip, The Little Red Hen,
+The Cap Seller and the Monkeys, The Great Race, Anansi and the Pot of Wisdom,
+and The Ugly Duckling) are **data**
 in `assets/data/stories.json`, and they all play in **one** reusable
 `StoryScreen`. There are no per-story screens.
 
 ## Windows: one-click scripts
+
+The launcher icon is the approved baby elephant reading a coral storybook on
+a lavender background. Android includes legacy, adaptive, and themed icons;
+iOS includes all AppIcon sizes. The approved preview stays in `assets/branding/previews/elephant.png`.
+The transparent adaptive foreground lives in
+`assets/branding/app_icon_elephant_foreground.png`, with the final 1024px
+`app_icon.png` and generation prompt alongside it. Regenerate the platform assets with
+`python tools/generate_app_icons.py` (requires Pillow). Rebuild and update the
+installed app to see the new launcher icon.
 
 Double-click these in the project folder. You need Flutter on PATH and the Android SDK, which Android Studio installs.
 
@@ -26,7 +39,7 @@ On the phone, turn on **Developer options → USB debugging** and accept the pro
 
 ## Story server: adding and updating stories for everyone
 
-The app always opens with stories on screen. The first time, it shows the 12 stories bundled
+The app always opens with stories on screen. The first time, it shows the 26 stories bundled
 with it. If a story server is set up, the app then fetches the latest list in the background
 and saves it, so the new stories still show the next time the app opens offline. Pull down on
 the library to check for new stories.
@@ -43,7 +56,7 @@ App on the Android emulator uses:  http://10.0.2.2:8080
 App on a phone on this Wi-Fi uses:  http://192.168.1.20:8080
 ```
 
-The first start copies the 12 bundled stories into `server\data\stories.json`. Everything the
+The first start copies the 26 bundled stories into `server\data\stories.json`. Everything the
 server saves (stories, uploaded pictures, the admin token) lives in `server\data\`. **Back up
 that folder.**
 

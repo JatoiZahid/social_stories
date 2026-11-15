@@ -1,0 +1,3 @@
+Mode: built-in imagegen; transparent foreground.
+
+Use case: stylized-concept. Asset type: mobile launcher icon foreground for toddler storybook app. A charming smiling open storybook mascot, coral orange thick rounded cover, cream pages with a few colorful rainbow page edges, two simple dark eyes and small happy smile, tiny friendly sun peeking above pages. Premium soft clay 3D illustration, simple bold silhouette readable at 48 pixels, warm joyful preschool aesthetic. Front view, centered, isolated on genuinely transparent background, no ground plane, no square tile, no border, no lettering, no watermark. All artwork compact within central 80% of square image, ample transparent margin, no extra scattered decorations. Background will be soft teal in app launcher.

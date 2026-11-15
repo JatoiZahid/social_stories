@@ -1,0 +1,5 @@
+Mode: built-in imagegen edit. Reference: previews/elephant.png.
+The approved preview is used directly for legacy Android and all iOS icons.
+This cutout is used only for adaptive Android and its themed silhouette.
+
+Edit target: approved elephant app icon. Remove only the lavender background and ground shadow, leaving genuinely transparent pixels outside the elephant and book. Preserve the exact baby elephant, pose, face, ears, body, feet, coral open book, cream pages, colors, soft clay textures and composition. Do not redesign or add anything. Keep all ears and feet fully visible with transparent margin. Output a clean isolated cutout for Android adaptive launcher foreground.

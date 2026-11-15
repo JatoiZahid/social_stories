@@ -1507,6 +1507,890 @@
           }
         }
       ]
+    },
+    {
+      "id": "ant_and_grasshopper",
+      "title": "The Ant and the Grasshopper",
+      "pages": [
+        {
+          "id": "ant_and_grasshopper-p1",
+          "image": "assets/images/story_scenes/ant_and_grasshopper_scene_01.png",
+          "lead": "On a sunny day, Ant gathered grain.",
+          "body": "Grasshopper played music in the meadow."
+        },
+        {
+          "id": "ant_and_grasshopper-p2",
+          "image": "assets/images/story_scenes/ant_and_grasshopper_scene_02.png",
+          "lead": "Ant carried seeds to her home.",
+          "body": "She was saving food for winter."
+        },
+        {
+          "id": "ant_and_grasshopper-p3",
+          "image": "assets/images/story_scenes/ant_and_grasshopper_scene_03.png",
+          "lead": "Grasshopper wanted to keep playing.",
+          "body": "He did not save any food before the cold days came."
+        },
+        {
+          "id": "ant_and_grasshopper-p4",
+          "image": "assets/images/story_scenes/ant_and_grasshopper_scene_04.png",
+          "lead": "Winter came, and food was hard to find.",
+          "body": "Hungry Grasshopper knocked on Ant's door."
+        },
+        {
+          "id": "ant_and_grasshopper-p5",
+          "image": "assets/images/story_scenes/ant_and_grasshopper_scene_05.png",
+          "lead": "Ant welcomed Grasshopper inside and shared her food.",
+          "body": "Grasshopper thanked her for being kind."
+        },
+        {
+          "id": "ant_and_grasshopper-p6",
+          "image": "assets/images/story_scenes/ant_and_grasshopper_scene_06.png",
+          "lead": "In spring, they gathered seeds together.",
+          "body": "They learned to plan ahead and help each other."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ant_and_grasshopper-q1",
+          "question": "Why did Ant save food?",
+          "choices": [
+            "For winter",
+            "To hide her toys",
+            "To make music"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ant_and_grasshopper-q2",
+          "question": "What did the friends learn?",
+          "choices": [
+            "Never ask for help",
+            "Plan ahead and be kind",
+            "Keep all food to yourself"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "ant_and_pigeon",
+      "title": "The Ant and the Pigeon",
+      "pages": [
+        {
+          "id": "ant_and_pigeon-p1",
+          "image": "assets/images/story_scenes/ant_and_pigeon_scene_01.png",
+          "lead": "A little ant went to the river for a drink.",
+          "body": "A pigeon rested in a tree nearby."
+        },
+        {
+          "id": "ant_and_pigeon-p2",
+          "image": "assets/images/story_scenes/ant_and_pigeon_scene_02.png",
+          "lead": "Ant slipped into the water.",
+          "body": "Pigeon saw Ant struggling and wanted to help."
+        },
+        {
+          "id": "ant_and_pigeon-p3",
+          "image": "assets/images/story_scenes/ant_and_pigeon_scene_03.png",
+          "lead": "Pigeon dropped a leaf beside Ant.",
+          "body": "Ant climbed onto the leaf and floated toward the bank."
+        },
+        {
+          "id": "ant_and_pigeon-p4",
+          "image": "assets/images/story_scenes/ant_and_pigeon_scene_04.png",
+          "lead": "Ant floated on the leaf toward the riverbank.",
+          "body": "Thank you, Pigeon! said Ant. I will remember your kindness."
+        },
+        {
+          "id": "ant_and_pigeon-p5",
+          "image": "assets/images/story_scenes/ant_and_pigeon_scene_05.png",
+          "lead": "Later, Ant saw a hunter with a net near Pigeon.",
+          "body": "Ant nipped the hunter's ankle, and he dropped the net."
+        },
+        {
+          "id": "ant_and_pigeon-p6",
+          "image": "assets/images/story_scenes/ant_and_pigeon_scene_06.png",
+          "lead": "Pigeon heard the noise and flew away safely.",
+          "body": "Even a small friend can give great help."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ant_and_pigeon-q1",
+          "question": "How did Pigeon help Ant?",
+          "choices": [
+            "Dropped a leaf",
+            "Built a house",
+            "Brought a net"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ant_and_pigeon-q2",
+          "question": "What does this story teach us?",
+          "choices": [
+            "Only big animals can help",
+            "Kindness can come back to us",
+            "Never help a friend"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "clever_crow",
+      "title": "The Clever Crow",
+      "pages": [
+        {
+          "id": "clever_crow-p1",
+          "image": "assets/images/story_scenes/clever_crow_scene_01.png",
+          "lead": "On a hot day, Crow was very thirsty.",
+          "body": "She flew over the meadow looking for water."
+        },
+        {
+          "id": "clever_crow-p2",
+          "image": "assets/images/story_scenes/clever_crow_scene_02.png",
+          "lead": "Crow found a pitcher beside a path.",
+          "body": "There was a little water at the bottom."
+        },
+        {
+          "id": "clever_crow-p3",
+          "image": "assets/images/story_scenes/clever_crow_scene_03.png",
+          "lead": "Crow put her beak into the pitcher.",
+          "body": "The water was too low for her to reach."
+        },
+        {
+          "id": "clever_crow-p4",
+          "image": "assets/images/story_scenes/clever_crow_scene_04.png",
+          "lead": "Crow stopped to think and noticed some pebbles.",
+          "body": "She picked up one small pebble in her beak."
+        },
+        {
+          "id": "clever_crow-p5",
+          "image": "assets/images/story_scenes/clever_crow_scene_05.png",
+          "lead": "Crow dropped the pebbles into the pitcher, one at a time.",
+          "body": "With each pebble, the water rose higher."
+        },
+        {
+          "id": "clever_crow-p6",
+          "image": "assets/images/story_scenes/clever_crow_scene_06.png",
+          "lead": "At last, Crow could reach the water and drink.",
+          "body": "Thinking carefully and trying patiently helped her solve the problem."
+        }
+      ],
+      "questions": [
+        {
+          "id": "clever_crow-q1",
+          "question": "What did Crow drop into the pitcher?",
+          "choices": [
+            "Leaves",
+            "Pebbles",
+            "Feathers"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "clever_crow-q2",
+          "question": "Why could Crow drink at the end?",
+          "choices": [
+            "The pitcher disappeared",
+            "The water rose higher",
+            "The sun went away"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "tortoise_and_hare",
+      "title": "The Tortoise and the Hare",
+      "pages": [
+        {
+          "id": "tortoise_and_hare-p1",
+          "image": "assets/images/story_scenes/tortoise_and_hare_scene_01.png",
+          "lead": "Hare loved to talk about how fast he could run.",
+          "body": "Tortoise smiled and agreed to a friendly race."
+        },
+        {
+          "id": "tortoise_and_hare-p2",
+          "image": "assets/images/story_scenes/tortoise_and_hare_scene_02.png",
+          "lead": "The animals gathered to watch the race begin.",
+          "body": "Hare raced ahead while Tortoise took steady steps."
+        },
+        {
+          "id": "tortoise_and_hare-p3",
+          "image": "assets/images/story_scenes/tortoise_and_hare_scene_03.png",
+          "lead": "Hare looked back and saw Tortoise far behind.",
+          "body": "I have plenty of time, he thought."
+        },
+        {
+          "id": "tortoise_and_hare-p4",
+          "image": "assets/images/story_scenes/tortoise_and_hare_scene_04.png",
+          "lead": "Hare lay down under a tree and fell asleep.",
+          "body": "Tortoise kept walking, one step at a time."
+        },
+        {
+          "id": "tortoise_and_hare-p5",
+          "image": "assets/images/story_scenes/tortoise_and_hare_scene_05.png",
+          "lead": "Hare woke up and hurried toward the finish.",
+          "body": "Tortoise was already very close to the line."
+        },
+        {
+          "id": "tortoise_and_hare-p6",
+          "image": "assets/images/story_scenes/tortoise_and_hare_scene_06.png",
+          "lead": "Tortoise crossed the finish line first.",
+          "body": "Hare learned that steady effort matters more than boasting."
+        }
+      ],
+      "questions": [
+        {
+          "id": "tortoise_and_hare-q1",
+          "question": "Why did Hare stop running?",
+          "choices": [
+            "He took a nap",
+            "He lost his shoes",
+            "It began to snow"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "tortoise_and_hare-q2",
+          "question": "What helped Tortoise finish the race?",
+          "choices": [
+            "Boasting",
+            "Steady effort",
+            "Taking a shortcut"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "lion_and_mouse",
+      "title": "The Lion and the Mouse",
+      "pages": [
+        {
+          "id": "lion_and_mouse-p1",
+          "image": "assets/images/story_scenes/lion_and_mouse_scene_01.png",
+          "lead": "A little mouse ran across a sleeping lion's paw.",
+          "body": "Lion woke up and looked down at Mouse."
+        },
+        {
+          "id": "lion_and_mouse-p2",
+          "image": "assets/images/story_scenes/lion_and_mouse_scene_02.png",
+          "lead": "Please let me go, said Mouse.",
+          "body": "One day, I may be able to help you."
+        },
+        {
+          "id": "lion_and_mouse-p3",
+          "image": "assets/images/story_scenes/lion_and_mouse_scene_03.png",
+          "lead": "Lion gently lifted his paw and let Mouse leave.",
+          "body": "Mouse thanked Lion for his kindness."
+        },
+        {
+          "id": "lion_and_mouse-p4",
+          "image": "assets/images/story_scenes/lion_and_mouse_scene_04.png",
+          "lead": "Later, Lion became tangled in a rope net.",
+          "body": "Mouse heard Lion calling and hurried to help."
+        },
+        {
+          "id": "lion_and_mouse-p5",
+          "image": "assets/images/story_scenes/lion_and_mouse_scene_05.png",
+          "lead": "Mouse chewed through the ropes with his little teeth.",
+          "body": "Soon, Lion could step out of the net."
+        },
+        {
+          "id": "lion_and_mouse-p6",
+          "image": "assets/images/story_scenes/lion_and_mouse_scene_06.png",
+          "lead": "Lion thanked his tiny friend.",
+          "body": "No one is too small to make a difference."
+        }
+      ],
+      "questions": [
+        {
+          "id": "lion_and_mouse-q1",
+          "question": "How did Mouse free Lion?",
+          "choices": [
+            "Chewed through the ropes",
+            "Climbed a mountain",
+            "Brought some grapes"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "lion_and_mouse-q2",
+          "question": "What did Lion learn?",
+          "choices": [
+            "Only large friends can help",
+            "Small friends can help too",
+            "Never listen to others"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "fox_and_grapes",
+      "title": "The Fox and the Grapes",
+      "pages": [
+        {
+          "id": "fox_and_grapes-p1",
+          "image": "assets/images/story_scenes/fox_and_grapes_scene_01.png",
+          "lead": "Fox walked along a sunny path.",
+          "body": "Soon, he came to a vineyard."
+        },
+        {
+          "id": "fox_and_grapes-p2",
+          "image": "assets/images/story_scenes/fox_and_grapes_scene_02.png",
+          "lead": "Fox spotted a bunch of purple grapes.",
+          "body": "They hung high above him on a vine."
+        },
+        {
+          "id": "fox_and_grapes-p3",
+          "image": "assets/images/story_scenes/fox_and_grapes_scene_03.png",
+          "lead": "Fox stretched up as far as he could.",
+          "body": "The grapes were still out of reach."
+        },
+        {
+          "id": "fox_and_grapes-p4",
+          "image": "assets/images/story_scenes/fox_and_grapes_scene_04.png",
+          "lead": "Fox jumped again and again.",
+          "body": "He could not reach the grapes and felt disappointed."
+        },
+        {
+          "id": "fox_and_grapes-p5",
+          "image": "assets/images/story_scenes/fox_and_grapes_scene_05.png",
+          "lead": "Those grapes are probably sour, Fox said as he walked away.",
+          "body": "But he had not tasted even one."
+        },
+        {
+          "id": "fox_and_grapes-p6",
+          "image": "assets/images/story_scenes/fox_and_grapes_scene_06.png",
+          "lead": "Fox sat down to think about what had happened.",
+          "body": "It is okay to feel disappointed without putting something down."
+        }
+      ],
+      "questions": [
+        {
+          "id": "fox_and_grapes-q1",
+          "question": "Why could Fox not get the grapes?",
+          "choices": [
+            "They were too high",
+            "They were in a box",
+            "They were underwater"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "fox_and_grapes-q2",
+          "question": "Had Fox tasted the grapes?",
+          "choices": [
+            "Yes, all of them",
+            "No, he had not",
+            "Yes, one bunch"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "dog_and_reflection",
+      "title": "The Dog and His Reflection",
+      "pages": [
+        {
+          "id": "dog_and_reflection-p1",
+          "image": "assets/images/story_scenes/dog_and_reflection_scene_01.png",
+          "lead": "A baker gave Dog a bread roll.",
+          "body": "Dog happily carried it home in his mouth."
+        },
+        {
+          "id": "dog_and_reflection-p2",
+          "image": "assets/images/story_scenes/dog_and_reflection_scene_02.png",
+          "lead": "On the way, Dog crossed a wooden bridge.",
+          "body": "A quiet stream flowed below him."
+        },
+        {
+          "id": "dog_and_reflection-p3",
+          "image": "assets/images/story_scenes/dog_and_reflection_scene_03.png",
+          "lead": "Dog looked down and saw his reflection in the water.",
+          "body": "He thought it was another dog with another roll."
+        },
+        {
+          "id": "dog_and_reflection-p4",
+          "image": "assets/images/story_scenes/dog_and_reflection_scene_04.png",
+          "lead": "Dog opened his mouth to bark for the other roll.",
+          "body": "His own bread fell into the stream."
+        },
+        {
+          "id": "dog_and_reflection-p5",
+          "image": "assets/images/story_scenes/dog_and_reflection_scene_05.png",
+          "lead": "The bread floated away on the water.",
+          "body": "Dog realized there had been no other dog."
+        },
+        {
+          "id": "dog_and_reflection-p6",
+          "image": "assets/images/story_scenes/dog_and_reflection_scene_06.png",
+          "lead": "Dog rested on the grassy bank and thought about his mistake.",
+          "body": "He learned to appreciate what he already had."
+        }
+      ],
+      "questions": [
+        {
+          "id": "dog_and_reflection-q1",
+          "question": "What did Dog see in the water?",
+          "choices": [
+            "His reflection",
+            "A lion",
+            "A baker"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "dog_and_reflection-q2",
+          "question": "Why did Dog lose his bread?",
+          "choices": [
+            "He hid it",
+            "He opened his mouth to bark",
+            "He shared it with a friend"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "bundle_of_sticks",
+      "title": "The Bundle of Sticks",
+      "pages": [
+        {
+          "id": "bundle_of_sticks-p1",
+          "image": "assets/images/story_scenes/bundle_of_sticks_scene_01.png",
+          "lead": "A farmer's three children often argued.",
+          "body": "Their father wanted to show them how to work together."
+        },
+        {
+          "id": "bundle_of_sticks-p2",
+          "image": "assets/images/story_scenes/bundle_of_sticks_scene_02.png",
+          "lead": "Father brought a bundle of sticks tied with twine.",
+          "body": "He asked each child to try to break the whole bundle."
+        },
+        {
+          "id": "bundle_of_sticks-p3",
+          "image": "assets/images/story_scenes/bundle_of_sticks_scene_03.png",
+          "lead": "Each child tried bending the bundle.",
+          "body": "The sticks held together, and no one could break them."
+        },
+        {
+          "id": "bundle_of_sticks-p4",
+          "image": "assets/images/story_scenes/bundle_of_sticks_scene_04.png",
+          "lead": "Father untied the twine and separated the sticks.",
+          "body": "Now try one stick at a time, he said."
+        },
+        {
+          "id": "bundle_of_sticks-p5",
+          "image": "assets/images/story_scenes/bundle_of_sticks_scene_05.png",
+          "lead": "Each child could easily snap a single thin stick.",
+          "body": "They noticed how much stronger the bundle had been."
+        },
+        {
+          "id": "bundle_of_sticks-p6",
+          "image": "assets/images/story_scenes/bundle_of_sticks_scene_06.png",
+          "lead": "The family began helping one another in the garden.",
+          "body": "Like the sticks, they were stronger when they worked together."
+        }
+      ],
+      "questions": [
+        {
+          "id": "bundle_of_sticks-q1",
+          "question": "What was hard to break?",
+          "choices": [
+            "One thin stick",
+            "The tied bundle",
+            "A leaf"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "bundle_of_sticks-q2",
+          "question": "What did the family learn?",
+          "choices": [
+            "Working together makes us stronger",
+            "Arguing helps us finish",
+            "Never ask for help"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "enormous_turnip",
+      "title": "The Enormous Turnip",
+      "pages": [
+        {
+          "id": "enormous_turnip-p1",
+          "image": "assets/images/story_scenes/enormous_turnip_scene_01.png",
+          "lead": "Grandfather planted a little seed.",
+          "body": "Grow, little turnip, grow!"
+        },
+        {
+          "id": "enormous_turnip-p2",
+          "image": "assets/images/story_scenes/enormous_turnip_scene_02.png",
+          "lead": "The turnip grew big, big, big!",
+          "body": "Grandfather pulled, but it stayed in the ground."
+        },
+        {
+          "id": "enormous_turnip-p3",
+          "image": "assets/images/story_scenes/enormous_turnip_scene_03.png",
+          "lead": "Grandmother came to help.",
+          "body": "Pull, pull! The turnip would not come out."
+        },
+        {
+          "id": "enormous_turnip-p4",
+          "image": "assets/images/story_scenes/enormous_turnip_scene_04.png",
+          "lead": "A child, a dog, and a cat joined in.",
+          "body": "Pull, pull! They needed one more helper."
+        },
+        {
+          "id": "enormous_turnip-p5",
+          "image": "assets/images/story_scenes/enormous_turnip_scene_05.png",
+          "lead": "A tiny mouse came to help too.",
+          "body": "They pulled together. Pop! Out came the turnip!"
+        },
+        {
+          "id": "enormous_turnip-p6",
+          "image": "assets/images/story_scenes/enormous_turnip_scene_06.png",
+          "lead": "Everyone cheered for every helper.",
+          "body": "Even the smallest friend can help."
+        }
+      ],
+      "questions": [
+        {
+          "id": "enormous_turnip-q1",
+          "question": "What grew in the garden?",
+          "choices": [
+            "A turnip",
+            "A hat"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "enormous_turnip-q2",
+          "question": "Who helped at the end?",
+          "choices": [
+            "A tiger",
+            "A mouse"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "little_red_hen",
+      "title": "The Little Red Hen",
+      "pages": [
+        {
+          "id": "little_red_hen-p1",
+          "image": "assets/images/story_scenes/little_red_hen_scene_01.png",
+          "lead": "Little Red Hen found some wheat seeds.",
+          "body": "Who will help me plant? she asked."
+        },
+        {
+          "id": "little_red_hen-p2",
+          "image": "assets/images/story_scenes/little_red_hen_scene_02.png",
+          "lead": "Not today, said Dog, Cat, and Duck.",
+          "body": "Hen and her chicks planted the seeds."
+        },
+        {
+          "id": "little_red_hen-p3",
+          "image": "assets/images/story_scenes/little_red_hen_scene_03.png",
+          "lead": "The wheat grew tall and golden.",
+          "body": "Hen and her chicks gathered the wheat."
+        },
+        {
+          "id": "little_red_hen-p4",
+          "image": "assets/images/story_scenes/little_red_hen_scene_04.png",
+          "lead": "Hen made flour and mixed the dough.",
+          "body": "Her chicks watched as she made bread."
+        },
+        {
+          "id": "little_red_hen-p5",
+          "image": "assets/images/story_scenes/little_red_hen_scene_05.png",
+          "lead": "Hen and her chicks enjoyed the bread they had made.",
+          "body": "The other animals wished they had helped."
+        },
+        {
+          "id": "little_red_hen-p6",
+          "image": "assets/images/story_scenes/little_red_hen_scene_06.png",
+          "lead": "Next time, Dog, Cat, and Duck helped plant.",
+          "body": "Working together made the job easier."
+        }
+      ],
+      "questions": [
+        {
+          "id": "little_red_hen-q1",
+          "question": "What did Hen plant?",
+          "choices": [
+            "Wheat seeds",
+            "Pebbles"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "little_red_hen-q2",
+          "question": "What did the friends do next time?",
+          "choices": [
+            "Hide",
+            "Help plant"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "cap_seller_and_monkeys",
+      "title": "The Cap Seller and the Monkeys",
+      "pages": [
+        {
+          "id": "cap_seller_and_monkeys-p1",
+          "image": "assets/images/story_scenes/cap_seller_and_monkeys_scene_01.png",
+          "lead": "A cap seller walked along a village path.",
+          "body": "His basket held red, blue, and yellow caps."
+        },
+        {
+          "id": "cap_seller_and_monkeys-p2",
+          "image": "assets/images/story_scenes/cap_seller_and_monkeys_scene_02.png",
+          "lead": "He rested under a shady tree.",
+          "body": "He kept his own red cap on his head."
+        },
+        {
+          "id": "cap_seller_and_monkeys-p3",
+          "image": "assets/images/story_scenes/cap_seller_and_monkeys_scene_03.png",
+          "lead": "When he woke, his basket was empty!",
+          "body": "Monkeys in the tree were wearing his caps."
+        },
+        {
+          "id": "cap_seller_and_monkeys-p4",
+          "image": "assets/images/story_scenes/cap_seller_and_monkeys_scene_04.png",
+          "lead": "The seller scratched his head.",
+          "body": "The monkeys scratched their heads too!"
+        },
+        {
+          "id": "cap_seller_and_monkeys-p5",
+          "image": "assets/images/story_scenes/cap_seller_and_monkeys_scene_05.png",
+          "lead": "He took off his cap and put it down.",
+          "body": "The monkeys copied him and dropped the caps."
+        },
+        {
+          "id": "cap_seller_and_monkeys-p6",
+          "image": "assets/images/story_scenes/cap_seller_and_monkeys_scene_06.png",
+          "lead": "The seller put all his caps back in the basket.",
+          "body": "He smiled and waved goodbye to the monkeys."
+        }
+      ],
+      "questions": [
+        {
+          "id": "cap_seller_and_monkeys-q1",
+          "question": "Who took the caps?",
+          "choices": [
+            "Monkeys",
+            "Ducks"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "cap_seller_and_monkeys-q2",
+          "question": "What did the monkeys do?",
+          "choices": [
+            "Bake bread",
+            "Copy the seller"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "great_race",
+      "title": "The Great Race",
+      "pages": [
+        {
+          "id": "great_race-p1",
+          "image": "assets/images/story_scenes/great_race_scene_01.png",
+          "lead": "The Jade Emperor invited the animals to a race.",
+          "body": "Come across the river! he said."
+        },
+        {
+          "id": "great_race-p2",
+          "image": "assets/images/story_scenes/great_race_scene_02.png",
+          "lead": "Little Rat rode on strong Ox's back.",
+          "body": "Ox swam steadily across the quiet water."
+        },
+        {
+          "id": "great_race-p3",
+          "image": "assets/images/story_scenes/great_race_scene_03.png",
+          "lead": "At the bank, Rat hopped ahead.",
+          "body": "Rat came first, and Ox came second."
+        },
+        {
+          "id": "great_race-p4",
+          "image": "assets/images/story_scenes/great_race_scene_04.png",
+          "lead": "Tiger swam, Rabbit hopped, and Dragon flew.",
+          "body": "Each animal found a way to cross."
+        },
+        {
+          "id": "great_race-p5",
+          "image": "assets/images/story_scenes/great_race_scene_05.png",
+          "lead": "Goat, Monkey, and Rooster shared a raft.",
+          "body": "Horse, Snake, Dog, and Pig arrived too."
+        },
+        {
+          "id": "great_race-p6",
+          "image": "assets/images/story_scenes/great_race_scene_06.png",
+          "lead": "All twelve animals gathered at the finish.",
+          "body": "Their order became part of the Chinese zodiac calendar."
+        }
+      ],
+      "questions": [
+        {
+          "id": "great_race-q1",
+          "question": "Who came first?",
+          "choices": [
+            "Rat",
+            "Ox"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "great_race-q2",
+          "question": "Who carried Rat across the river?",
+          "choices": [
+            "Dog",
+            "Ox"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "anansi_pot_of_wisdom",
+      "title": "Anansi and the Pot of Wisdom",
+      "pages": [
+        {
+          "id": "anansi_pot_of_wisdom-p1",
+          "image": "assets/images/story_scenes/anansi_pot_of_wisdom_scene_01.png",
+          "lead": "Anansi the spider had a pot full of wisdom.",
+          "body": "Wisdom means knowing helpful things."
+        },
+        {
+          "id": "anansi_pot_of_wisdom-p2",
+          "image": "assets/images/story_scenes/anansi_pot_of_wisdom_scene_02.png",
+          "lead": "He wanted to keep the pot all to himself.",
+          "body": "He tied it in front of him to climb a tree."
+        },
+        {
+          "id": "anansi_pot_of_wisdom-p3",
+          "image": "assets/images/story_scenes/anansi_pot_of_wisdom_scene_03.png",
+          "lead": "The pot bumped against the tree.",
+          "body": "Anansi could not climb easily."
+        },
+        {
+          "id": "anansi_pot_of_wisdom-p4",
+          "image": "assets/images/story_scenes/anansi_pot_of_wisdom_scene_04.png",
+          "lead": "His little child had an idea.",
+          "body": "Try putting the pot on your back!"
+        },
+        {
+          "id": "anansi_pot_of_wisdom-p5",
+          "image": "assets/images/story_scenes/anansi_pot_of_wisdom_scene_05.png",
+          "lead": "Anansi tried it, and climbing was easier.",
+          "body": "Someone else knew a helpful thing too!"
+        },
+        {
+          "id": "anansi_pot_of_wisdom-p6",
+          "image": "assets/images/story_scenes/anansi_pot_of_wisdom_scene_06.png",
+          "lead": "Anansi came down to share his ideas.",
+          "body": "Everyone has something to teach and something to learn."
+        }
+      ],
+      "questions": [
+        {
+          "id": "anansi_pot_of_wisdom-q1",
+          "question": "Who had a helpful idea?",
+          "choices": [
+            "Anansi's child",
+            "A fish"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "anansi_pot_of_wisdom-q2",
+          "question": "What did Anansi learn to do?",
+          "choices": [
+            "Hide ideas",
+            "Share ideas"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "ugly_duckling",
+      "title": "The Ugly Duckling",
+      "pages": [
+        {
+          "id": "ugly_duckling-p1",
+          "image": "assets/images/story_scenes/ugly_duckling_scene_01.png",
+          "lead": "Some little birds hatched beside a pond.",
+          "body": "One fluffy gray bird looked different from the yellow ducklings."
+        },
+        {
+          "id": "ugly_duckling-p2",
+          "image": "assets/images/story_scenes/ugly_duckling_scene_02.png",
+          "lead": "The gray little bird wondered why he looked different.",
+          "body": "He wanted to feel that he belonged."
+        },
+        {
+          "id": "ugly_duckling-p3",
+          "image": "assets/images/story_scenes/ugly_duckling_scene_03.png",
+          "lead": "Mother Duck stayed close and comforted him.",
+          "body": "You deserve kindness just as you are."
+        },
+        {
+          "id": "ugly_duckling-p4",
+          "image": "assets/images/story_scenes/ugly_duckling_scene_04.png",
+          "lead": "The little bird grew through the seasons.",
+          "body": "His feathers and his long neck began to change."
+        },
+        {
+          "id": "ugly_duckling-p5",
+          "image": "assets/images/story_scenes/ugly_duckling_scene_05.png",
+          "lead": "In spring, he saw his reflection.",
+          "body": "He had grown into a young swan!"
+        },
+        {
+          "id": "ugly_duckling-p6",
+          "image": "assets/images/story_scenes/ugly_duckling_scene_06.png",
+          "lead": "He swam with the swans and his duck family.",
+          "body": "Everyone belongs, however they look."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ugly_duckling-q1",
+          "question": "What did the gray bird grow into?",
+          "choices": [
+            "A swan",
+            "A cat"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ugly_duckling-q2",
+          "question": "Who deserves kindness?",
+          "choices": [
+            "Only swans",
+            "Everyone"
+          ],
+          "answer": 1
+        }
+      ]
     }
   ]
 }
